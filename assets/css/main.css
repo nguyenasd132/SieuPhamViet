@@ -270,8 +270,6 @@ main {
 }
 .sp-card{
     border: 3px #f6f7f8 solid;
-    min-width: 250px;
-    min-height: 350px;
     padding: 10px;
     border-radius: 16px;
     scale: 0.85;
@@ -358,4 +356,8 @@ main {
 }
 .giaDaGiam{
     font-size: 10px;
+}
+.swiper{
+    height: auto;
+    width: auto;
 }
