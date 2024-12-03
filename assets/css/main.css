@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
 }
 
 body{
@@ -262,42 +261,54 @@ main {
 .sale-slide-show{
     position: relative;
     height: 400px;
-    width: 1040px;
     left: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    overflow: hidden;
+}
+.swiper-wrapper{
 }
 .sp-card{
+    border: 3px #f6f7f8 solid;
     min-width: 250px;
     min-height: 350px;
-    border: 1px black solid;
     padding: 10px;
+    border-radius: 16px;
+    scale: 0.85;
 }
-.sp-card .sp-card-link a{
+.sp-card:hover{
+    border: 3px #4c46ef solid;
+    transition: 0.3s linear;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.sp-card .sp-card-link{
     text-decoration: none;
 }
 .sp-card .sp-card-link img{
     width: 100%;
     object-fit: cover;
     aspect-ratio: 1/1;
+    border-radius: 12px;
+}
+.tag-group{
+    display: flex;
 }
 .sp-card .sp-card-link .tag{
     position: relative;
     color: #f08152;
-    left: 10px;
+    left: 5px;
+    top: 5px;
     width: fit-content;
     background: #ffeadd;
-    padding: 6px 12px ;
+    padding: 4px 8px ;
     border-radius: 50px;
     margin-right: 5px ;
+    font-size: 10px;
 }
 .sp-card .sp-info{
     position: relative;
     font-size: 8px;
-    top:  0;
+    top:  12px;
     right: 0;
 }
 .card-container{
@@ -306,4 +317,45 @@ main {
 }
 .sp-info i{
     font-size: 20px;
+}
+.sp-card a li{
+    color: gray;
+}
+
+.sp-card a:hover li{
+    color: gray;
+}
+.sp-card .green{
+    color: #34ce57;
+}
+
+.sp-card a .blue {
+    color: #4da1fb;
+}
+
+.sp-card a .red{
+    color: #f80808;
+}
+.sp-card a:hover .blue{
+    color: #073cee;
+}
+.sp-card a:hover .red{
+    color: #f80808;
+}
+
+.sp-card-link:hover img{
+    scale: 1.1;
+}
+.sp-card s{
+    font-size: 10px;
+}
+.green{
+    font-size: 10px;
+}
+.giaHientai{
+    color: black;
+    font-size: 16px;
+}
+.giaDaGiam{
+    font-size: 10px;
 }
