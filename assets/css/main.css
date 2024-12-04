@@ -756,3 +756,10 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+
+.sale-container-2 .sp-card a{
+    text-decoration: none;
+}
+.sale-container-2 .sp-card:hover img{
+    scale: 1.2;
+}
