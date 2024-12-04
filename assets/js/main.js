@@ -79,3 +79,33 @@ const gridSwiper = new Swiper(".gridSlide", {
         }
     }
 });
+
+const gridSwiper2 = new Swiper(".gridSlide-2", {
+    grid: {
+        rows: 1,
+    },
+    spaceBetween: 0,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            rows: 1,
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        }
+    }
+});
