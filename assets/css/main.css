@@ -755,3 +755,23 @@ main {
 .sale-container-2 .sp-card:hover img{
     scale: 1.2;
 }
+
+.sale-container-3{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 250px;
+
+    /* Center slide text vertically */
+    display: flex;
+    align-items: center;
+}
+.sale-container-3 .sp-card a{
+    text-decoration: none;
+}
+.sale-container-3 .sp-card{
+    background: red;
+    position: relative;
+    top: 95px;
+    height: 200px;
+}
