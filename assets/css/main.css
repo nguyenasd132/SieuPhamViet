@@ -294,6 +294,13 @@ main {
     padding: 20px;
     height: 550px;
 }
+.sale-container-2{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 550px;
+    border: 3px black solid;
+}
 .sale-card-container{
     margin-top: 50px;
     height: 400px;
