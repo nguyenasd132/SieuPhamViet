@@ -177,13 +177,9 @@ input.menu-input-search:not(:placeholder-shown) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto; 
-}
-
-.menu-search span  {
+    left: auto; 
     font-size: 20px;
     color: #999;
-    left: auto;
 }
 
 .menu-search span i {
@@ -533,7 +529,7 @@ main {
         width:40px;
     }
     .logo h1{
-        font-size: 25px;
+        font-size: 20px;
         margin-left: -10px;
         padding: 10px;
     }
@@ -561,9 +557,11 @@ main {
         margin-right: -10px;
         gap: 2px;
         top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .list-menu li{
-        font-size: 14px;
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -573,7 +571,6 @@ main {
         background:  rgba(255, 255, 255, 0.201);
         border-radius: 10px;
     }
-
     .footer-container{
         border: 1px solid black;
         margin-top: 20px;
@@ -585,21 +582,12 @@ main {
         justify-content: space-between;
         flex-direction: row;
     }
-    .list-menu{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .list-menu li span{
         display: none;  
     }
-    .list-menu li i:last-child {
-        font-size: 20px;
-        padding: 7px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
+    .list-menu li i {
+        font-size: 2em;
+        margin-top: -10px;
     }
 }
 
@@ -627,7 +615,7 @@ main {
         grid-template-columns: repeat(2, 1fr);
     }
     .menu-search {
-        width: 35%;
+        width: 44%;
         left: 170px;
         top: 12px;
     }
@@ -636,23 +624,27 @@ main {
     }
     .menu-search span i{
         width: 30px;
-        left: auto;
+        left: 180px;
     }
     .list-menu{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .list-menu li {
+    .list-menu li span  {
         display: none;  
     }
-    .list-menu li:last-child {
+    .list-menu li{
+        display: none;
+    }
+    .list-menu li:first-child {
         font-size: 16px;
-        padding: 7px;
+        padding: 8px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: auto;
+        margin-right: 15px;
     }
     main{
         display: flex;
