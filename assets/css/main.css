@@ -299,14 +299,17 @@ main {
     align-items: center;
     text-align: center;
     padding: 20px;
-    height: 550px;
-    border: 3px black solid;
+    height: 500px;
 }
 .sale-card-container{
     margin-top: 50px;
     height: 400px;
     width: 1100px;
 }
+.sale-card-container-2{
+     height: 400px;
+     width: 1100px;
+ }
 .sale-slide-show{
     position: relative;
     height: 400px;

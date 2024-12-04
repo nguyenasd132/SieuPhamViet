@@ -20,7 +20,7 @@ setInterval(() => {
 showCurrentImage();
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.spSwiper', {
     // Optional parameters
     loop: false,
     // If we need pagination
@@ -50,3 +50,32 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+const gridSwiper = new Swiper(".gridSlide", {
+    grid: {
+        rows: 2,
+    },
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            rows: 1,
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 4
+        }
+    }
+});
