@@ -20,8 +20,6 @@ setInterval(() => {
 showCurrentImage();
 
 
-
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: false,
