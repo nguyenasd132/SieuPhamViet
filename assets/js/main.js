@@ -22,17 +22,15 @@ showCurrentImage();
 
 
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
+new Swiper('.sale-card-container', {
+
     loop: false,
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
         dynamicBullets: true
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -51,4 +49,14 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
-
+var swiper2 = new Swiper2(".mySwiper", {
+    slidesPerView: 3,
+    grid: {
+        rows: 2,
+    },
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
