@@ -146,12 +146,12 @@ input.menu-input-search:not(:placeholder-shown) {
 }
 
 .menu-search {
-    width: 500px;
+    width: 42%;
     height: 40px;
     position: fixed;
     background: white;
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 20px;
     left: 550px;
     top: 12px;
     display: flex;
@@ -163,7 +163,7 @@ input.menu-input-search:not(:placeholder-shown) {
     height: 100%;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 1em;
 }
 
@@ -189,7 +189,7 @@ input.menu-input-search:not(:placeholder-shown) {
 .menu-search span i {
     background: #d8d9db;
     border: solid #d8d9db;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
     position: absolute;
     height: 40px;
     width: 60px;  
@@ -256,7 +256,7 @@ input.menu-input-search:not(:placeholder-shown) {
     font-size: 20px;
 }
 
-.list-menu:hover .login {
+.list-menu li:hover .login {
     opacity: 1;
     visibility: visible;
 }
