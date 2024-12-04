@@ -141,6 +141,10 @@ body{
     margin-right: 5px;
 }
 
+input.menu-input-search:not(:placeholder-shown) {
+    transform: translateX(10px); 
+}
+
 .menu-search {
     width: 500px;
     height: 40px;
@@ -195,9 +199,10 @@ body{
 }
 
 .list-menu{
+    position: relative;
     position: fixed;
     display: flex;
-    gap: 35px;
+    gap: 5px;
     right: 10px;
     list-style: none;
     color: white;
@@ -206,21 +211,54 @@ body{
 }
 
 .list-menu li{
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding: 7px;
+    padding: 10px;
 }
 
 .list-menu i{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .list-menu li:hover{
     background:  rgba(255, 255, 255, 0.201);
-    border-radius: 10px;
+    border-radius: 30px;
+}
+
+.list-menu .login{
+    position: absolute;
+    top: 60px;
+    padding: 10px 10px 10px -10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: 150px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.login .login-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    
+}
+
+.login .login-child a h6{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.list-menu:hover .login {
+    opacity: 1;
+    visibility: visible;
 }
 
 main {
@@ -478,7 +516,11 @@ main {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width : 1024px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
     .menu {
         display: flex;
         align-items: center;
@@ -529,9 +571,6 @@ main {
         border-radius: 10px;
     }
 
-    .menu-icon{
-        display: none;  
-    }
     .footer-container{
         border: 1px solid black;
         margin-top: 20px;
@@ -548,11 +587,11 @@ main {
         align-items: center;
         justify-content: center;
     }
-    .list-menu li {
+    .list-menu li span{
         display: none;  
     }
-    .list-menu li:last-child {
-        font-size: 16px;
+    .list-menu li i:last-child {
+        font-size: 20px;
         padding: 7px;
         display: flex;
         justify-content: center;
