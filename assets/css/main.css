@@ -320,7 +320,13 @@ main {
     border-radius: 16px;
     scale: 0.85;
 }
-.sp-card:hover{
+
+.sale-container-1 .sp-card:hover{
+    border: 3px #4c46ef solid;
+    transition: 0.3s linear;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.sale-container-2 .sp-card:hover{
     border: 3px #4c46ef solid;
     transition: 0.3s linear;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
