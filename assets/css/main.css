@@ -23,13 +23,8 @@ body{
     margin: 0 auto;
     padding:10px;
     width: 100%;
-<<<<<<< HEAD
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, blacklinear 0%, rgba(7,6,95,1) 21%, rgba(9,18,121,1) 34%, rgba(0,212,255,1) 100%);
-=======
     background: rgb(3,25,48);
     background: linear-gradient(90deg, rgb(12, 17, 229) 0%, rgb(10, 17, 246) 10%, rgb(15, 60, 241) 29%, rgb(18, 88, 238) 52%, rgba(54,132,219,1) 93%);
->>>>>>> 64016ac70c5a6f61cae6195e6a806787eb16f1f9
     z-index:  10000;
     text-align: center;
     top: 0;
