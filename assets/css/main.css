@@ -16,55 +16,57 @@ body{
 .menu{
     position: fixed;
     display: flex;
+    user-select: none;
     align-items: center;
     justify-content: center;
     height: 64px;
     margin: 0 auto;
     padding:10px;
     width: 100%;
+<<<<<<< HEAD
     background: rgb(2,0,36);
     background: linear-gradient(90deg, blacklinear 0%, rgba(7,6,95,1) 21%, rgba(9,18,121,1) 34%, rgba(0,212,255,1) 100%);
+=======
+    background: rgb(3,25,48);
+    background: linear-gradient(90deg, rgb(12, 17, 229) 0%, rgb(10, 17, 246) 10%, rgb(15, 60, 241) 29%, rgb(18, 88, 238) 52%, rgba(54,132,219,1) 93%);
+>>>>>>> 64016ac70c5a6f61cae6195e6a806787eb16f1f9
     z-index:  10000;
     text-align: center;
     top: 0;
-    transition: top 0.3s ease;;
+    transition: transform 0.45s ease;
 }
 
-.logo h1{
+.logo h3{
     position: fixed;
-    top: 10px;
-    padding: 0 0 0 10px;
-
-}
-
-.logo a h1{
+    top: 16px;
+    left: 0;
     color: white;
     left: 40px;
 }
-
 .logo img{
     width: 50px;
     height: 64px;
     position: fixed;
-    left: 0px;
-    top: 0px;
+    left: 275px;
+    top: 0;
+    scale: 1.5;
 }
 .menu-container {
     position: absolute;
-    top: 60px; 
+    top: 55px;
     left: 0;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    width: 1000px; 
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 1000px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
     z-index: 2000;
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s linear;
+    transition: 0.15s linear;
 }
 
 .menu-child {
@@ -102,7 +104,6 @@ body{
 
 
 .nav{
-    position: relative;
     position: fixed;
     display: flex;
     left: 380px;
@@ -113,18 +114,20 @@ body{
     border-radius: 10px;
     padding: 0 10px;
     cursor: pointer;
-    background-color: rgba(0, 213, 255, 0.66);
-    z-index: 1002px;
+    background-color: rgb(253, 145, 4);
+    z-index: 1002;
+
 }
 
 .nav:hover{
-    background-color:rgba(0,212,255,1) ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .nav:hover .menu-container {
     display: grid; 
     opacity: 1;
     visibility: visible;
+    transition: 0.15s linear;
 }
 
 .nav span{
@@ -136,18 +139,21 @@ body{
 
 .nav .icon{
     font-size: 18px;
-    border: 2px solid white;
     border-radius: 20%;
     margin-right: 5px;
 }
 
+input.menu-input-search:not(:placeholder-shown) {
+    transform: translateX(10px); 
+}
+
 .menu-search {
-    width: 500px;
+    width: 42%;
     height: 40px;
     position: fixed;
     background: white;
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 20px;
     left: 550px;
     top: 12px;
     display: flex;
@@ -159,7 +165,7 @@ body{
     height: 100%;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 1em;
 }
 
@@ -173,19 +179,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto; 
-}
-
-.menu-search span  {
+    left: auto; 
     font-size: 20px;
     color: #999;
-    left: auto;
 }
 
 .menu-search span i {
     background: #d8d9db;
     border: solid #d8d9db;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
     position: absolute;
     height: 40px;
     width: 60px;  
@@ -197,8 +199,8 @@ body{
 .list-menu{
     position: fixed;
     display: flex;
-    gap: 35px;
-    right: 10px;
+    gap: 5px;
+    right: 100px;
     list-style: none;
     color: white;
     cursor: pointer;
@@ -206,21 +208,21 @@ body{
 }
 
 .list-menu li{
-    font-size: 30px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding: 7px;
+    padding: 10px;
 }
 
 .list-menu i{
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .list-menu li:hover{
     background:  rgba(255, 255, 255, 0.201);
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 main {
@@ -257,17 +259,21 @@ main {
     height: 550px;
 }
 .sale-container-2{
+    background: #eee;
     align-items: center;
     text-align: center;
     padding: 20px;
-    height: 550px;
-    border: 3px black solid;
+    height: 500px;
 }
 .sale-card-container{
     margin-top: 50px;
     height: 400px;
     width: 1100px;
 }
+.sale-card-container-2{
+     height: 400px;
+     width: 1100px;
+ }
 .sale-slide-show{
     position: relative;
     height: 400px;
@@ -276,17 +282,32 @@ main {
     flex-direction: row;
     align-items: center;
 }
-.swiper-wrapper{
-}
 .sp-card{
     border: 3px #f6f7f8 solid;
     padding: 10px;
     border-radius: 16px;
     scale: 0.85;
 }
-.sp-card:hover{
+.sale-container-1 .sp-card{
+    position: relative;
+    min-height: 420px;
+    height: fit-content;
+}
+.card-container{
+    margin-bottom: auto;
+}
+.sale-container-1 .card-container{
+    min-height: 250px;
+}
+.sale-container-1 .sp-card:hover{
     border: 3px #4c46ef solid;
-    transition: 0.3s linear;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.sale-container-2 .sp-card:hover{
+    border: 3px #4c46ef solid;
+    transition: 0.2s;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .sp-card .sp-card-link{
@@ -375,14 +396,17 @@ main {
 .footer-container{
     border: 1px solid black;
     margin-top: 20px;
-    background: linear-gradient(90deg, black 0%, rgba(7,6,95,1) 21%, rgba(9,18,121,1) 34%, rgba(0,212,255,1) 100%);
+    background: rgb(3,25,48);
+    background: linear-gradient(90deg, rgb(12, 17, 229) 0%, rgb(10, 17, 246) 10%, rgb(15, 60, 241) 29%, rgb(18, 88, 238) 52%, rgba(54,132,219,1) 93%);
     padding: 20px 50px;
     color: white;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: row;
-    
+}
+.footer-container h4{
+    color: #1ee817;
 }
 
 .footer-contact h4{
@@ -391,7 +415,11 @@ main {
 }
 
 .footer-contact a{
+    color: whitesmoke;
     text-decoration: none;
+}
+.footer-contact a:hover{
+    color: #ff0000;
 }
 
 .footer-text h4{
@@ -400,7 +428,7 @@ main {
 }
 
 .footer-text p:hover{
-    color: #2E7EEA ;
+    color: yellow ;
     cursor: pointer;
 }
 
@@ -410,7 +438,7 @@ main {
 }
 
 .footer-different p:hover{
-    color: #2E7EEA ;
+    color: yellow;
     cursor: pointer;
 }
 
@@ -479,7 +507,11 @@ main {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width : 1024px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
     .menu {
         display: flex;
         align-items: center;
@@ -489,7 +521,7 @@ main {
         width:40px;
     }
     .logo h1{
-        font-size: 25px;
+        font-size: 20px;
         margin-left: -10px;
         padding: 10px;
     }
@@ -517,9 +549,11 @@ main {
         margin-right: -10px;
         gap: 2px;
         top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .list-menu li{
-        font-size: 14px;
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -529,14 +563,11 @@ main {
         background:  rgba(255, 255, 255, 0.201);
         border-radius: 10px;
     }
-
-    .menu-icon{
-        display: none;  
-    }
     .footer-container{
         border: 1px solid black;
         margin-top: 20px;
-        background: linear-gradient(90deg, black 0%, rgba(7,6,95,1) 21%, rgba(9,18,121,1) 34%, rgba(0,212,255,1) 100%);
+        background: rgb(3,25,48);
+        background: linear-gradient(90deg, rgb(12, 17, 229) 0%, rgb(10, 17, 246) 10%, rgb(15, 60, 241) 29%, rgb(18, 88, 238) 52%, rgba(54,132,219,1) 93%);
         padding: 20px;
         color: white;
         display: flex;
@@ -544,21 +575,12 @@ main {
         justify-content: space-between;
         flex-direction: row;
     }
-    .list-menu{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .list-menu li {
+    .list-menu li span{
         display: none;  
     }
-    .list-menu li:last-child {
-        font-size: 16px;
-        padding: 7px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
+    .list-menu li i {
+        font-size: 2em;
+        margin-top: -10px;
     }
 }
 
@@ -586,7 +608,7 @@ main {
         grid-template-columns: repeat(2, 1fr);
     }
     .menu-search {
-        width: 35%;
+        width: 44%;
         left: 170px;
         top: 12px;
     }
@@ -595,23 +617,27 @@ main {
     }
     .menu-search span i{
         width: 30px;
-        left: auto;
+        left: 180px;
     }
     .list-menu{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .list-menu li {
+    .list-menu li span  {
         display: none;  
     }
-    .list-menu li:last-child {
+    .list-menu li{
+        display: none;
+    }
+    .list-menu li:first-child {
         font-size: 16px;
-        padding: 7px;
+        padding: 8px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: auto;
+        margin-right: 15px;
     }
     main{
         display: flex;
@@ -697,4 +723,58 @@ main {
         text-align: left; 
     }
     
+}
+.sale-container-2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2) !important;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sale-container-2 .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sale-container-2 .sp-card a{
+    transition: 0.2s;
+    text-decoration: none;
+    color: azure;
+}
+.sale-container-2 .sp-card:hover img{
+    scale: 1.2;
+    transition: 0.2s;
+}
+.sale-card-container-2 .sp-card{
+    user-select: none;
+    line-height: 5em;
+    background: #ffffff;
+}
+.sale-card-container-2 .sp-card a{
+    color: #0021fc;
+}
+.sale-container-3{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 250px;
+
+    /* Center slide text vertically */
+    display: flex;
+    align-items: center;
+}
+.sale-container-3 .sp-card a{
+    text-decoration: none;
+}
+.sale-container-3 .sp-card{
+    background: red;
+    position: relative;
+    top: 95px;
+    height: 200px;
 }

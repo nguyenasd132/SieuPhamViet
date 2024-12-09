@@ -12,16 +12,15 @@
 </head>
 
 <body>
-    <header id="headers">
-        <div class="menu">
+    <header class="menu" id="header">
             <div class="logo">
                 <a href="main.html">
-                    <img src="assets/img/header/logo.jpg" alt="logo">
-                    <h1>Siêu Phẩm Việt</h1>
+                    <h3>Siêu Phẩm Việt</h3>
+                    <img src="assets/img/header/logo.png" alt="logo">
                 </a>
             </div>
             <div class="nav">
-                <i class='bx bx-menu icon'></i>
+                <i class='bx bx-menu icon' style="color: white"></i>
                 <span>Danh Mục</span>
                 <div class="menu-container">
                     <div class="menu-child">
@@ -75,15 +74,16 @@
                 </div>
             </div>
             <div class="menu-search">
-                <input class="menu-input-search" type="text" placeholder="Search..." spellcheck="false">
+                <input class="menu-input-search" type="text" placeholder="   Tìm kiếm sản phầm bạn ưa thích" spellcheck="false">
                 <span onclick=""><i class='bx bx-search'></i></span>
             </div>
 
             <ul class="list-menu">
-                <li><i class='bx bx-cart '></i>Giỏ Hàng</li>
-                <li><i class='bx bx-user-circle'></i>Đăng Nhập</li>
+                <li><i class='bx bx-cart '></i><span>Giỏ Hàng</span></li>
+                <li><i class='bx bx-user-circle'></i>
+                    <span>Đăng Nhập</span>
+                </li>
             </ul>
-        </div>
     </header>
 
     <main class="content">
@@ -96,726 +96,95 @@
             </div>
         </div>
     </main>
+
+
+
+
     <br>
-    <!--  Nguyên: Tạo khung sale, sản phẩm nổi bật, ... -->
-    <div class="sale-container-1 container bg-dark text-info">
-        <h5 class="display-6"> Săn máy tính giờ giá sốc</h5>
-
-        <div class="sale-card-container container-fluid bg-light swiper">
-            <!-- Nguyên: Tạo slideshow container để trưng bày sản phầm -->
-            <div class="sale-slide-show swiper-wrapper">
-                <!-- Nguyên: Tạo thẻ sản phẩm -->
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-    <br>
-
-
 
 
 
     <div class="sale-container-2 container">
-        <h1> Đây là container 2</h1>
+        <div class=" container-fluid bg-ligh swiper gridSlide" style="margin-top: 0px">
+            <div class="sale-card-container-2 container-fluid swiper-wrapper">
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/linkKienPC/danhmuc.webp" alt="PC" width="80px">
+                        <h4>PC ráp sẵn</h4>
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#laptop">
+                        <img src="assets/img/linkKienPC/danhmuc.webp" alt="PC" width="80px">
+                        <h4>Laptop</h4>
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/linkKienPC/ram.png" alt="RAM" width="80px">
+                        <h4>RAM</h4>
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/linkKienPC/mainboard.png" alt="Mainboard" width="80px">
+                        <h4>Mainboard</h4>
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/linkKienPC/vga.png" alt="VGA" width="80px">
+                        <h4>VGA</h4>
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/linkKienPC/cpu.png" alt="CPU" width="80px">
+                        <h4>CPU</h4>
+                    </a>
+                </div>
+
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/linkKienPC/o_cung.png" alt="Ổ Cứng" width="80px">
+                        <h4>Ổ Cứng</h4>
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/linkKienPC/tan_nhiet.png" alt="Tản Nhiệt" width="80px">
+                        <h4>Tản Nhiệt</h4>
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/linkKienPC/vo_case.png" alt="Vỏ Case" width="80px">
+                        <h4>Vỏ Case</h4>
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/linkKienPC/nguon_may_tinh_cate_thumb_1cb5ef76ac.png" alt="Nguồn máy tính" width="80px">
+                        <h4>Nguồn máy tính</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
 
     <br>
-    <div class="sale-container-1 container bg-dark text-info">
-        <h5 class="display-6"> Săn máy tính giờ giá sốc</h5>
 
-        <div class="sale-card-container container-fluid bg-light swiper">
+
+
+
+    <!--  Nguyên: Tạo khung sale, sản phẩm nổi bật, ... -->
+<div class="sale-container-1 container bg-dark text-info" id="laptop">
+    <h3> Săn Deal Máy tính - Laptop giờ giá sốc</h5>
+
+        <div class="sale-card-container container-fluid bg-light swiper spSwiper">
             <!-- Nguyên: Tạo slideshow container để trưng bày sản phầm -->
             <div class="sale-slide-show swiper-wrapper">
                 <!-- Nguyên: Tạo thẻ sản phẩm -->
@@ -825,43 +194,43 @@
                     <a href="#" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
+                                <img src="assets/img/SP/SP1.png" alt="SP1" class="">
                             </div>
                             <div class="sp-info">
                                 <li>
                                     <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
+                                    <p> Chip Apple M2, 8 nhân GPU</p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
+                                    <i class='bx bx-desktop'></i>
+                                    <p>Màn hình độ phân giải 2560 x 1664 cùng độ sáng 500 nits</p>
                                 </li>
                                 <li>
                                     <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
+                                    <p>Ram 8GB, SSD 256GB cho phép vừa làm việc, vừa nghe nhạc </p>
                                 </li>
                             </div>
                         </div>
                         <!-- Vị trị các tag -->
                         <div class="tag-group">
                             <p class="tag">
-                                Điện Thoại
+                                MacBook
                             </p>
                             <p class="tag">
                                 Apple
                             </p>
                             <p class="tag">
-                                giảm giá 90%
+                                Giảm giá 10%
                             </p>
                         </div>
 
                         <!-- Khung giá tiền -->
                         <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
+                            <span> Giá Gốc:</span> <s class="red"> 22.290.000đ </s> <br>
+                            <span class="giaHientai"> 20.061.000đ</span> <br>
+                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 2.229.000đ</span>
                         </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
+                        <h6 class="sp-card-title blue"> Apple MacBook Air M2 2024 - Chính hãng Apple Việt Nam </h6>
 
                     </a>
                 </div>
@@ -871,43 +240,88 @@
                     <a href="#" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
+                                <img src="assets/img/SP/SP2.png" alt="SP2" class="">
                             </div>
                             <div class="sp-info">
                                 <li>
                                     <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
+                                    <p>  Intel Core i5-12450HX, Card đồ họa NVIDIA GeForce RTX 3050</p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
+                                    <i class='bx bx-desktop'></i>
+                                    <p>Màn hình 15.6 inch FHD cùng tần sốt quét 144Hz hỗ trợ G-SYNC</p>
                                 </li>
                                 <li>
                                     <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
+                                    <p> Bộ nhớ RAM 12GB DDR5, Ổ cứng SSD 512GB</p>
                                 </li>
                             </div>
                         </div>
                         <!-- Vị trị các tag -->
                         <div class="tag-group">
                             <p class="tag">
-                                Điện Thoại
+                                Laptop
                             </p>
                             <p class="tag">
-                                Apple
+                                Lenovo
                             </p>
                             <p class="tag">
-                                giảm giá 90%
+                                Giảm giá 15%
                             </p>
                         </div>
 
                         <!-- Khung giá tiền -->
                         <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
+                            <span> Giá Gốc:</span> <s class="red"> 23.990.000đ </s> <br>
+                            <span class="giaHientai"> 20.391.500đ</span> <br>
+                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 3.598.500đ </span>
                         </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
+                        <h6 class="sp-card-title blue"> Laptop Lenovo LOQ 15IAX9 83GS001RVN </h6>
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
+                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
+                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <div class="card-container">
+                            <div class="sp-hinh-anh">
+                                <img src="assets/img/SP/SP3.png" alt="SP3" class="">
+                            </div>
+                            <div class="sp-info">
+                                <li>
+                                    <i class='bx bx-chip'></i>
+                                    <p> Chip Core i5-12500H cùng card rời RTX 3050 </p>
+                                </li>
+                                <li>
+                                    <i class='bx bx-desktop'></i>
+                                    <p>Màn hình 15.6 inch độ phân giải Full HD</p>
+                                </li>
+                                <li>
+                                    <i class='bx bx-memory-card'></i>
+                                    <p> Ram 8GB, ổ cứng SSD 512GB </p>
+                                </li>
+                            </div>
+                        </div>
+                        <!-- Vị trị các tag -->
+                        <div class="tag-group">
+                            <p class="tag">
+                                Laptop
+                            </p>
+                            <p class="tag">
+                                Acer
+                            </p>
+                            <p class="tag">
+                                Giảm giá 38%
+                            </p>
+                        </div>
+
+                        <!-- Khung giá tiền -->
+                        <p class="green">
+                            <span> Giá Gốc:</span> <s class="red"> 27.990.000đ </s> <br>
+                            <span class="giaHientai"> 17.490.000đ </span> <br>
+                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 10.500.000đ </span>
+                        </p>
+                        <h6 class="sp-card-title blue"> Laptop Gaming Acer Nitro 5 Tiger AN515 58 52SP </h6>
 
                     </a>
                 </div>
@@ -917,43 +331,43 @@
                     <a href="#" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
+                                <img src="assets/img/SP/SP4.png" alt="SP4" class="">
                             </div>
                             <div class="sp-info">
                                 <li>
                                     <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
+                                    <p>  Intel Core i5-1235U, card đồ họa tích hợp Intel Iris Xe Graphics </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
+                                    <i class='bx bx-desktop'></i>
+                                    <p>Màn hình FHD 15.6 inch với độ sáng 250 nits và độ phủ màu 45% NTSC</p>
                                 </li>
                                 <li>
                                     <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
+                                    <p>  RAM 16GB DDR4 với ổ cứng SSD M.2 NVMe PCIe 3.0 dung lượng 512GB </p>
                                 </li>
                             </div>
                         </div>
                         <!-- Vị trị các tag -->
                         <div class="tag-group">
                             <p class="tag">
-                                Điện Thoại
+                                Laptop
                             </p>
                             <p class="tag">
-                                Apple
+                                ASUS
                             </p>
                             <p class="tag">
-                                giảm giá 90%
+                                Giảm giá 17%
                             </p>
                         </div>
 
                         <!-- Khung giá tiền -->
                         <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
+                            <span> Giá Gốc:</span> <s class="red"> 16.490.000đ </s> <br>
+                            <span class="giaHientai"> 13.690.000đ </span> <br>
+                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 2.800.000đ</span>
                         </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
+                        <h6 class="sp-card-title blue">Laptop ASUS Vivobook 15 X1504ZA-NJ517W</h6>
 
                     </a>
                 </div>
@@ -963,549 +377,43 @@
                     <a href="#" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
+                                <img src="assets/img/SP/SP5.png" alt="SP5" class="">
                             </div>
                             <div class="sp-info">
                                 <li>
                                     <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
+                                    <p> Apple M1</p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
+                                    <i class='bx bx-desktop'></i>
+                                    <p>Màn hình Retina cao cấp cùng công nghệ TrueTone cân bằng màu sắc</p>
                                 </li>
                                 <li>
                                     <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
+                                    <p> Ram 8GB, SSD 256GB </p>
                                 </li>
                             </div>
                         </div>
                         <!-- Vị trị các tag -->
                         <div class="tag-group">
                             <p class="tag">
-                                Điện Thoại
+                                MacBook
                             </p>
                             <p class="tag">
                                 Apple
                             </p>
                             <p class="tag">
-                                giảm giá 90%
+                                Giảm giá 21%
                             </p>
                         </div>
 
                         <!-- Khung giá tiền -->
                         <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
+                            <span> Giá Gốc:</span> <s class="red">22.990.000đ</s> <br>
+                            <span class="giaHientai"> 18.190.000đ </span> <br>
+                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 4.800.000đ </span>
                         </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
+                        <h6 class="sp-card-title blue"> Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam </h6>
 
                     </a>
                 </div>
@@ -1514,758 +422,352 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
+</div>
+
+<br>
+
+
+
+    <!--  Nguyên: Tạo khung dành để quảng cáo, show các hãng, ....-->
+    <div class="sale-container-3 container">
+        <div class=" container-fluid bg-ligh swiper gridSlide-2" style="margin-top: 0px">
+            <div class="sale-card-container-2 container-fluid swiper-wrapper">
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-scroll"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
+
+    <br>
+
+    <!--  Nguyên: Tạo khung trưng bày sản phẩm ... -->
+    <div class="sale-container-1 container bg-dark text-info">
+        <h3> Ram PC - Laptop</h3>
+
+            <div class="sale-card-container container-fluid bg-light swiper spSwiper">
+                <!-- Nguyên: Tạo slideshow container để trưng bày sản phầm -->
+                <div class="sale-slide-show swiper-wrapper">
+                    <!-- Nguyên: Tạo thẻ sản phẩm -->
+                    <div class="sp-card swiper-slide">
+                        <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
+                        <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
+                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                            <div class="card-container">
+                                <div class="sp-hinh-anh">
+                                    <img src="assets/img/sanpham/Ram.1.png" alt="Ram.1" class="">
+                                </div>
+                                <div class="sp-info">
+                                    <li>
+                                        <i class='bx bx-chip'></i>
+                                        <p> RGB 8GB-DDR4-3200MHz (AX4U32008G16A-ST50) </p>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-desktop' ></i>
+                                        <p>Dung lượng RAM: 8 GB (1 thanh 8 GB)</p>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-memory-card'></i>
+                                        <p> Loại RAM: DDR4 <br>
+                                            Tốc độ RAM: 3200 MHz</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- Vị trị các tag -->
+                            <div class="tag-group">
+                                <p class="tag">
+                                    Ram PC
+                                </p>
+                                <p class="tag">
+                                    XPG
+                                </p>
+                                <p class="tag">
+                                    Giảm giá 5%
+                                </p>
+                            </div>
+
+                            <!-- Khung giá tiền -->
+                            <p class="green">
+                                <span> Giá Gốc:</span> <s class="red"> 799.000 ₫ </s> <br>
+                                <span class="giaHientai"> 759.050 ₫</span> <br>
+                                <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 39.950 ₫</span>
+                            </p>
+                            <h6 class="sp-card-title blue"> RAM ADATA Spectrix D50 </h6>
+
+                        </a>
+                    </div>
+                    <div class="sp-card swiper-slide">
+                        <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
+                        <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
+                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                            <div class="card-container">
+                                <div class="sp-hinh-anh">
+                                    <img src="assets/img/sanpham/Ram.2.png" alt="Ram.2" class="">
+                                </div>
+                                <div class="sp-info">
+                                    <li>
+                                        <i class='bx bx-chip'></i>
+                                        <p> 8GB - DDR4 - 3200 MHz (CMK8GX4M1E3200C16) </p>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-desktop' ></i>
+                                        <p>Dung lượng RAM: 8 GB</p>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-memory-card'></i>
+                                        <p>Loại RAM: DDR4 <br>
+                                           Tốc độ RAM: 3200 MHz</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- Vị trị các tag -->
+                            <div class="tag-group">
+                                <p class="tag">
+                                    Ram PC
+                                </p>
+                                <p class="tag">
+                                    LPX
+                                </p>
+                                <p class="tag">
+                                    Giảm giá 24%
+                                </p>
+                            </div>
+
+                            <!-- Khung giá tiền -->
+                            <p class="green">
+                                <span> Giá Gốc:</span> <s class="red"> 799.000 ₫ </s> <br>
+                                <span class="giaHientai"> 609.000 ₫ </span> <br>
+                                <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 190.000 ₫</span>
+                            </p>
+                            <h6 class="sp-card-title blue"> RAM Corsair Vengeance </h6>
+
+                        </a>
+                    </div>
+                    <div class="sp-card swiper-slide">
+                        <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
+                        <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
+                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                            <div class="card-container">
+                                <div class="sp-hinh-anh">
+                                    <img src="assets/img/sanpham/Ram.3.png" alt="Ram.3" class="">
+                                </div>
+                                <div class="sp-info">
+                                    <li>
+                                        <i class='bx bx-chip'></i>
+                                        <p> RGB RS 8 GB-DDR4-3200 MHz (CMG8GX4M1E3200C16) </p>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-desktop' ></i>
+                                        <p>Dung lượng RAM: 8 GB </p>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-memory-card'></i>
+                                        <p> Loại RAM: DDR4 <br>
+                                            Tốc độ RAM: 3200 MHz</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- Vị trị các tag -->
+                            <div class="tag-group">
+                                <p class="tag">
+                                    Ram PC
+                                </p>
+                                <p class="tag">
+                                    RS
+                                </p>
+                                <p class="tag">
+                                    Giảm giá 15%
+                                </p>
+                            </div>
+
+                            <!-- Khung giá tiền -->
+                            <p class="green">
+                                <span> Giá Gốc:</span> <s class="red"> 939.000 ₫ </s> <br>
+                                <span class="giaHientai"> 798.150 ₫</span> <br>
+                                <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 140.850 ₫ </span>
+                            </p>
+                            <h6 class="sp-card-title blue"> RAM CORSAIR Vengeance </h6>
+
+                        </a>
+                    </div>
+                    <div class="sp-card swiper-slide">
+                        <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
+                        <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
+                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                            <div class="card-container">
+                                <div class="sp-hinh-anh">
+                                    <img src="assets/img/sanpham/Ram.4.png" alt="Ram.4" class="">
+                                </div>
+                                <div class="sp-info">
+                                    <li>
+                                        <i class='bx bx-chip'></i>
+                                        <p> 32 GB-DDR4-4000 MHz (F4-4000C16D-32GTES)</p>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-desktop' ></i>
+                                        <p>Dung lượng RAM: 32 GB </p>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-memory-card'></i>
+                                        <p> Loại RAM: DDR4 <br>
+                                            Tốc độ RAM: 4000 MHz</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- Vị trị các tag -->
+                            <div class="tag-group">
+                                <p class="tag">
+                                    RAM 
+                                </p>
+                                <p class="tag">
+                                    RGB
+                                </p>
+                                <p class="tag">
+                                    Giảm giá 15%
+                                </p>
+                            </div>
+
+                            <!-- Khung giá tiền -->
+                            <p class="green">
+                                <span> Giá Gốc:</span> <s class="red"> 9.760.000 ₫</s> <br>
+                                <span class="giaHientai"> 8.296.000 ₫</span> <br>
+                                <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 1.464.000 ₫ </span>
+                            </p>
+                            <h6 class="sp-card-title blue"> G.SKILL Trident Z Royal Elite </h6>
+
+                        </a>
+                    </div>
+                    <div class="sp-card swiper-slide">
+                        <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
+                        <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
+                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                            <div class="card-container">
+                                <div class="sp-hinh-anh">
+                                    <img src="assets/img/sanpham/Ram.5.png" alt="Ram.5" class="">
+                                </div>
+                                <div class="sp-info">
+                                    <li>
+                                        <i class='bx bx-chip'></i>
+                                        <p> 32 GB-DDR4-3200 MHz (F4-3200C16D-32GTZ)</p>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-desktop' ></i>
+                                        <p>Dung lượng RAM: 32 GB </p>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-memory-card'></i>
+                                        <p> Loại RAM: DDR4 <br>
+                                            Tốc độ RAM: 4000 MHz
+                                        </p>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- Vị trị các tag -->
+                            <div class="tag-group">
+                                <p class="tag">
+                                    RAM
+                                </p>
+                                <p class="tag">
+                                    RGB
+                                </p>
+                                <p class="tag">
+                                    giảm giá 20%
+                                </p>
+                            </div>
+
+                            <!-- Khung giá tiền -->
+                            <p class="green">
+                                <span> Giá Gốc:</span> <s class="red"> 2.699.000 ₫ </s> <br>
+                                <span class="giaHientai"> 2.159.200 ₫</span> <br>
+                                <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 539.800 ₫</span>
+                            </p>
+                            <h6 class="sp-card-title blue"> RAM G.SKILL Trident Z </h6>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </div>
+
+    <br>
+
+
+
     <br>
 
 
 
 
-    <div class="sale-card-container">
-        <div class="sale-container-1">
-            <h1>
-                Đây là container 4
-            </h1>
-        </div>
-    </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="sale-container-1 container bg-dark text-info">
-        <h5 class="display-6"> Săn máy tính giờ giá sốc</h5>
-
-        <div class="sale-card-container container-fluid bg-light swiper">
-            <!-- Nguyên: Tạo slideshow container để trưng bày sản phầm -->
-            <div class="sale-slide-show swiper-wrapper">
-                <!-- Nguyên: Tạo thẻ sản phẩm -->
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-                <div class="sp-card swiper-slide">
-                    <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
-                    <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
-                        <div class="card-container">
-                            <div class="sp-hinh-anh">
-                                <img src="assets/img/sanpham/sp1.png" alt="" class="">
-                            </div>
-                            <div class="sp-info">
-                                <li>
-                                    <i class='bx bx-chip'></i>
-                                    <p> Apple m4 pro max</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-desktop' ></i>
-                                    <p>màn hình độ phân giải 4k</p>
-                                </li>
-                                <li>
-                                    <i class='bx bx-memory-card'></i>
-                                    <p> Bộ nhớ: 528 GB</p>
-                                </li>
-                            </div>
-                        </div>
-                        <!-- Vị trị các tag -->
-                        <div class="tag-group">
-                            <p class="tag">
-                                Điện Thoại
-                            </p>
-                            <p class="tag">
-                                Apple
-                            </p>
-                            <p class="tag">
-                                giảm giá 90%
-                            </p>
-                        </div>
-
-                        <!-- Khung giá tiền -->
-                        <p class="green">
-                            <span> Giá Gốc:</span> <s class="red"> 999.000.000 <u>đ</u></s> <br>
-                            <span class="giaHientai"> 99.900.00 <u>đ</u></span> <br>
-                            <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 900.099.999 <u>đ</u></span>
-                        </p>
-                        <h6 class="sp-card-title blue"> Iphone 16 256G Sang Xịn Mịn</h6>
-
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
 
     <footer>
         <div class="footer-container">
             <div class="footer-contact">
                 <h4>Tổng đài hỗ trợ.</h4>
-                <p>Gọi Mua Hàng: <a href="#">1800.2097</a>(8.00 - 21.30)</p>
-                <p>Khiếu nại: <a href="#">1800.1062</a>(8.00 - 21.30)</p>
-                <p>Bảo hành: <a href="#">1900 232 464</a>(8.00 - 21.00)</p>
+                <p>Gọi Mua Hàng: <a href="#">1800.2097</a> </p>
+                <p>Khiếu nại: <a href="#">1800.1062</a></p>
+                <p>Bảo hành: <a href="#">1900 232 464</a></p>
                 <h4>Phương thức thanh toán.</h4>
                 <div class="footer-img">
                     <a href="https://zalopay.vn/"><img src="assets/img/footer/zalopay-logo.webp" alt="zalopay"></a>
                     <a href="https://www.momo.vn/"><img src="assets/img/footer/momo_1.webp" alt="MOMO"></a>
-                    <a href="https://www.visa.com.vn/en_VN"><img src="assets/img/footer/d4bbea4570b93bfd5fc652ca82a262a8.png"
-                            alt="visa"></a>
+                    <a href="https://www.visa.com.vn/en_VN"><img
+                            src="assets/img/footer/d4bbea4570b93bfd5fc652ca82a262a8.png" alt="visa"></a>
                     <a href="https://onepay.vn/invoice/login.op"><img src="assets/img/footer/onepay-logo.webp"
                             alt="onePay"></a>
                     <a href="https://vnpay.vn/"><img src="assets/img/footer/vnpay-logo.webp" alt="VNpay"></a>
                     <a href="https://www.apple.com/vn/apple-pay/"><img src="assets/img/footer/apple-pay-og.webp"
-                        alt="applepay"></a>
+                            alt="applepay"></a>
                 </div>
             </div>
             <div class="footer-text">
@@ -2309,9 +811,11 @@
                 <h4>Chứng nhận.</h4>
                 <div class="footer-img">
                     <span><a href="#"><img src="assets/img/footer/dmca_icon_8fc6622bd5.svg" alt=""></a></span>
-                    <span><a href="#"><img src="assets/img/footer/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg"
+                    <span><a href="#"><img
+                                src="assets/img/footer/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg"
                                 alt=""></a></span>
-                    <span><a href="#"><img src="assets/img/footer/thuong_hieu_manh_2013_icon_b56f772475.svg" alt=""></a></span>
+                    <span><a href="#"><img src="assets/img/footer/thuong_hieu_manh_2013_icon_b56f772475.svg"
+                                alt=""></a></span>
                     <a href="#"><img src="assets/img/footer/noi_khong_voi_hang_gia_icon_e16037d9cb.svg" alt=""></a>
                     <a href="#"><img src="assets/img/footer/da_thong_bao_bo_cong_thuong_icon_64785fb3f7.svg" alt=""></a>
                 </div>
@@ -2332,8 +836,8 @@
                 Địa chỉ: 280, An Dương Vương, P. 4, Q. 5, Tp. Hồ Chí Minh.
                 <p>Địa chỉ liên hệ và gửi chứng từ: 280, An Dương Vương, P. 4, Q. 5, Tp. Hồ Chí Minh.</p>
                 <p> Email:
-                    cskh@sieuphamviet.com. Email: hotrotmdt@sieuphamviet.com.</p> Chịu trách nhiệm nội dung: Dương Trunng
-                Nguyên, Nguyễn Phạm Phú An, Nguyễn Văn Tuấn, Trần Nguyễn Xuân Sơn, Nguyễn Đức Trọng.
+                    cskh@sieuphamviet.com. Email: hotrotmdt@sieuphamviet.com.</p> Chịu trách nhiệm nội dung: Dương
+                Trung Nguyên, Nguyễn Phạm Phú An, Nguyễn Văn Tuấn, Trần Nguyễn Xuân Sơn, Nguyễn Đức Trọng.
                 <a href="#" style="text-decoration: none;">Xem chính sách sử dụng</a>
             </div>
         </div>
@@ -2342,6 +846,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="assets/js/main.js"></script>
+
+    <script>
+
+    </script>
 </body>
 
 </html>
