@@ -109,3 +109,25 @@ const gridSwiper2 = new Swiper(".gridSlide-2", {
         }
     }
 });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+var prevScrollpos = window.pageYOffset;
+var header = document.getElementById("header");
+
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        header.style.transform = "translateY(0)";
+    } else {
+        header.style.transform = "translateY(-64px)";
+    }
+    prevScrollpos = currentScrollPos;
+}
