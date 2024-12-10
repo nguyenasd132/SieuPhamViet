@@ -772,14 +772,43 @@ input.menu-input-search:not(:placeholder-shown) {
 
 .danhMucItem{
     grid-template-columns: 450px auto;
-    background: red;
-    height: 1000px;
+    height: 1600px;
     width: 100%;
 }
+.danhMucItem a{
+    text-decoration: none;
+}
 
+.danhMucCon{
+    background: #ffffff;
+    border-radius: 15px;
+    border: black 1px solid;
+    margin-bottom: 15px;
+}
 
-
+.sidebar{
+    top: 64px;
+    left: 48px;
+    height: 1536px;
+    position: absolute;
+}
 .sidemenu{
+    padding: 15px;
     position: sticky;
-    top: 100px;
+    top: 64px;
+    background: cornflowerblue;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
+    border-radius: 15px;
+    min-width: 300px;
+    height: 800px;
+}
+
+.menu-item{
+    position: relative;
+    height: 32px;
+    padding: 5px;
+    padding-left: 16px;
+}
+#linhkienpc .menu-item{
+    padding-left: 48px;
 }
