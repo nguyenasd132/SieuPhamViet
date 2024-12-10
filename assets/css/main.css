@@ -220,11 +220,11 @@ input.menu-input-search:not(:placeholder-shown) {
     border-radius: 30px;
 }
 
-main {
+.content{
     display: flex;
     justify-content: center; 
     align-items: center;     
-    padding-top: 70px;   
+    padding-top: 70px;
 }
 
 .slide-show {
@@ -282,6 +282,7 @@ main {
     padding: 10px;
     border-radius: 16px;
     scale: 0.85;
+    user-select: none;
 }
 .sale-container-1 .sp-card{
     position: relative;
@@ -634,11 +635,6 @@ main {
         margin-left: auto;
         margin-right: 15px;
     }
-    main{
-        display: flex;
-        justify-content: center; 
-        align-items: center;     
-    }
     .slide-show {
         width: 80%;      
         height: 200px;      
@@ -772,4 +768,18 @@ main {
     position: relative;
     top: 95px;
     height: 200px;
+}
+
+.danhMucItem{
+    grid-template-columns: 450px auto;
+    background: red;
+    height: 1000px;
+    width: 100%;
+}
+
+
+
+.sidemenu{
+    position: sticky;
+    top: 100px;
 }
