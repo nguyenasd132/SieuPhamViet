@@ -197,8 +197,7 @@ input.menu-input-search:not(:placeholder-shown) {
     position: absolute;
     display: flex;
     gap: 5px;
-    margin-right: min(64px, 100px);
-    right: 48px;
+    right:20px;
     list-style: none;
     color: white;
     cursor: pointer;
