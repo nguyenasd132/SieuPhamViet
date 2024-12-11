@@ -187,14 +187,14 @@ height: 255px;}
     /* padding: 20px; */
     width: 50%;
     margin: 0px auto;
-  }
-  
- #input_dk input {
+}
+
+#input_dk input {
     display: block;
     float: left;
     padding: 10px 40px;
     border: 2px solid white;
-  }
+}
 
 
 input[type="submit"] {
@@ -351,3 +351,4 @@ margin: 20px 0px 30px;}
 .mg_top{
     margin-top: 120px;
 }
+
