@@ -19,7 +19,7 @@ body{
     user-select: none;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 64px;
     margin: 0 auto;
     padding:5px;
     width: 100%;
@@ -199,7 +199,7 @@ input.menu-input-search:not(:placeholder-shown) {
     display: flex;
     gap: 5px;
     margin-right: min(64px, 100px);
-    right: 48px;
+    right: 0px;
     list-style: none;
     color: white;
     cursor: pointer;
