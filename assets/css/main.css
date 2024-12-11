@@ -768,13 +768,16 @@ input.menu-input-search:not(:placeholder-shown) {
     text-decoration: none;
 }
 .sale-container-3 .sp-card{
-    background: red;
+    display: block;
     position: relative;
     top: 95px;
-    height: 200px;
+    height: fit-content;
 }
-
-
+.sale-container-3 .sp-card img{
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
 
 .danhmucSP{
     display: grid;
@@ -861,5 +864,4 @@ input.menu-input-search:not(:placeholder-shown) {
     height: 100%;
     object-fit: cover; 
     display: block;
->>>>>>> 8b3ae937917056ce38023b0697e976df5e380950
 }
