@@ -241,15 +241,9 @@
                 <img src="assets/img/SP/SP1.4.png" alt="">
                 <!-- thêm video vào website -->
                 <section class="video">
-                    <video id="video" src="assets/img/SP/sp1.mp4" controls width="500px"></video>
-                    <div class="dieu_huong">
-                        <button type="submit" class="btn_product" onclick="play_pause()">play</button>
-                        <button type="submit" onclick="play_pause()" class="btn_product">pause</button>
-                        <button type="submit" onclick="makeSmall()" class="btn_product">300px</button>
-                        <button type="submit" onclick="makeNomal()" class="btn_product">500px</button>
-                        <button type="submit" onclick="makeBig()" class="btn_product">830px</button>
-
-                    </div>
+                    <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
                 </section> <!--video-->
         </article>
 
@@ -420,6 +414,20 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        var header = document.getElementById("header");
+
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                header.style.transform = "translateY(0)";
+            } else {
+                header.style.transform = "translateY(-64px)";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 
 
 </body>
