@@ -738,6 +738,7 @@ input.menu-input-search:not(:placeholder-shown) {
     transition: 0.2s;
     text-decoration: none;
     color: azure;
+    width: 80px;
 }
 .sale-container-2 .sp-card:hover img{
     scale: 1.2;
@@ -762,8 +763,8 @@ input.menu-input-search:not(:placeholder-shown) {
 .sale-container-3 .sp-card a{
     text-decoration: none;
 }
+
 .sale-container-3 .sp-card{
-    display: block;
     position: relative;
     top: 95px;
     height: fit-content;
@@ -777,6 +778,11 @@ input.menu-input-search:not(:placeholder-shown) {
 .danhmucSP{
     display: grid;
     grid-template-columns: 300px 1fr;
+}
+
+.sale-container-3 .sp-card:hover{
+    scale: 1;
+    transition: 0.2s;
 }
 
 .danhMucItem{
@@ -850,13 +856,14 @@ input.menu-input-search:not(:placeholder-shown) {
 }
 
 
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {  }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+/* // Medium devices (tablets, 768px and up) */
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+@media (min-width: 768px) { }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
