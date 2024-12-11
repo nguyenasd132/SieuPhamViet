@@ -774,6 +774,19 @@ input.menu-input-search:not(:placeholder-shown) {
     height: 200px;
 }
 
+
+
+.danhmucSP{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+
+
+
+
+
+
 .danhMucItem{
     grid-template-columns: 450px auto;
     height: 1600px;
@@ -816,4 +829,29 @@ input.menu-input-search:not(:placeholder-shown) {
 }
 #linhkienpc .menu-item{
     padding-left: 48px;
+}
+
+.item-container{
+    position: absolute;
+    left: 00px;
+    top: 66px;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: auto;
+    background: red;
+}
+.danhMucItem .sale-container-1{
+    position: relative;
+    left: 200px;
+}
+.danhMucItem .sale-container-1 .sale-slide-show{
+
+}
+.danhMucItem .sale-container-1 .sp-card{
+    background: white;
+}
+.danhMucItem .sale-container-1 .sp-card-link .card-container img{
+    position: relative;
+    top: 25%;
 }
