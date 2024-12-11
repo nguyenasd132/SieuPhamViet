@@ -742,6 +742,7 @@ input.menu-input-search:not(:placeholder-shown) {
     transition: 0.2s;
     text-decoration: none;
     color: azure;
+    width: 80px;
 }
 .sale-container-2 .sp-card:hover img{
     scale: 1.2;
@@ -768,11 +769,16 @@ input.menu-input-search:not(:placeholder-shown) {
 .sale-container-3 .sp-card a{
     text-decoration: none;
 }
+
 .sale-container-3 .sp-card{
-    background: red;
     position: relative;
     top: 95px;
     height: 200px;
+}
+
+.sale-container-3 .sp-card:hover{
+    scale: 1;
+    transition: 0.2s;
 }
 
 .danhMucItem{
