@@ -247,6 +247,9 @@ input.menu-input-search:not(:placeholder-shown) {
 .sale-container-1{
     align-items: center;
     text-align: center;
+    border: #007bff 2px solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;
     height: 550px;
     width: auto;

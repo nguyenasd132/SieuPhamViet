@@ -73,7 +73,8 @@ const gridSwiper = new Swiper(".gridSlide", {
             rows: 1,
         },
         768: {
-            slidesPerView: 2
+            slidesPerView: 2,
+            rows: 2,
         },
         1024: {
             slidesPerView: 4
