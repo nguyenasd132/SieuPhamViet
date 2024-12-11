@@ -22,7 +22,7 @@ body{
     height: 80px;
     margin: 0 auto;
     padding:5px;
-    width: 100%;s
+    width: 100%;
     background: rgb(3,25,48);
     background: linear-gradient(90deg, rgb(12, 17, 229) 0%, rgb(10, 17, 246) 10%, rgb(15, 60, 241) 29%, rgb(18, 88, 238) 52%, rgba(54,132,219,1) 93%);
     z-index:  10000;
@@ -270,9 +270,9 @@ input.menu-input-search:not(:placeholder-shown) {
     width: 1100px;
 }
 .sale-card-container-2{
-     height: 400px;
-     width: 1100px;
- }
+    height: 400px;
+    width: 1100px;
+}
 .sale-slide-show{
     position: relative;
     height: 400px;
