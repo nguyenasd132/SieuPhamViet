@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     list-style: none;
 }
@@ -15,10 +13,8 @@ body{
 
 .menu{
     position: fixed;
-    display: flex;
+    display: grid;
     user-select: none;
-    align-items: center;
-    justify-content: center;
     height: 64px;
     margin: 0 auto;
     padding:10px;
@@ -405,7 +401,8 @@ input.menu-input-search:not(:placeholder-shown) {
     flex-direction: row;
 }
 .footer-container h4{
-    color: #1ee817;
+    color: yellow;
+    text-shadow: 2px 2px black;
 }
 
 .footer-contact h4{
