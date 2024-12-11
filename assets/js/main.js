@@ -21,7 +21,6 @@ showCurrentImage();
 
 
 
-
 const swiper = new Swiper('.spSwiper', {
     // Optional parameters
     loop: false,
