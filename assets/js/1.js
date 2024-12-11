@@ -2,7 +2,6 @@ const listImage = document.querySelector('.list-images');
 const imgs = document.querySelectorAll('.list-images img');
 const length = imgs.length;
 let current = 0;
-
 const swiper = new Swiper('.spSwiper', {
     // Optional parameters
     loop: false,
