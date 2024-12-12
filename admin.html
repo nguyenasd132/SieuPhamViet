@@ -7,21 +7,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/trangadmin.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="menu">
-            <ul>
-                <li><a href="#"><i class='bx bxs-chat'>Phản Hồi</i></a></li>
-                <li><a href="#"><i class='bx bxs-analyse' >Dữ Liệu</i></a></li>
-                <li><a href="#"><i class='bx bxs-store' >Sản Phẩm</i></a></li>
-                <li><a href="#"><i class='bx bx-user' >Người Dùng</i></a></li>
-                <li><a href="#"><i class='bx bxs-cog' >Cài Đặt</i></a></li>
-                <li><a href="#"><i class='bx bxs-log-out' >Log Out</i></a></li>
-            </ul>
-        </div>
-    </div>
-
     <div class="navbar1">
         <div class="logo">
 
@@ -33,94 +21,155 @@
             </div>
         </div>
     </div>
-
-    <div class="danhsach">
-        <div style="padding-bottom: 10%;">
-            <h2>Dữ Liệu</h2>
+    <div class="allbox">
+        <div class="sidebar">
+            <div class="menu">
+                <ul class="controlside">
+                    <li><a href="#"><i class='bx bxs-chat'><p class=" d-none d-md-block ">Phản Hồi</p></i></a></li>
+                    <li><a href="#"><i class='bx bxs-analyse' ><p class=" d-none d-md-block ">Dữ Liệu</p></i></a></li>
+                    <li><a href="#"><i class='bx bxs-store' ><p class=" d-none d-md-block ">Sản Phẩm</p></i></a></li>
+                    <li><a href="#"><i class='bx bx-user' ><p class=" d-none d-md-block ">Sản Phẩm</p></i></a></li>
+                    <li><a href="#"><i class='bx bxs-cog' ><p class=" d-none d-md-block ">Cài Đặt</p></i></a></li>
+                    <li><a href="#"><i class='bx bxs-log-out' ><p class=" d-none d-md-block ">Log Out</p></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="dulieu">
-            <div class="data1">
-                <div class="luotmua">
-                    <i class='bx bx-calendar-check' style="font-size: 30%; color: #1673CF;"></i>
+    
+    
+        <div class="danhsach">
+            <div class="miniheader">
+                <div>
+                    <h2 style="font-weight: bolder;">Dữ Liệu</h2>
                 </div>
-                <div style="padding-top: 18px; margin-bottom: none;">
-                    <div><p style="font-weight: bolder; margin-bottom: 0% ;">1,074</p></div>
-                    <div><p style="font-size: 12px;">Lượt Mua</p></div>
+                <div class="Chart" >
+                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                    <script>
+                    const xValues = ["Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"];
+                    const yValues = [55, 49, 44, 24, 17];
+                    const barColors = ["#347AB8", "#347AB8","#347AB8","#347AB8","#347AB8"];
+                    
+                    new Chart("myChart", {
+                      type: "bar",
+                      data: {
+                        labels: xValues,
+                        datasets: [{
+                          backgroundColor: barColors,
+                          data: yValues,
+                        }]
+                      },
+                      options: {
+                        legend: { display: false },
+                        title: {
+                          display: true,
+                          text: "Doanh Thu 5 tháng gần nhất",
+                          fontColor: "black",
+                        },
+                        scales: {
+                          xAxes: [{
+                            ticks: {
+                              autoSkip: false
+                            },
+                            barThickness: 40,
+                            categoryPercentage: 0.5,
+                            barPercentage: 0.8
+                          }],
+                          yAxes: [{
+                            ticks: {
+                              beginAtZero: true
+                            }
+                          }]
+                        }
+                      }
+                    });
+                    </script>
                 </div>
+    
             </div>
-
-            <div class="data1">
-                <div class="truycap">
-                    <i class='bx bx-show-alt' style="font-size: 30%; color: #F2C054; "></i>
+            <div class="dulieu">
+                <div class="data1">
+                    <div class="luotmua">
+                        <i class='bx bx-calendar-check' style="font-size: 30%; color: #1673CF;"></i>
+                    </div>
+                    <div class="boxtext">
+                        <div><p style="font-weight: bolder; margin-bottom: 0% ;">1,074</p></div>
+                        <div><p style="font-size: 14px;">Lượt Mua</p></div>
+                    </div>
                 </div>
-                <div style="padding-top: 18px; margin-bottom: none;">
-                    <div><p style="font-weight: bolder; margin-bottom: 0% ;">10,202</p></div>
-                    <div><p style="font-size: 12px;">Lượt Truy Cập</p></div>
+    
+                <div class="data1">
+                    <div class="truycap">
+                        <i class='bx bx-show-alt' style="font-size: 30%; color: #F2C054; "></i>
+                    </div>
+                    <div class="boxtext">
+                        <div><p style="font-weight: bolder; margin-bottom: 0% ;">10,202</p></div>
+                        <div><p style="font-size: 14px;">Lượt Truy Cập</p></div>
+                    </div>
                 </div>
+                <div class="data1">
+                    <div class="timkiem">
+                        <i class='bx bx-line-chart' style="font-size: 30%; color: #AC413D;"></i>
+                    </div>
+                    <div class="boxtext">
+                        <div><p style="font-weight: bolder; margin-bottom: 0% ;">8,606</p></div>
+                        <div><p style="font-size: 14px;">Lượt Tìm Kiếm</p></div>
+                    </div>
+                </div>
+                <div class="data1">
+                    <div class="doanhthu">
+                        <i class='bx bx-dollar' style="font-size: 30%; color:#5C9B70;"></i>
+                    </div>
+                    <div class="boxtext">
+                        <div><p style="font-weight: bolder; margin-bottom: 0% ;">$17,211</p></div>
+                        <div><p style="font-size: 14px;">Thu Nhập</p></div>
+                    </div>
+                </div>
+        </div>
+    
+        <div class="donhang">
+            <div class="minibar">
+                <i class='bx bx-receipt' style="color:white;" id="minibar">Đơn Hàng Gần Đây</i>
             </div>
-            <div class="data1">
-                <div class="timkiem">
-                    <i class='bx bx-line-chart' style="font-size: 30%; color: #AC413D;"></i>
-                </div>
-                <div style="padding-top: 18px; margin-bottom: none;">
-                    <div><p style="font-weight: bolder; margin-bottom: 0% ;">8,606</p></div>
-                    <div><p style="font-size: 12px;">Lượt Tìm Kiếm</p></div>
-                </div>
+            <div class="cacdonhang">
+                <table class="table table-hover">
+                    <tr style="font-size: 10px;">
+                        <th>Tài Khoản</th>
+                        <th>Ngày Mua Hàng</th>
+                        <th>Tình Trạng</th>
+                    </tr>
+                    <tr>
+                        <td><i class='bx bxs-user-circle'></i>Vythichpc</td>
+                        <td>23/12/2024</td>
+                        <td><p class="success"> Hoàn Tẩt</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class='bx bxs-user-circle'></i>ElonRush</td>
+                        <td>22/12/2024</td>
+                        <td > <p class="chothanhtoan">Chờ Xác Thực</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class='bx bxs-user-circle'></i>DaiHaoMa</td>
+                        <td>22/12/2024</td>
+                        <td> <p class="thatbai">Bị Hủy</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class='bx bxs-user-circle'></i>Nguyên</td>
+                        <td>21/12/2024</td>
+                        <td ><p class="thatbai">Bị Hủy</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class='bx bxs-user-circle'></i>Trọng</td>
+                        <td>21/12/2024</td>
+                        <td><p class="success">Hoàn Tất</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class='bx bxs-user-circle'></i>Tuấn</td>
+                        <td>22/12/2024</td>
+                        <td><p class="success">Hoàn Tất</p></td>
+                    </tr>
+                </table>
             </div>
-            <div class="data1">
-                <div class="doanhthu">
-                    <i class='bx bx-dollar' style="font-size: 30%; color:#5C9B70;"></i>
-                </div>
-                <div style="padding-top: 18px; margin-bottom: none;">
-                    <div><p style="font-weight: bolder; margin-bottom: 0% ;">$17,211</p></div>
-                    <div><p style="font-size: 12px;">Thu Nhập</p></div>
-                </div>
-            </div>
+        </div>
     </div>
-
-    <div class="donhang">
-        <div class="minibar">
-            <i class='bx bx-receipt' style="color:white;">Đơn Hàng Gần Đây</i>
-        </div>
-        <div class="cacdonhang">
-            <table class="table table-hover">
-                <tr style="font-size: 10px;">
-                    <th>Tài Khoản</th>
-                    <th>Ngày Mua Hàng</th>
-                    <th>Tình Trạng</th>
-                </tr>
-                <tr>
-                    <td><i class='bx bxs-user-circle'></i>Vythichpc</td>
-                    <td>23/12/2024</td>
-                    <td><p class="success"> Thành Công</p></td>
-                </tr>
-                <tr>
-                    <td><i class='bx bxs-user-circle'></i>ElonRush</td>
-                    <td>22/12/2024</td>
-                    <td > <p class="chothanhtoan">Chờ Xác Thực</p></td>
-                </tr>
-                <tr>
-                    <td><i class='bx bxs-user-circle'></i>DaiHaoMa</td>
-                    <td>22/12/2024</td>
-                    <td> <p class="thatbai">Bị Hủy</p></td>
-                </tr>
-                <tr>
-                    <td><i class='bx bxs-user-circle'></i>Nguyên</td>
-                    <td>21/12/2024</td>
-                    <td ><p class="thatbai">Bị Hủy</p></td>
-                </tr>
-                <tr>
-                    <td><i class='bx bxs-user-circle'></i>Trọng</td>
-                    <td>21/12/2024</td>
-                    <td><p class="success">Hoàn Tất</p></td>
-                </tr>
-                <tr>
-                    <td><i class='bx bxs-user-circle'></i>Tuấn</td>
-                    <td>22/12/2024</td>
-                    <td><p class="success">Hoàn Tất</p></td>
-                </tr>
-            </table>
-        </div>
-    </div>
+</div>
 </body>
-</html>-
+</html>
