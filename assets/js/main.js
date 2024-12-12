@@ -123,6 +123,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 var prevScrollpos = window.pageYOffset;
 var header = document.getElementById("header");
+var sidebar = document.getElementById("sidebar");
 
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;

@@ -15,7 +15,7 @@
     <body >
         <header class="menu d-none d-md-block" id="header2">
             <div class="logo">
-                <a href="/SieuPhamViet.html">
+                <a href="../SieuPhamViet.html"><img src="assets/img/logo.png" alt="">
                     <h3 class="d-none d-lg-block">Siêu Phẩm Việt</h3>
                 </a>
                 <img src="assets/img/header/logo.png" alt="logo">
@@ -89,14 +89,16 @@
 
 
 
-       <div class="danhMucItem">
-           <nav class="sidebar">
+       <div class="danhMucItem row">
+
+           <nav class="sidebar col col-2" id="sidebar">
                <div class="sidemenu">
-                   <div>
-                       <h4 style="border-bottom: 2px solid #003cff;  padding-bottom: 15px"> Danh Mục Sản Phẩm</h4>
+                   <div class="d-flex" style="border-bottom: 2px solid #003cff; padding-bottom: 5px; margin-bottom: 10px;">
+                       <button class="btn" type="button" data-toggle="collapse" data-target="#danhMucCon"> <i class='bx bx-menu icon' style="position: relative;color: white; justify-content: center"></i> </button>
+                       <h4 style="margin-top: 2px"> Danh Mục Sản Phẩm</h4>
                    </div>
 
-                   <div class="danhMucCon">
+                   <div class="danhMucCon collapse" id="danhMucCon">
                        <ul class="">
                            <li class="">
                                <a class="danhmucSP" href="#"><div class="menu-item">PC Ráp Sẵn</div></a>
@@ -137,12 +139,16 @@
                </div>
            </nav>
 
-           <main class="">
-               <div class="sale-container-1 container">
-                   <h3> Ram PC - Laptop</h3>
+
+
+
+
+           <main class=" container-fluid col col-8" id="body-1">
+               <div class="sale-container-1 container-fluid">
                    <div class="sale-card-container container-fluid">
                        <!-- Nguyên: Tạo slideshow container để trưng bày sản phầm -->
-                       <div class="sale-slide-show row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-sm-start">
+                       <h3 class=""> Ram PC - Laptop</h3>
+                       <div class="sale-slide-show row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-sm-between">
                            <!-- Nguyên: Tạo thẻ sản phẩm -->
                            <div class="sp-card">
                                <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
@@ -563,7 +569,6 @@
                                        <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 1.464.000 ₫ </span>
                                    </p>
                                    <h6 class="sp-card-title blue"> G.SKILL Trident Z Royal Elite </h6>
-
                                </a>
                            </div>
                        </div>

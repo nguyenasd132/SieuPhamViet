@@ -261,8 +261,12 @@ input.menu-input-search:not(:placeholder-shown) {
     padding: 20px;
     height: 500px;
 }
+.sale-container-3{
+    border-radius: 10px;
+    box-shadow: rgb(255, 255, 255) 0px 3px 8px;
+}
 .sale-card-container{
-    margin-top: 50px;
+    margin-top: 64px;
     height: 400px;
     width: 1100px;
 }
@@ -287,8 +291,6 @@ input.menu-input-search:not(:placeholder-shown) {
 }
 .sale-container-1 .sp-card{
     position: relative;
-    min-height: 420px;
-    height: fit-content;
 }
 .card-container{
     margin-bottom: auto;
@@ -312,7 +314,6 @@ input.menu-input-search:not(:placeholder-shown) {
 }
 .sp-card .sp-card-link img{
     width: 100%;
-    object-fit: cover;
     aspect-ratio: 1/1;
     border-radius: 12px;
 }
@@ -328,7 +329,7 @@ input.menu-input-search:not(:placeholder-shown) {
     background: #ffeadd;
     padding: 4px 8px ;
     border-radius: 50px;
-    margin-right: 5px ;
+    margin-right: 5px;
     font-size: 10px;
 }
 .sp-card .sp-info{
@@ -756,9 +757,8 @@ input.menu-input-search:not(:placeholder-shown) {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    height: 250px;
+    height: 200px;
     display: flex;
-    align-items: center;
 }
 .sale-container-3 .sp-card a{
     text-decoration: none;
@@ -766,8 +766,9 @@ input.menu-input-search:not(:placeholder-shown) {
 
 .sale-container-3 .sp-card{
     position: relative;
-    top: 95px;
     height: fit-content;
+    top: 0;
+    transform: translateY(25%);
 }
 .sale-container-3 .sp-card img{
     border-radius: 10px;
@@ -777,7 +778,6 @@ input.menu-input-search:not(:placeholder-shown) {
 
 .danhmucSP{
     display: grid;
-    grid-template-columns: 300px 1fr;
 }
 
 .sale-container-3 .sp-card:hover{
@@ -786,7 +786,6 @@ input.menu-input-search:not(:placeholder-shown) {
 }
 
 .danhMucItem{
-    grid-template-columns: 450px auto;
     height: 1600px;
     width: 100%;
 }
@@ -802,10 +801,11 @@ input.menu-input-search:not(:placeholder-shown) {
 }
 
 .sidebar{
-    top: 64px;
+    top: 80px;
     left: 48px;
     height: 1536px;
     position: absolute;
+    transition: transform 0.45s ease;
 }
 .sidemenu{
     padding: 15px;
@@ -843,16 +843,23 @@ input.menu-input-search:not(:placeholder-shown) {
 .danhMucItem .sale-container-1{
     position: relative;
     left: 200px;
+    height: 1600px;
+    width: fit-content;
 }
 .danhMucItem .sale-container-1 .sale-slide-show{
 
 }
 .danhMucItem .sale-container-1 .sp-card{
     background: white;
+    width: 100px;
 }
 .danhMucItem .sale-container-1 .sp-card-link .card-container img{
     position: relative;
     top: 25%;
+}
+#body-1{
+    top: 80px;
+    transition: transform 0.3s ease;
 }
 
 
