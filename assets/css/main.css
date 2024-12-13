@@ -898,11 +898,10 @@ sale-card-container-2 .sp-card a h4{
     transition: transform 0.3s ease;
 }
 #xemthem{
-    position: absolute;
+    position: relative;
     display: inline-block;
     background: white;
-    top: 880px;
-    left: 520px;
+    top: 412px;
     z-index: 10001;
     border: 2px solid #ffa600;
     color: #007bff;
