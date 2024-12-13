@@ -8,12 +8,12 @@ article{
 }
 
 aside{
-    width: 307px;
-   
-    margin-left: 15px;
+    width: fit-content;
 }
 aside a{color: #333333;
-font-family: Roboto_bold;}
+font-family: Roboto_bold;
+}
+
 .aside_widget{
     margin-top: 7px;
     margin-bottom: 54px;
@@ -50,7 +50,8 @@ aside .anh{
 }
 aside .thong_tin{
     width: 184px;
-    margin-left: 10px;}
+    margin-left: 10px;
+}
 aside .thong_tin> .title_product{
     font-size: 14px;
     margin: 0px;

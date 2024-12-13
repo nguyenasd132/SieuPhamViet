@@ -92,8 +92,11 @@ const gridSwiper2 = new Swiper(".gridSlide-2", {
         clickable: true,
         dynamicBullets: true
     },
-
-    // Navigation arrows
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -123,6 +126,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 var prevScrollpos = window.pageYOffset;
 var header = document.getElementById("header");
+var sidebar = document.getElementById("sidebar");
 
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
