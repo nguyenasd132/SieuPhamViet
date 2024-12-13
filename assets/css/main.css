@@ -89,8 +89,8 @@ body{
 }
 
 .menu-child h4 {
-    margin-left: 10px;
     color: #333;
+    width: fit-content;
 }
 
 
@@ -249,6 +249,7 @@ input.menu-input-search:not(:placeholder-shown) {
     text-align: center;
     border: #007bff 2px solid;
     border-radius: 10px;
+    background: #abd1ff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;
     height: 550px;
@@ -260,15 +261,27 @@ input.menu-input-search:not(:placeholder-shown) {
     text-align: center;
     padding: 20px;
     height: 500px;
+    padding-right: 30px;
+}
+.gridSlide{
+    padding-left: 10px;
+    padding-right: 40px;
+}
+sale-card-container-2 .sp-card a h4{
+    width: fit-content;
 }
 .sale-container-3{
     border-radius: 10px;
     box-shadow: rgb(255, 255, 255) 0px 3px 8px;
 }
 .sale-card-container{
+    border-radius: 25px;
     margin-top: 64px;
-    height: 400px;
+    height: 00px;
     width: 1100px;
+    bottom: 32px;
+    padding-bottom: 32px;
+    padding-right: 25px;
 }
 .sale-card-container-2{
     height: 400px;
@@ -278,12 +291,10 @@ input.menu-input-search:not(:placeholder-shown) {
     position: relative;
     height: 400px;
     left: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+    }
 .sp-card{
-    border: 3px #f6f7f8 solid;
+    border: 3px #ff9900 solid;
+    height: fit-content;
     padding: 10px;
     border-radius: 16px;
     scale: 0.85;
@@ -308,6 +319,10 @@ input.menu-input-search:not(:placeholder-shown) {
     border: 3px #4c46ef solid;
     transition: 0.2s;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.sale-container-2 .sp-card{
+    border: 3px #ff9900 solid;
+
 }
 .sp-card .sp-card-link{
     text-decoration: none;
@@ -741,9 +756,12 @@ input.menu-input-search:not(:placeholder-shown) {
     color: azure;
     width: 80px;
 }
-.sale-container-2 .sp-card:hover img{
+.sale-container-2 .sp-card img{
     scale: 1.2;
-    transition: 0.2s;
+}
+.sale-container-2 .sp-card:hover img{
+    scale: 1.3;
+    transition: 0.2s ease-in-out;
 }
 .sale-card-container-2 .sp-card{
     user-select: none;
@@ -786,7 +804,7 @@ input.menu-input-search:not(:placeholder-shown) {
 }
 
 .danhMucItem{
-    height: 1600px;
+    height: 1000px;
     width: 100%;
 }
 .danhMucItem a{
@@ -803,8 +821,9 @@ input.menu-input-search:not(:placeholder-shown) {
 .sidebar{
     top: 80px;
     left: 48px;
-    height: 1536px;
+    height: 1000px;
     position: absolute;
+    background: #00ff24;
     transition: transform 0.45s ease;
 }
 .sidemenu{
@@ -832,7 +851,7 @@ input.menu-input-search:not(:placeholder-shown) {
 
 .item-container{
     position: absolute;
-    left: 00px;
+    left: 0;
     top: 66px;
     display: flex;
     align-items: center;
@@ -841,33 +860,80 @@ input.menu-input-search:not(:placeholder-shown) {
     background: red;
 }
 .danhMucItem .sale-container-1{
+    top: 100px;
+    background: #abd1ff;
+    border: #ff9900 5px solid;
     position: relative;
-    left: 200px;
-    height: 1600px;
-    width: fit-content;
+    height: 950px;
 }
 .danhMucItem .sale-container-1 .sale-slide-show{
-
+    display: flex;
+    flex-wrap: wrap;
+}
+.danhMucItem .sale-container-1 .sale-slide-show .sp-card{
+    display: none;
+}
+.danhMucItem .sale-container-1 .sale-slide-show .sp-card:nth-child(1),
+.danhMucItem .sale-container-1 .sale-slide-show .sp-card:nth-child(2),
+.danhMucItem .sale-container-1 .sale-slide-show .sp-card:nth-child(3),
+.danhMucItem .sale-container-1 .sale-slide-show .sp-card:nth-child(4),
+.danhMucItem .sale-container-1 .sale-slide-show .sp-card:nth-child(5),
+.danhMucItem .sale-container-1 .sale-slide-show .sp-card:nth-child(6),
+.danhMucItem .sale-container-1 .sale-slide-show .sp-card:nth-child(7),
+.danhMucItem .sale-container-1 .sale-slide-show .sp-card:nth-child(8){
+    display: inline-block;
 }
 .danhMucItem .sale-container-1 .sp-card{
+    position: relative;
     background: white;
-    width: 100px;
+    width: 260px;
+    height: fit-content;
 }
 .danhMucItem .sale-container-1 .sp-card-link .card-container img{
     position: relative;
     top: 25%;
 }
 #body-1{
-    top: 80px;
     transition: transform 0.3s ease;
 }
+#xemthem{
+    position: absolute;
+    display: inline-block;
+    background: white;
+    top: 880px;
+    left: 520px;
+    z-index: 10001;
+    border: 2px solid #ffa600;
+    color: #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+#xemthem:hover{
+    background: #007afd;
+    color: white;
+    border: 2px solid #ffffff;
+}
+.trungbay-container{
+    box-shadow: none;
+}
+@media (min-width: 576px) {
+    .danhMucItem .sale-container-1{
+        left: 0px;
+    }
 
-
-@media (min-width: 576px) {  }
+}
 
 /* // Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) { }
+@media (min-width: 768px) {
+    .danhMucItem .sale-container-1{
+        left: 0px;
+    }
+
+}
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  }
