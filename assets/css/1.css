@@ -359,8 +359,11 @@ position: relative;}
 .col3_list_hot{
     display: flex;
 }
+
 .col3_list_hot li{width: 30%;
 margin: 15px;}
+
+
 .col3_list_hot .title_product{
     font-family: Roboto_bold;
     font-size: 20px;

@@ -92,8 +92,11 @@ const gridSwiper2 = new Swiper(".gridSlide-2", {
         clickable: true,
         dynamicBullets: true
     },
-
-    // Navigation arrows
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

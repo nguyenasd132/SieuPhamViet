@@ -783,6 +783,7 @@ sale-card-container-2 .sp-card a h4{
 }
 
 .sale-container-3 .sp-card{
+    border: none;
     position: relative;
     height: fit-content;
     top: 0;
