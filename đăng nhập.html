@@ -15,13 +15,14 @@
 
     <body class="body"
         style="background-image: url('assets/img/ảnh background signup.jpg'); background-repeat: no-repeat;  background-attachment: fixed;">
-        <div class="cha">
+        <form class="cha"  id="loginForm" onsubmit="return validateForm()">
             <div class="con1">
                 <h4 style="text-align: center;">Đăng Nhập</h4><br>
                 <div class="container">
                     <div class="nhapdulieu">
-                        <input type="text" required>
+                        <input type="text" id="fullName" required>
                         <div class="labelline">Tên Tài Khoản</div>
+
                     </div>
                 </div>
                 <div class="container">
@@ -41,7 +42,7 @@
                 </div>
             </div>
             <div class="divider">
-                <hr><span style="color: white;"> Đăng Nhập Với</span>
+                <hr><span style="color: white;">Hoặc Đăng Nhập Với</span>
                 <hr>
             </div>
             <div class="dangki">
@@ -62,8 +63,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-
+        </form>
+        <script src="assets/js/login.js"></script>
     </body>
 
 </html>

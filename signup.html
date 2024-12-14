@@ -11,38 +11,38 @@
 
 </head>
 
-<body class="body"
-    style="background-image: url('assets/img/ảnh background signup.jpg'); background-repeat: no-repeat; background-attachment: fixed;">
-    <div class="cha">
+<body class="body" style="background-image: url('assets/img/ảnh background signup.jpg');
+background-repeat: no-repeat; 
+background-attachment: fixed;">
+    <form class="cha" id="loginForm" onsubmit="return validateForm()">
         <div class="con1">
-            <h4 style="position: relative;text-align: center; top: 25px;">Tạo Tài Khoản</h4>
-            <br>
+            <h4 style="text-align: center;">Tạo Tài Khoản</h4><br>
             <div class="container">
                 <div class="nhapdulieu">
-                    <input type="text" required>
+                    <input type="text" id="fullName" required>
                     <div class="labelline">Tên Tài Khoản</div>
                 </div>
             </div>
             <div class="container">
                 <div class="nhapdulieu">
-                    <input type="password" required>
+                    <input type="password" id="password" required>
                     <div class="labelline">Mật Khẩu</div>
                 </div>
             </div>
             <div class="container">
                 <div class="nhapdulieu">
-                    <input type="password" required>
+                    <input type="password" id="password" required>
                     <div class="labelline">Xác Nhận Mật Khẩu</div>
 
                 </div>
             </div>
             <div class="nutdangkicha">
                 <button type="submit" class="nutdangki" style="width: 100%; border-radius: 20px;">
-                    <span>
-                        Đăng Ký
-                        <img src="assets/img/—Pngtree—black paper plane vector illustration_15572175.png" width="30px">
-                    </span>
+                    <img src="assets/img/—Pngtree—black paper plane vector illustration_15572175.png" width="30px">
+                    Xác Nhận Đăng Kí
                 </button>
+
+
             </div>
         </div>
         <div class="divider">
@@ -51,20 +51,26 @@
         </div>
         <div class="dangki">
             <div class="logo">
-                <img src="assets/img/logo google.png" width="40px">
-                <span class="textlogo">Google</span>
+                <div>
+                    <img src="assets/img/logo google.png" width="40px">
+                </div>
+                <div>
+                    <p class="textlogo">Google</p>
+                </div>
             </div>
             <div class="logo">
-                <img src="assets/img/icons8-facebook-48.png" width="40px">
-                <span class="textlogo">Facebook</span>
+                <div>
+                    <img src="assets/img/icons8-facebook-48.png" width="40px">
+                </div>
+                <div>
+                    <p class="textlogo">Facebook</p>
+                </div>
             </div>
         </div>
 
         <p style="color: white; padding-top: 5%; text-align: center;">Bạn đã có <a href="#">Tài khoản ?</a></p>
-    </div>
-    </div>
-    </div>
-
+    </form>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
