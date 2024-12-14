@@ -1,4 +1,4 @@
-@media (max-width: 426px){
+@media (max-width: 500px){
     .cart__wrapper{
         max-width: 100vw;
         width: 100%;
@@ -78,7 +78,7 @@
         width: 250px;
     }
 
-    footer{
+    #footer-1{
         padding-bottom: 25px;
     }
 
