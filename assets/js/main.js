@@ -19,19 +19,41 @@ setInterval(() => {
 
 showCurrentImage();
 
+var swiper_phu = new Swiper(".SwiperPhu", {
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper_chinh = new Swiper(".SwiperChinh", {
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper_phu,
+    },
+});
 
-
-const swiper = new Swiper('.spSwiper', {
-    // Optional parameters
+const swipercnt1 = new Swiper('.spSwiper', {
     loop: false,
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
         dynamicBullets: true
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -62,7 +84,6 @@ const gridSwiper = new Swiper(".gridSlide", {
         dynamicBullets: true
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
