@@ -37,5 +37,9 @@ $(document).ready( function(){
         updatePayment();
     });
 
+    $('#change__decrease-1, #change__decrease-2, #change__decrease-3, #change__increase-1, #change__increase-2, #change__increase-3').on('click', function(){
+        updatePayment();
+    });
+
     updatePayment();
 });
