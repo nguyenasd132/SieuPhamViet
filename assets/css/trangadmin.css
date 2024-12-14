@@ -2,68 +2,74 @@
     height: 80%;
     width: 100%;
     display: grid;
-    grid-template-columns: 15% 90%;
+    grid-template-columns: 15% 85%;
     grid-template-rows: 5% 95% ;
 }
-.sidebar{
-    width: 15%;
-    height: 1050px;
-    background-color: #F7F7F9;
-    grid-column: 1 /span 2;
-    grid-row: 2 /span 3;
-}
 .menu{
-    position: fixed;
-    padding-top: 5%;
-    width: 15%;
+    background-color: #F7F7F9;
+    padding-top: 100px;
+    width: 100%;
     border-color: 1px solid black;
-    height: 100%;
-    left: 1.5em;
-    margin-top: 0;
+    height: auto;
     color: black;
+    grid-row: 2/ span 3;
 }
-li{
+.menu ul li{
+    margin: 0px;
     list-style: none;
-    padding: 20px 0;
+    padding: 20px 0px;
     width: 80%;
     padding-left: 10px;
-    transition: all 0.2s ease-in-out;
+    height: 40%;
 }
-li:hover{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    background-color: white;
-    border-radius: 10px;
+.menu ul li.active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 15px;
+    background-color: #EEEEEE;
+}
+.menu ul li a i{
+    color:var(--dark);
+    transition: all 0.3s ease;
+    font-size: 20px;
+    width: 100%;
+}
+.menu ul li.active a i{
+    color:var(--success);
 }
 
-i{
-    color: black;
-    font-size: 20px;
-}
-i:hover{
-    color: yellowgreen;
-}
-ul{
+
+.menu ul{
+    margin: 0;
     padding-left: 0;
 }
+.menu .logout a i{
+    color:var(--danger);
+}
+
 .navbar1{
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, black 0%, rgba(7,6,95,1) 21%, rgba(9,18,121,1) 34%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgb(12, 17, 229) 0%, rgb(10, 17, 246) 10%, rgb(15, 60, 241) 29%, rgb(18, 88, 238) 52%, rgba(54,132,219,1) 93%);
     width: 100%;
-    height: 7%;
-    display: grid;
-    grid-template-columns: 15% 85%;
+    height: 10% ;
     position: fixed;
+}
+.navbarimg{
+    width: 100px;
+    height: auto;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    grid-column: 1 /span 2;
 }
 .navbar-p1{
     display: grid;
-    align-items: center;
-    justify-self: center;
     width: 100%;
-    height: auto;
-    grid-template-columns: 10% 90%;
+    height:10%;
+    grid-template-columns: 20% 80%;
+}
+.menu-search-cha{
+    padding-top: 20px;
 }
 .menu-search {
-    grid-column: 2 /span 3;
     width: 500px;
     height: 30px;
     background: white;
@@ -73,6 +79,7 @@ ul{
     top: 12px;
     display: flex;
     align-items: center;
+    grid-column: 2 /span 3;
 }
 
 .menu-input-search {
@@ -152,6 +159,7 @@ ul{
     font-size: 100px;
     background-color: #CCE7FF;
     border-radius: 10px;
+    padding-left: 22%;
 }
 .timkiem{
     margin: 15px 15px;
@@ -161,6 +169,7 @@ ul{
     font-size: 100px;
     background-color:#FFD2D1;
     border-radius: 10px;
+    padding-left: 22%;
 }
 .doanhthu{
     margin: 15px 15px;
@@ -170,6 +179,7 @@ ul{
     font-size: 100px;
     background-color:#B7F0D1;
     border-radius: 10px;
+    padding-left: 22%;
 }
 .truycap{
     margin: 15px 15px;
@@ -179,12 +189,13 @@ ul{
     font-size: 100px;
     background-color:#FFF1C4;
     border-radius: 10px;
+    padding-left: 22%;
 }
 
 .donhang{
     border-radius: 15px;
     margin: 0 30px;
-    height: 300px;
+    height: auto;
     background-color:  #F7F7F9 ;
     display: grid;
     grid-template-rows: 15% 85%;
@@ -222,7 +233,7 @@ ul{
     color: white;
     width: 30%;
     height: 20%;
-    background-color: #DBA625;
+    background-color: #DBA625; 
 }
 .miniheader{
     padding-top: 2%;
@@ -232,36 +243,75 @@ ul{
 .Chart{
     width: 100%; 
 }
-@media (max-width: 767px) {
+@media (min-width: 660px) and (max-width: 1024px){
     .allbox{
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 10% 90%;
         grid-template-rows: 5% 95%;
-    }
-    .sidebar{
-        width: 20%;
-    }
-    .danhsach{
-        width: 100%;
-    }
-    .controlside{
-        width: 100%;
+        height: 100%;
     }
     .menu{
-        width: 20%;
+        padding-left: 20%;
+    }
+    .mattieu{
+        opacity: 0;
+    }
+    .dulieu{
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+@media (max-width: 660px) {
+    .mattieu{
+        opacity: 0;
+    }
+    .allbox{
+        grid-template-columns: 14% 86%;
+        grid-template-rows: 5% 95%;
+        width: 100%;
+        height: 100%;
+    }
+    .danhsach{
+        padding-top: 40px;
+        width: 100%;
         height: auto;
-        left: 3%;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .menu ul li{
+        padding-bottom: 100px;
+        padding-bottom: 40px;
+        height: 30px;
     }
     ul{
         width: 100%;
     }
     .navbar1{
-        height: 10%;
+        height: 80px;
+    }
+    .navbar-p1{
+        grid-template-columns: 20% 80%;
+    }
+    .navbarimg{
+        margin-left: -30px;
+        width: 100px;
+    }
+    .menu-search {
+        width: 80%;
     }
     .Chart{
-        width: 90%;
+        width: 100%;
     }
     .dulieu{
-        width: 89%;
+        width: 100%;
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -271,9 +321,10 @@ ul{
         width: 100%;
         height: 100%;
     }
-    .luotmua{
+    .donhang{
+        margin: 0px 30px;
         width: 80%;
-        height: 60%;
+        height: 20%;
     }
     .cacdonhang{
         width: 100%;
@@ -291,11 +342,6 @@ ul{
     .minibar{
         height: 100%;  
         padding-top: 5px;
-    }
-    .donhang{
-        padding-right: 10%;
-        width: 90%;
-        height: 20%;
     }
     #minibar{
         font-size: smaller;

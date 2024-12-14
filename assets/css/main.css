@@ -780,7 +780,6 @@ sale-card-container-2 .sp-card a h4{
 }
 
 .sale-container-3 .sp-card{
-    border: none;
     position: relative;
     height: fit-content;
     top: 0;
@@ -895,10 +894,11 @@ sale-card-container-2 .sp-card a h4{
     transition: transform 0.3s ease;
 }
 #xemthem{
-    position: relative;
+    position: absolute;
     display: inline-block;
     background: white;
-    top: 412px;
+    top: 880px;
+    left: 520px;
     z-index: 10001;
     border: 2px solid #ffa600;
     color: #007bff;
