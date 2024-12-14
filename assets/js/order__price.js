@@ -12,7 +12,7 @@ $(document).ready( function(){
         var p3 = parseInt($('#price-3').val());
         var payment3 = n3 * p3;
 
-        console.log("number of the first product : " + n1);
+        console.log("number of the first product : " + typeof n1);
         console.log("price of the first product: " + p1);
 
         console.log("number of the second product: " + n2);
@@ -32,8 +32,10 @@ $(document).ready( function(){
         var totalPayment = payment1 + payment2 + payment3;
         $('.totalPayment').html(vnd.format(totalPayment));
     }
-
-    $('#quantity-1, #price-1, #quantity-2, #price-2, #quantity-3, #price-3').on('change', updatePayment);
     
+    $('#quantity-1, #quantity-2, #quantity-3').on('input', function(){
+        updatePayment();
+    });
+
     updatePayment();
 });

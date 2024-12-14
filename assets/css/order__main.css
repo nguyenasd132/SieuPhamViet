@@ -46,10 +46,8 @@ ul li{
 
 .menu{
     position: fixed;
-    display: flex;
+    display: grid;
     user-select: none;
-    align-items: center;
-    justify-content: center;
     height: 64px;
     margin: 0 auto;
     padding:10px;
@@ -124,8 +122,8 @@ ul li{
 }
 
 .menu-child h4 {
-    margin-left: 10px;
     color: #333;
+    width: fit-content;
 }
 
 
@@ -228,8 +226,7 @@ input.menu-input-search:not(:placeholder-shown) {
     position: absolute;
     display: flex;
     gap: 5px;
-    margin-right: min(64px, 100px);
-    right: 48px;
+    right:20px;
     list-style: none;
     color: white;
     cursor: pointer;
