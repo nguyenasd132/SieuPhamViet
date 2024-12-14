@@ -1,7 +1,4 @@
 $(document).ready( function(){
-    $('button[id^="change__"]').on('click', function () {
-        updatePayment();
-    });
     function updatePayment(){
         var n1 = Number($('#quantity-1').val());
         var p1 = Number($('#price-1').val());
@@ -15,7 +12,7 @@ $(document).ready( function(){
         var p3 = parseInt($('#price-3').val());
         var payment3 = n3 * p3;
 
-        console.log("number of the first product : " + typeof n1);
+        console.log("number of the first product : " + n1);
         console.log("price of the first product: " + p1);
 
         console.log("number of the second product: " + n2);
@@ -28,15 +25,26 @@ $(document).ready( function(){
             style: "currency",
             currency: "VND"
         })
+
+        var voucherCode = $('#total__voucher--code').val();
+        var discount = voucherCode === 'helloworld123' ? 999000 : 0;
+
+        $('#discount').html(vnd.format(discount));
+
         $('#payment1').html(vnd.format(payment1));
         $('#payment2').html(vnd.format(payment2));
         $('#payment3').html(vnd.format(payment3));
 
-        var totalPayment = payment1 + payment2 + payment3;
-        $('.totalPayment').html(vnd.format(totalPayment));
+        var totalPrice = payment1 + payment2 + payment3;
+        $('#totalPrice').html(vnd.format(totalPrice));
+        $('#totalPayment').html(vnd.format(totalPrice - discount));
     }
     
-    $('#quantity-1, #quantity-2, #quantity-3').on('input', function(){
+    $('#quantity-1, #quantity-2, #quantity-3,  #total__voucher--code').on('input', function(){
+        updatePayment();
+    });
+
+    $('button[id^="change__"]').on('click', function () {
         updatePayment();
     });
 
@@ -45,4 +53,6 @@ $(document).ready( function(){
     // });
 
     updatePayment();
+
+    
 });

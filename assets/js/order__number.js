@@ -13,7 +13,7 @@ $(document).ready( function(){
 
     $('#change__increase-1').click(
         function(){
-            console.log('#change__decrease-2');
+            console.log('#change__increase-1');
             let number = parseInt($('#quantity-1').val());
             number++;
             $('#quantity-1').val(number);
