@@ -558,6 +558,10 @@ sale-card-container-2 .sp-card a h4{
     padding-right: 15px;
 }
 
+.footer-social .footer-icon a i:hover{
+    color: rgb(0, 5, 96);
+}
+
 @media screen and (min-width : 1024px){
 
 }
