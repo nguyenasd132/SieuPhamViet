@@ -131,11 +131,9 @@
                             <b style="color:red;">Tổng: </b>
                             <b style="color:red;" id="payment1"></b>
                             <div class="changenumber">
-                                <button onclick="updatePayment()" id="change__decrease-1"
-                                    class="change__button"><b>-</b></button>
+                                <button onclick="updatePayment()" id="change__decrease-1" class="change__button"><b>-</b></button>
                                 <input type="text" value="1" id="quantity-1">
-                                <button onclick="updatePayment()" id="change__increase-1"
-                                    class="change__button"><b>+</b></button>
+                                <button onclick="updatePayment()" id="change__increase-1" class="change__button"><b>+</b></button>
                             </div>
                         </div>
                     </div>
@@ -160,11 +158,9 @@
                             <b style="color:red;">Tổng: </b>
                             <b style="color:red;" id="payment2"></b>
                             <div class="changenumber">
-                                <button onclick="updatePayment()" id="change__decrease-2"
-                                    class="change__button"><b>-</b></button>
+                                <button onclick="updatePayment()" id="change__decrease-2" class="change__button"><b>-</b></button>
                                 <input type="text" value="1" id="quantity-2">
-                                <button onclick="updatePayment()" id="change__increase-2"
-                                    class="change__button"><b>+</b></button>
+                                <button onclick="updatePayment()" id="change__increase-2" class="change__button"><b>+</b></button>
                             </div>
                         </div>
                     </div>
@@ -190,11 +186,9 @@
                             <b style="color:red;">Tổng: </b>
                             <b style="color:red;" id="payment3"></b>
                             <div class="changenumber">
-                                <button onclick="updatePayment()" id="change__decrease-3"
-                                    class="change__button"><b>-</b></button>
+                                <button onclick="updatePayment()" id="change__decrease-3" class="change__button"><b>-</b></button>
                                 <input type="text" value="1" id="quantity-3">
-                                <button onclick="updatePayment()" id="change__increase-3"
-                                    class="change__button"><b>+</b></button>
+                                <button onclick="updatePayment()" id="change__increase-3" class="change__button"><b>+</b></button>
                             </div>
                         </div>
                     </div>
@@ -206,18 +200,18 @@
                 <div class="total">
                     <div class="total__voucher">
                         <p style="font-weight: bolder; color: red;">Mã giảm giá</p>
-                        <input type="text" placeholder="Nhập mã giảm giá (spv99)">
-                        <button><b>Áp dụng</b></button>
+                        <input id="total__voucher--code" type="text" placeholder="vd: helloworld123">
+                        <button id="total__voucher--code--action"><b>Áp dụng</b></button>
                     </div>
                     <div class="total__price">
                         <span>Phí vận chuyển: 0đ</span><br>
                         <span>Phí dịch vụ: 0đ</span><br>
                         <b style="color: red;">Tổng cộng: </b>
-                        <b style="color: red;" class="totalPayment"></b>
+                        <b style="color: red;" id="totalPrice"></b>
                         <br>
-                        <p>Giảm giá: <span id="voucher"></span></p><br>
+                        <p>Giảm giá: <input id="discount" type="text" value="0" style="border-style: none; width: 30px;" readonly></p>
                         <b style="color: red;">Thanh toán: </b>
-                        <b style="color: red;" class="totalPayment"></b>
+                        <b style="color: red;" id="totalPayment"></b>
                     </div>
                 </div>
                 <!-- ------------------------------------------------------------------------------------- -->
