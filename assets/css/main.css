@@ -834,6 +834,15 @@ sale-card-container-2 .sp-card a h4{
     .footer-text, .footer-different {
         text-align: left;
     }
+    .slide-show{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -50px 0;
+    }
+    .slide-show .list-images{
+        width: 100%;
+    }
 }
 .sale-container-2 .swiper-slide {
     text-align: center;
