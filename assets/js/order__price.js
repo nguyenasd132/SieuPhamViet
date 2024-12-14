@@ -1,4 +1,7 @@
 $(document).ready( function(){
+    $('button[id^="change__"]').on('click', function () {
+        updatePayment();
+    });
     function updatePayment(){
         var n1 = Number($('#quantity-1').val());
         var p1 = Number($('#price-1').val());
@@ -37,9 +40,9 @@ $(document).ready( function(){
         updatePayment();
     });
 
-    $('#change__decrease-1, #change__decrease-2, #change__decrease-3, #change__increase-1, #change__increase-2, #change__increase-3').on('click', function(){
-        updatePayment();
-    });
+    // $('#change__decrease-1, #change__decrease-2, #change__decrease-3, #change__increase-1, #change__increase-2, #change__increase-3').on('click', function(){
+    //     updatePayment();
+    // });
 
     updatePayment();
 });
