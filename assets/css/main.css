@@ -863,10 +863,7 @@ input.menu-input-search:not(:placeholder-shown) {
 
     .footer-img a {
         padding-right: 2px;
-    }
-
-    .footer-img span {
-        border: none;
+        width: 50px;
     }
     .footer-text, .footer-different {
         text-align: left;
