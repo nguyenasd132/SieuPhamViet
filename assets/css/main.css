@@ -139,9 +139,6 @@ img{
     margin-right: 5px;
 }
 
-input.menu-input-search:not(:placeholder-shown) {
-}
-
 .menu-search {
     min-width: 300px;
     width: 650px;
@@ -198,24 +195,17 @@ input.menu-input-search:not(:placeholder-shown) {
     position: absolute;
     display: flex;
     gap: 5px;
-    right:20px;
+    right: 20px;
     list-style: none;
     color: white;
-    cursor: pointer;
-    top: 5px;
+    top: 15px;
 }
 
-.list-menu li{
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+.list-menu li a {
+    color: white;
+    font-size: 25px;
     padding: 10px;
-}
-
-.list-menu i{
-    font-size: 36px;
+    text-decoration: none;
 }
 
 .list-menu li:hover{
@@ -739,8 +729,7 @@ input.menu-input-search:not(:placeholder-shown) {
         margin-right: 15px;
     }
     .slide-show {
-        width: 80%;      
-        height: 200px;      
+        width: 80%;           
         overflow: hidden;  
         pointer-events: none;
     }
