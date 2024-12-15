@@ -45,7 +45,9 @@ $(document).ready( function(){
         $('#totalPrice').html(vnd.format(totalPrice));
         $('#totalPayment').html(vnd.format(totalPrice - discount));
     }
-    
+    $('button[id^="change__"]').on('click', function () {
+        updatePayment();
+    });
     $('#quantity-1, #quantity-2, #quantity-3').on('input', function(){
         updatePayment();
     });

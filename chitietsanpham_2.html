@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi Tiết Sản Phẩm</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
@@ -13,8 +12,6 @@
     <link rel="stylesheet" href="assets/css/catagory.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/1.css">
-
-
     <script src="assets/js/js.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -23,19 +20,20 @@
 
 </head>
 <style>
-    .detail_sp {
-        display: flex;
-    }
-
     .detail_img {
-        width: 350px;
+        width: 600px;
         margin-right: 15px;
-        height: 412px;
+        aspect-ratio: auto;
+    }
+    .detail_img img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background-size: cover;
     }
 
     .detail_nd {
-        margin-left: 15px;
-        width: 432px;
+        width: fit-content;
+        min-width: 350px;
     }
 
     .detail_nd h3 {
@@ -175,32 +173,58 @@
             </ul>
         </div>
     </section>
+
     <div class="container main">
         <article>
             <!-- làm thông tin giỏ hàng -->
-            <section class="detail_sp">
-                <div class="detail_img">
-                    <img src="assets/img/SP/SP2.png" alt="">
-                </div>
-                <!--img-->
-                <div class="detail_nd">
-                    <h3>Laptop Lenovo LOQ 15IAX9 83GS001RVN</h3>
-                    <p class="code_sp">Mã sản phẩm: LNV33569</p>
-                    <p class="price_product"> 20.391.500đ <span class="price_del"> 23.990.000đ </span></p>
-                    <p class="detail_ndct">Laptop Lenovo LOQ 15IAX9 83GS001RVN được trang bị bộ xử lý Intel Core i5-12450HX với 8 lõi, 12 luồng cùng RAM DDR5-4800 cho khả năng đa nhiệm ấn tượng. Ổ cứng SSD 512GB chuẩn kết nối PCIe rút ngắn thời gian truy xuất dữ liệu và có thể nâng cấp với lên đến 1TB. Màn hình 15.6 inch cho vùng hiển thị rộng và tốc độ phản hồi nhanh nhờ tần số quét 144Hz. Sản phẩm laptop Lenovo Gaming trang bị đầy đủ cổng giao tiếp để kết nối với nhiều thiết bị ngoại vi. </p>
-                    <span class="detail_soLuong">Số lượng: <input type="number" min="1" placeholder="1" tail></span>
-                    <br>
-                    <button class="btn_product add_cart">THÊM GIỎ HÀNG</button>
-                    <button class="btn_product  buy_now">Mua Ngay</button>
-                </div><!-- nội dung-->
-            </section>
-            <br>
-            <hr>
-            <!--thông tin sản phẩm, chi tiết về sản phẩm -->
-            <section class="info_sanPham">
-                <p class="ttsp">Thông tin sản phẩm</p>
-                <p class="ttsp">Bình luận</p>
-            </section>
+                <section class="detail_sp">
+                    <div class="detail_img">
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/SP/SP2.1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/SP/SP2.2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/SP/SP2.3.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/SP/SP2.4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <br>
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/SP/SP2.1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/SP/SP2.2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                   <img src="assets/img/SP/SP2.3.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/SP/SP2.4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br>
+                <br>
+                <!--thông tin sản phẩm, chi tiết về sản phẩm -->
+                <section class="info_sanPham">
+                    <p class="ttsp">Thông tin sản phẩm</p>
+                </section>
+    
+           
+
             <div class="bai_viet">
                 <h2>Laptop Lenovo LOQ 15IAX9 83GS001RVN: hiệu năng mạnh mẽ, màn hình hiển thị sắc nét</h2>
                 <h3>CPU Intel Core i5 chiến game cực đã</h3>
@@ -232,17 +256,19 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/zNTadDZfxDk?si=bdiSO8gaF0xq4jq2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </section> <!--video-->
         </article>
-
         <!-- aside bar -->
         <aside>
             <div class="aside_widget">
-                <h3>MENU</h3>
-                <ul>
-                    <li><a href="SieuPhamViet.html">TRANG CHỦ</a></li>
-                    <li class="danh_muc_active"><a href="chitietsanpham_2.html"> CHI TIẾT SẢN PHẨM</a></li>
-                    <li><a href="#">BÁN CHẠY</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
-                </ul>
+                <div class="detail_nd">
+                    <h3>Laptop Lenovo LOQ 15IAX9 83GS001RVN</h3>
+                    <p class="code_sp">Mã sản phẩm: LNV33569</p>
+                    <p class="price_product"> 20.391.500đ <span class="price_del"> 23.990.000đ </span></p>
+                    <p class="detail_ndct">Laptop Lenovo LOQ 15IAX9 83GS001RVN được trang bị bộ xử lý Intel Core i5-12450HX với 8 lõi, 12 luồng cùng RAM DDR5-4800 cho khả năng đa nhiệm ấn tượng. Ổ cứng SSD 512GB chuẩn kết nối PCIe rút ngắn thời gian truy xuất dữ liệu và có thể nâng cấp với lên đến 1TB. Màn hình 15.6 inch cho vùng hiển thị rộng và tốc độ phản hồi nhanh nhờ tần số quét 144Hz. Sản phẩm laptop Lenovo Gaming trang bị đầy đủ cổng giao tiếp để kết nối với nhiều thiết bị ngoại vi. </p>
+                    <span class="detail_soLuong">Số lượng: <input type="number" min="1" placeholder="1" tail></span>
+                    <br>
+                    <button class="btn_product add_cart">THÊM GIỎ HÀNG</button>
+                    <button class="btn_product  buy_now">Mua Ngay</button>
+                </div><!-- nội dung-->
             </div>
             <!--menu-->
 
@@ -411,6 +437,24 @@
             }
             prevScrollpos = currentScrollPos;
         }
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+         });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+            swiper: swiper,
+            },
+        });
     </script>
 
 

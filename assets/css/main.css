@@ -505,21 +505,27 @@ sale-card-container-2 .sp-card a h4{
     cursor: pointer;
 }
 
-.footer-contact .footer-img, .footer-social .footer-img {
+.footer-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
 }
 
-.footer-contact .footer-img a img, .footer-social .footer-img a img {
-    width: 70px;
+.footer-img{
+    height: 50px;
+    width: auto;
+    aspect-ratio: 1/1;
 }
-
-.footer-img span {
-    border: 1px solid white;
-    padding: 4px;
+.footer-img img{
+    width: 100px;
+    height: 50px;
     border-radius: 10px;
-    width: max-content;
+    background-size: cover;
+    background: white;
+}
+.footer-img span {
+    border-radius: 10px;
+    width: fit-content;
     margin: auto;
 }
 

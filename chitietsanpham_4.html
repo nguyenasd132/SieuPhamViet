@@ -23,19 +23,21 @@
 
 </head>
 <style>
-    .detail_sp {
-        display: flex;
-    }
 
     .detail_img {
-        width: 350px;
+        width: 600px;
         margin-right: 15px;
-        height: 412px;
+        aspect-ratio: auto;
+    }
+    .detail_img img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background-size: cover;
     }
 
     .detail_nd {
-        margin-left: 15px;
-        width: 432px;
+        width: fit-content;
+        min-width: 350px;
     }
 
     .detail_nd h3 {
@@ -180,26 +182,54 @@
             <!-- làm thông tin giỏ hàng -->
             <section class="detail_sp">
                 <div class="detail_img">
-                    <img src="assets/img/SP/SP4.png" alt="">
-                </div>
-                <!--img-->
-                <div class="detail_nd">
-                    <h3>Laptop ASUS Vivobook 15 X1504ZA-NJ517W</h3>
-                    <p class="code_sp">Mã sản phẩm: ASS62625</p>
-                    <p class="price_product"> 13.690.000đ <span class="price_del"> 16.490.000đ </span></p>
-                    <p class="detail_ndct">Laptop Asus Vivobook 15 X1504ZA-NJ517W được trang bị bộ vi xử lý Intel Core i5-1235U cùng card đồ họa Intel Xe Graphics hạn chế độ trễ của khung hình. Sản phẩm sử dụng RAM 16GB DDR4 với ổ cứng SSD M.2 NVMe PCIe 3.0 dung lượng 512GB cung cấp kho lưu trữ lớn. Màn hình FHD 15.6 inch theo chuẩn tỉ lệ 16:9 tích hợp công nghệ màn hình Anti-Glare chống lóa. Thiết kế máy mỏng gọn với bản lề xoay 180 độ linh hoạt, dễ điều chỉnh. </p>
-                    <span class="detail_soLuong">Số lượng: <input type="number" min="1" placeholder="1" tail></span>
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP4.1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP4.2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP4.3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP4.4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                     <br>
-                    <button class="btn_product add_cart">THÊM GIỎ HÀNG</button>
-                    <button class="btn_product  buy_now">Mua Ngay</button>
-                </div><!-- nội dung-->
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP4.1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP4.2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                               <img src="assets/img/SP/SP4.3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP4.4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <br>
-            <hr>
+            <br>
             <!--thông tin sản phẩm, chi tiết về sản phẩm -->
             <section class="info_sanPham">
                 <p class="ttsp">Thông tin sản phẩm</p>
-                <p class="ttsp">Bình luận</p>
             </section>
             <div class="bai_viet">
                 <h2>Laptop Asus Vivobook 15 X1504ZA-NJ517W: bản lề 180 độ, bộ xử lý Core i5 gen 12</h2>
@@ -239,13 +269,18 @@
         <!-- aside bar -->
         <aside>
             <div class="aside_widget">
-                <h3>MENU</h3>
-                <ul>
-                    <li><a href="SieuPhamViet.html">TRANG CHỦ</a></li>
-                    <li class="danh_muc_active"><a href="chitietsanpham_4.html"> CHI TIẾT SẢN PHẨM</a></li>
-                    <li><a href="#">BÁN CHẠY</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
-                </ul>
+                <section class="detail_sp">
+                    <div class="detail_nd">
+                        <h3>Laptop ASUS Vivobook 15 X1504ZA-NJ517W</h3>
+                        <p class="code_sp">Mã sản phẩm: ASS62625</p>
+                        <p class="price_product"> 13.690.000đ <span class="price_del"> 16.490.000đ </span></p>
+                        <p class="detail_ndct">Laptop Asus Vivobook 15 X1504ZA-NJ517W được trang bị bộ vi xử lý Intel Core i5-1235U cùng card đồ họa Intel Xe Graphics hạn chế độ trễ của khung hình. Sản phẩm sử dụng RAM 16GB DDR4 với ổ cứng SSD M.2 NVMe PCIe 3.0 dung lượng 512GB cung cấp kho lưu trữ lớn. Màn hình FHD 15.6 inch theo chuẩn tỉ lệ 16:9 tích hợp công nghệ màn hình Anti-Glare chống lóa. Thiết kế máy mỏng gọn với bản lề xoay 180 độ linh hoạt, dễ điều chỉnh. </p>
+                        <span class="detail_soLuong">Số lượng: <input type="number" min="1" placeholder="1" tail></span>
+                        <br>
+                        <button class="btn_product add_cart">THÊM GIỎ HÀNG</button>
+                        <button class="btn_product  buy_now">Mua Ngay</button>
+                    </div><!-- nội dung-->
+                </section>
             </div>
             <!--menu-->
 
@@ -413,6 +448,24 @@
             }
             prevScrollpos = currentScrollPos;
         }
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+         });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+            swiper: swiper,
+            },
+        });
     </script>
 
 
