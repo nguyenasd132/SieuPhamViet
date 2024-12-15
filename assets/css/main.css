@@ -25,6 +25,12 @@ body{
     transition: transform 0.45s ease;
 }
 
+
+/* sơn: thêm chỗ này để ảnh không bị méo */
+img{
+    object-fit: cover; 
+}
+
 .logo h3{
     position: fixed;
     top: 16px;
