@@ -10,7 +10,8 @@ article{
 aside{
     width: fit-content;
 }
-aside a{color: #333333;
+aside a{
+    color: #333333;
 font-family: Roboto_bold;
 }
 
@@ -20,7 +21,7 @@ font-family: Roboto_bold;
     border: 1px solid #333333;
 }
 .aside_widget h3{
-    padding: 17px 15px;
+    padding: 10px 15px;
     background-color: #283943;
     color: white;
 }

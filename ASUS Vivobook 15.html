@@ -23,7 +23,6 @@
 
 </head>
 <style>
-
     .detail_img {
         width: 600px;
         margin-right: 15px;
@@ -38,6 +37,7 @@
     .detail_nd {
         width: fit-content;
         min-width: 350px;
+        padding-left: 10px;
     }
 
     .detail_nd h3 {
@@ -173,7 +173,7 @@
                 <li><a href="SieuPhamViet.html"><ion-icon name="home-outline" role="img" class="md hydrated"></a></li>
                 <li><a href="SieuPhamViet.html"> Trang Chủ</a></li>
                 <li><a href="">></a></li>
-                <li><a href="chitietsanpham_4.html"> Chi Tiết Sản Phẩm</a></li>
+                <li><a href="ASUS Vivobook 15.html"> Chi Tiết Sản Phẩm</a></li>
             </ul>
         </div>
     </section>
@@ -227,9 +227,11 @@
             </section>
             <br>
             <br>
+            
             <!--thông tin sản phẩm, chi tiết về sản phẩm -->
             <section class="info_sanPham">
                 <p class="ttsp">Thông tin sản phẩm</p>
+                
             </section>
             <div class="bai_viet">
                 <h2>Laptop Asus Vivobook 15 X1504ZA-NJ517W: bản lề 180 độ, bộ xử lý Core i5 gen 12</h2>
@@ -270,6 +272,7 @@
         <aside>
             <div class="aside_widget">
                 <section class="detail_sp">
+                
                     <div class="detail_nd">
                         <h3>Laptop ASUS Vivobook 15 X1504ZA-NJ517W</h3>
                         <p class="code_sp">Mã sản phẩm: ASS62625</p>
@@ -294,35 +297,35 @@
                 <ul class="ban_chay">
                     <!-- sản phẩm 2 -->
                     <li>
-                        <a href="" class="anh">
+                        <a href="Lenovo LOQ 15IAX9.html" class="anh">
                             <img src="assets/img/SP/SP2.png" alt="">
                         </a>
                         <div class="thong_tin">
                             <p class="title_product">Laptop Lenovo LOQ 15IAX9 83GS001RVN</p>
                             <p class="price_product"> 20.391.500đ <span class="price_del"> 23.990.000đ </span></p>
-                            <a href="#" class="detail">Chi tiết ></a>
+                            <a href="Lenovo LOQ 15IAX9.html" class="detail">Chi tiết ></a>
                         </div>
                     </li>
                     <!-- sản phẩm 3-->
                     <li>
-                        <a href="" class="anh">
+                        <a href="Acer Nitro 5.html" class="anh">
                             <img src="assets/img/SP/SP3.png" alt="">
                         </a>
                         <div class="thong_tin">
                             <p class="title_product">Laptop Gaming Acer Nitro 5 Tiger AN515 58 52SP</p>
                             <p class="price_product"> 17.490.000đ <span class="price_del"> 27.990.000đ </span></p>
-                            <a href="#" class="detail">Chi tiết ></a>
+                            <a href="Acer Nitro 5.html" class="detail">Chi tiết ></a>
                         </div>
                     </li>
                     <!-- sản phẩm 4 -->
                     <li>
-                        <a href="" class="anh">
+                        <a href="ASUS Vivobook 15.html" class="anh">
                             <img src="assets/img/SP/SP4.png" alt="">
                         </a>
                         <div class="thong_tin">
                             <p class="title_product">Laptop ASUS Vivobook 15 X1504ZA-NJ517W</p>
                             <p class="price_product">13.690.000đ<span class="price_del">16.490.000đ</span></p>
-                            <a href="#" class="detail">Chi tiết ></a>
+                            <a href="ASUS Vivobook 15.html" class="detail">Chi tiết ></a>
                         </div>
                     </li>
                     <!-- sản phẩm 5 -->
@@ -346,10 +349,16 @@
     <footer>
         <div class="footer-container">
             <div class="footer-contact">
-                <h4>Tổng đài hỗ trợ.</h4>
-                <p>Gọi Mua Hàng: <a href="#">1800.2097</a> </p>
-                <p>Khiếu nại: <a href="#">1800.1062</a></p>
-                <p>Bảo hành: <a href="#">1900 232 464</a></p>
+                <button type="button" class="btn btn-primary focus:outline-none border-0" data-bs-toggle="collapse"
+                    data-bs-target="#contact-collapse">
+                    Tổng đài hỗ trợ <i class='bx bxs-chevron-down'></i>
+                </button>
+                <div id="contact-collapse" class="collapse">
+                    <p>Gọi Mua Hàng: <a href="#">1800.2097</a> </p>
+                    <p>Khiếu nại: <a href="#">1800.1062</a></p>
+                    <p>Bảo hành: <a href="#">1900 232 464</a></p>
+                </div>
+
                 <h4>Phương thức thanh toán.</h4>
                 <div class="footer-img">
                     <a href="https://zalopay.vn/"><img src="assets/img/footer/zalopay-logo.webp" alt="zalopay"></a>
@@ -363,57 +372,67 @@
                             alt="applepay"></a>
                 </div>
             </div>
+
             <div class="footer-text">
-                <h4>Thông tin và chính sách.</h4>
-                <p>Mua hàng và thanh toán Online</p>
-                <p>Mua hàng trả góp Online</p>
-                <p>Mua hàng trả góp bằng thẻ tín dụng</p>
-                <p>Giao hàng & Thanh toán</p>
-                <p>Tin tức khuyến mại</p>
-                <p>Tra thông tin bảo hành</p>
-                <p>Tra cứu hoá đơn điện tử</p>
-                <p>Thông tin hoá đơn mua hàng</p>
-                <p>Trung tâm bảo hành chính hãng</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#text-collapse">
+                    Thông tin và chính sách <i class='bx bxs-chevron-down'></i>
+                </button>
+                <div id="text-collapse" class="collapse">
+                    <p>Mua hàng và thanh toán Online</p>
+                    <p>Mua hàng trả góp Online</p>
+                    <p>Mua hàng trả góp bằng thẻ tín dụng</p>
+                    <p>Giao hàng & Thanh toán</p>
+                    <p>Tin tức khuyến mại</p>
+                    <p>Tra thông tin bảo hành</p>
+                    <p>Tra cứu hoá đơn điện tử</p>
+                    <p>Thông tin hoá đơn mua hàng</p>
+                    <p>Trung tâm bảo hành chính hãng</p>
+                </div>
             </div>
+
             <div class="footer-different">
-                <h4>Dịch vụ và thông tin khác.</h4>
-                <p>Khách hàng doanh nghiệp (B2B)</p>
-                <p>Ưu đãi thanh toán</p>
-                <p>Quy chế hoạt động</p>
-                <p>Chính sách bảo mật thông tin cá nhân</p>
-                <p>Chính sách Bảo hành</p>
-                <p>Liên hệ hợp tác kinh doanh</p>
-                <p>Tuyển dụng</p>
-                <p>Dịch vụ bảo hành mở rộng</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                    data-bs-target="#different-collapse">
+                    Dịch vụ và thông tin khác <i class='bx bxs-chevron-down'></i>
+                </button>
+                <div id="different-collapse" class="collapse">
+                    <p>Khách hàng doanh nghiệp (B2B)</p>
+                    <p>Ưu đãi thanh toán</p>
+                    <p>Quy chế hoạt động</p>
+                    <p>Chính sách bảo mật thông tin cá nhân</p>
+                    <p>Chính sách Bảo hành</p>
+                    <p>Liên hệ hợp tác kinh doanh</p>
+                    <p>Tuyển dụng</p>
+                    <p>Dịch vụ bảo hành mở rộng</p>
+                </div>
             </div>
+
             <div class="footer-social">
                 <h4>Kết nối với siêu phẩm việt.</h4>
                 <div class="footer-icon">
-                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
-                    <a href="https://www.tiktok.com/fr/"><i class='bx bxl-tiktok'></i></a>
-                    <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/"><i class="bx bxl-facebook-circle"></i></a>
+                    <a href="https://www.tiktok.com/fr/"><i class="bx bxl-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a>
                     <a
                         href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fadmin.google.com%2Fhcmute.edu.vn%2FDashboard&service=CPanel&hl=vi&ddm=1&flowName=GlifWebSignIn&flowEntry=AccountChooser"><i
-                            class='bx bxl-gmail'></i></a>
+                            class="bx bxl-gmail"></i></a>
                     <a
                         href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F8714169748610710%3Flocale%3Dvi_VN"><i
-                            class='bx bxl-messenger'></i></a>
+                            class="bx bxl-messenger"></i></a>
                 </div>
                 <br>
                 <h4>Chứng nhận.</h4>
                 <div class="footer-img">
                     <span><a href="#"><img src="assets/img/footer/dmca_icon_8fc6622bd5.svg" alt=""></a></span>
-                    <span><a href="#"><img
-                                src="assets/img/footer/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg"
-                                alt=""></a></span>
-                    <span><a href="#"><img src="assets/img/footer/thuong_hieu_manh_2013_icon_b56f772475.svg"
-                                alt=""></a></span>
+                    <span><a href="#"><img  src="assets/img/footer/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg" alt=""></a></span>
+                    <span><a href="#"><img src="assets/img/footer/thuong_hieu_manh_2013_icon_b56f772475.svg"  alt=""></a></span>
                     <a href="#"><img src="assets/img/footer/noi_khong_voi_hang_gia_icon_e16037d9cb.svg" alt=""></a>
                     <a href="#"><img src="assets/img/footer/da_thong_bao_bo_cong_thuong_icon_64785fb3f7.svg" alt=""></a>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="footer-text">
                 <h5>Chính sách bảo mật</h5>
