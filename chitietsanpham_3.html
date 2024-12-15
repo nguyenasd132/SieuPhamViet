@@ -23,19 +23,20 @@
 
 </head>
 <style>
-    .detail_sp {
-        display: flex;
-    }
-
-    .detail_img {
-        width: 350px;
+      .detail_img {
+        width: 600px;
         margin-right: 15px;
-        height: 412px;
+        aspect-ratio: auto;
+    }
+    .detail_img img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background-size: cover;
     }
 
     .detail_nd {
-        margin-left: 15px;
-        width: 432px;
+        width: fit-content;
+        min-width: 350px;
     }
 
     .detail_nd h3 {
@@ -180,30 +181,48 @@
             <!-- làm thông tin giỏ hàng -->
             <section class="detail_sp">
                 <div class="detail_img">
-                    <img src="assets/img/SP/SP3.png" alt="">
-                </div>
-                <!--img-->
-                <div class="detail_nd">
-                    <h3>Laptop Gaming Acer Nitro 5 Tiger AN515 58 52SP</h3>
-                    <p class="code_sp">Mã sản phẩm: ACR55975</p>
-                    <p class="price_product"> 17.490.000đ  <span class="price_del"> 27.990.000đ </span></p>
-                    <p class="detail_ndct">Chip Core i5-12500H cùng card rời RTX 3050 cho khả năng chiến các tựa game nặng, chỉnh sửa hình ảnh trên PTS, Render video ngắn mượt mà.<br>
-                        Ram 8GB, ổ cứng SSD 512GB mang đến tốc độ xử lý nhanh cùng đa nhiệm mượt mà.<br>
-                        Màn hình 15.6 inch độ phân giải Full HD, mang lại chất lượng hiển thị sắc nét.<br>
-                        Công nghệ âm thanh DTS X:Ultra Audio, Acer Purified, Acer TrueHarmony - mang lại trải nghiệm giải trí chân thật.<br>
-                        Bàn phím được tích hợp đèn - Thoả sức làm việc trong môi trường thiếu sáng</p>
-                    <span class="detail_soLuong">Số lượng: <input type="number" min="1" placeholder="1" tail></span>
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP3.1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP3.2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP3.3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                     <br>
-                    <button class="btn_product add_cart">THÊM GIỎ HÀNG</button>
-                    <button class="btn_product  buy_now">Mua Ngay</button>
-                </div><!-- nội dung-->
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP3.1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/SP/SP3.2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                               <img src="assets/img/SP/SP3.3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <br>
-            <hr>
+            <br>
             <!--thông tin sản phẩm, chi tiết về sản phẩm -->
             <section class="info_sanPham">
                 <p class="ttsp">Thông tin sản phẩm</p>
-                <p class="ttsp">Bình luận</p>
             </section>
             <div class="bai_viet">
                 <h2>Laptop Acer Nitro 5 Tiger AN515-58-52SP - Thủ lĩnh laptop gaming</h2>
@@ -233,13 +252,20 @@
         <!-- aside bar -->
         <aside>
             <div class="aside_widget">
-                <h3>MENU</h3>
-                <ul>
-                    <li><a href="SieuPhamViet.html">TRANG CHỦ</a></li>
-                    <li class="danh_muc_active"><a href="chitietsanpham_3.html"> CHI TIẾT SẢN PHẨM</a></li>
-                    <li><a href="#">BÁN CHẠY</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
-                </ul>
+                <div class="detail_nd">
+                    <h3>Laptop Gaming Acer Nitro 5 Tiger AN515 58 52SP</h3>
+                    <p class="code_sp">Mã sản phẩm: ACR55975</p>
+                    <p class="price_product"> 17.490.000đ  <span class="price_del"> 27.990.000đ </span></p>
+                    <p class="detail_ndct">Chip Core i5-12500H cùng card rời RTX 3050 cho khả năng chiến các tựa game nặng, chỉnh sửa hình ảnh trên PTS, Render video ngắn mượt mà.<br>
+                        Ram 8GB, ổ cứng SSD 512GB mang đến tốc độ xử lý nhanh cùng đa nhiệm mượt mà.<br>
+                        Màn hình 15.6 inch độ phân giải Full HD, mang lại chất lượng hiển thị sắc nét.<br>
+                        Công nghệ âm thanh DTS X:Ultra Audio, Acer Purified, Acer TrueHarmony - mang lại trải nghiệm giải trí chân thật.<br>
+                        Bàn phím được tích hợp đèn - Thoả sức làm việc trong môi trường thiếu sáng</p>
+                    <span class="detail_soLuong">Số lượng: <input type="number" min="1" placeholder="1" tail></span>
+                    <br>
+                    <button class="btn_product add_cart">THÊM GIỎ HÀNG</button>
+                    <button class="btn_product  buy_now">Mua Ngay</button>
+                </div><!-- nội dung-->
             </div>
             <!--menu-->
 
@@ -394,6 +420,7 @@
             </div>
         </div>
     </footer>
+    
     <script>
         var prevScrollpos = window.pageYOffset;
         var header = document.getElementById("header");
@@ -407,7 +434,26 @@
             }
             prevScrollpos = currentScrollPos;
         }
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+         });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+            swiper: swiper,
+            },
+        });
     </script>
+
 
 
 </body>
