@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     list-style: none;
 }
@@ -23,6 +25,11 @@ body{
     text-align: center;
     top: 0;
     transition: transform 0.45s ease;
+}
+
+/* sơn: thêm chỗ này để ảnh không bị méo */
+img{
+    object-fit: cover; 
 }
 
 .logo h3{
@@ -264,7 +271,7 @@ input.menu-input-search:not(:placeholder-shown) {
     padding-left: 10px;
     padding-right: 40px;
 }
-sale-card-container-2 .sp-card a h4{
+.sale-card-container-2 .sp-card a h4{
     width: fit-content;
 }
 .sale-container-3{
@@ -505,14 +512,16 @@ sale-card-container-2 .sp-card a h4{
     cursor: pointer;
 }
 
-.footer-contact .footer-img, .footer-social .footer-img {
+.footer-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-.footer-contact .footer-img a img, .footer-social .footer-img a img {
-    width: 70px;
+.footer-img{
+    height: 50px;
+    width: auto;
+    aspect-ratio: 1/1;
 }
 
 .footer-img{
@@ -524,8 +533,17 @@ sale-card-container-2 .sp-card a h4{
 .footer-img span {
     border: 1px solid white;
     padding: 4px;
+}
+.footer-img img{
+    width: 100px;
+    height: 50px;
     border-radius: 10px;
-    width: max-content;
+    background-size: cover;
+    background: white;
+}
+.footer-img span {
+    border-radius: 10px;
+    width: fit-content;
     margin: auto;
 }
 

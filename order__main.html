@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>order</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script
-    src="https://kit.fontawesome.com/6dff643abc.js"
-    crossorigin="anonymous"
-    ></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="assets/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6dff643abc.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="assets/img/header/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/order__main.css">
     <link rel="stylesheet" href="assets/css/order__reponsive.css">
 </head>
+
 <body>
     <header class=" d-none d-md-flex menu" id="header">
         <div class="logo">
@@ -96,184 +98,175 @@
 
     <div class="cart__layout"> <!--lop tong the-->
         <div class="cart__wrapper"> <!--lop  chua noi dung-->
-            <div class="container-fluid"> <!--noi dung-->
-                <h1 class="tagh1">GIỎ HÀNG CỦA BẠN</h1>
-                <P>
-                    <b style="color:red;">
-                        Liên hệ nhân viên trước khi chuyển tiền mua hàng.
-                        <br>
-                        Để đặt hàng
-                    </b>
-                    , quý khách vui lòng kiểm tra sản phẩm, số lượng, giá, màu sắc và điền các thông tin dưới đây:
-                </P>
-                <hr>
-                <!-- -----------------------------cac san pham----------------------- -->
-                <div class="things">
-                    <!-- ------------------san pham 1------------------------- -->
-                    <div class="thing__item">
-                        <div class="thing__item--img">
-                            <img src="assets/img/order/item1.jpg" alt="">
-                        </div>
-                        <div class="thing__item--content">
-                            <a href="#" class="taga">
-                                Laptop Lenovo LOQ 15IRX9 83DV00D5VN 
-                                (Intel Core i7-13650HX |RTX 4050 | 16GB | 512GB | 15.6 inch FHD | Win 11 | Xám)
-                            </a>
-                            <p style="color: red;">Mã sản phẩm: NBLN0860</p>
-                            <p>Bảo hành: 24 tháng, Bảo Hành Chính Hãng Lenovo</p>
-                        </div>
-                        <div class="thing__item--price">
-                            <span style="color: #999; text-decoration: line-through;">32.000.000đ</span><br>
-                            <span>28.000.000đ</span><br>
-                            <input type="hidden" value="28000000" id="price-1">
-                            <b style="color:red;">Tổng: </b>
-                            <b style="color:red;" id="payment1"></b>
-                            <div class="changenumber">
-                                <button id="change__decrease-1" class="change__button"><b>-</b></button>
-                                <input type="text" value="1" id="quantity-1">
-                                <button id="change__increase-1" class="change__button"><b>+</b></button>
-                            </div>
-                        </div>
+            <h1 class="tagh1">GIỎ HÀNG CỦA BẠN</h1>
+            <P>
+                <b style="color:red;">
+                    Liên hệ nhân viên trước khi chuyển tiền mua hàng.
+                    <br>
+                    Để đặt hàng
+                </b>
+                , quý khách vui lòng kiểm tra sản phẩm, số lượng, giá, màu sắc và điền các thông tin dưới đây:
+            </P>
+            <hr>
+            <!-- -----------------------------cac san pham----------------------- -->
+            <div class="things">
+                <!-- ------------------san pham 1------------------------- -->
+                <div class="thing__item">
+                    <div class="thing__item--img">
+                        <img src="assets/img/order/item1.jpg" alt="">
                     </div>
-                    <!-- --------------------------------------------------------- -->
-                    <hr>
-                    <!-- -------------------------san pham 2---------------------- -->
-                    <div class="thing__item">
-                        <div class="thing__item--img">
-                            <img src="assets/img/order/item2.jpg" alt="">
-                        </div>
-                        <div class="thing__item--content">
-                            <a href="#" class="taga">
-                                VGA Gigabyte RTX 4060 Windforce OC 8GB (N4060WF2OC_8GD)
-                            </a>
-                            <p style="color: red;">Mã sản phẩm: VGGI0317</p>
-                            <p>Bảo hành: 36 tháng</p>
-                        </div>
-                        <div class="thing__item--price">
-                            <span style="color: #999; text-decoration: line-through;">11.999.000đ</span><br>
-                            <span >7.999.000đ</span><br>
-                            <input type="hidden" value="7999000" id="price-2">
-                            <b style="color:red;">Tổng: </b>
-                            <b style="color:red;" id="payment2"></b>
-                            <div class="changenumber">
-                                <button id="change__decrease-2" class="change__button"><b>-</b></button>
-                                <input type="text" value="1" id="quantity-2">
-                                <button id="change__increase-2" class="change__button"><b>+</b></button>
-                            </div>
-                        </div>
+                    <div class="thing__item--content">
+                        <a href="#" class="taga">
+                            Laptop Lenovo LOQ 15IRX9 83DV00D5VN
+                            (Intel Core i7-13650HX |RTX 4050 | 16GB | 512GB | 15.6 inch FHD | Win 11 | Xám)
+                        </a>
+                        <p style="color: red;">Mã sản phẩm: NBLN0860</p>
+                        <p>Bảo hành: 24 tháng, Bảo Hành Chính Hãng Lenovo</p>
                     </div>
-                    <!-- --------------------------------------------------------- -->
-                    <hr>
-                    <!-- -------------------------san pham 3---------------------- -->
-                    <div class="thing__item">
-                        <div class="thing__item--img">
-                            <img src="assets/img/order/item3.jpg" alt="">
+                    <div class="thing__item--price">
+                        <span style="color: #999; text-decoration: line-through;">32.000.000 ₫</span><br>
+                        <span>28.000.000 ₫</span><br>
+                        <input type="hidden" value="28000000" id="price-1">
+                        <b style="color:red;">Tổng: <span id="payment1"></span></b>
+                        <div class="changenumber">
+                            <button id="change__decrease-1" class="change__button"><b>-</b></button>
+                            <input type="text" value="1" id="quantity-1">
+                            <button id="change__increase-1" class="change__button"><b>+</b></button>
                         </div>
-                        <div class="thing__item--content">
-                            <a href="#" class="taga">
-                                Màn Hình Gaming UltraWide SAMSUNG Odyssey G5 
-                                LC34G55TWWEXXV (34.0 inch - WQHD - 165Hz - VA - 1ms - FreeSync - HDR10 - Curved)
-                            </a>
-                            <p style="color: red;">Mã sản phẩm: NBLN0860</p>
-                            <p>Bảo hành: 24 tháng</p>
-                        </div>
-                        <div class="thing__item--price">
-                            <span style="color: #999; text-decoration: line-through;">9.999.000đ</span><br>
-                            <span >7.389.000đ</span><br>
-                            <input type="hidden" value="7389000" id="price-3">
-                            <b style="color:red;">Tổng: </b>
-                            <b style="color:red;" id="payment3"></b>
-                            <div class="changenumber">
-                                <button id="change__decrease-3" class="change__button"><b>-</b></button>
-                                <input type="text" value="1" id="quantity-3">
-                                <button id="change__increase-3" class="change__button"><b>+</b></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- --------------------------------------------------------- -->
-                </div>
-                <!-- ------------------------------------------------------------------------------ -->
-                <hr>
-                <!-- --------------------------------------thanh toan------------------------------------ -->
-                <div class="total">
-                    <div class="total__voucher">
-                        <p style="font-weight: bolder; color: red;">Mã giảm giá</p>
-                        <input type="text" placeholder="helloworld123">
-                        <button><b>Áp dụng</b></button>
-                    </div>
-                    <div class="total__price">
-                        <span>Phí vận  chuyển: 0đ</span><br>
-                        <span>Phí dịch vụ: 0đ</span><br>
-                        <b style="color: red;">Tổng cộng: </b>
-                        <b style="color: red;" class="totalPayment"></b>
-                        <br>
-                        <p>Giảm giá: <span id="voucher"></span></p><br>
-                        <b style="color: red;">Thanh toán: </b>
-                        <b style="color: red;" class="totalPayment"></b>
                     </div>
                 </div>
-                <!-- ------------------------------------------------------------------------------------- -->
+                <!-- --------------------------------------------------------- -->
                 <hr>
-                <div class="payments">
-                    <button class="btn btn-primary button__left"><b>Đặt hàng</b></button>
-                    <button class="btn btn-warning button__right"><b>Mua trả góp</b></button>
+                <!-- -------------------------san pham 2---------------------- -->
+                <div class="thing__item">
+                    <div class="thing__item--img">
+                        <img src="assets/img/order/item2.jpg" alt="">
+                    </div>
+                    <div class="thing__item--content">
+                        <a href="#" class="taga">
+                            VGA Gigabyte RTX 4060 Windforce OC 8GB (N4060WF2OC_8GD)
+                        </a>
+                        <p style="color: red;">Mã sản phẩm: VGGI0317</p>
+                        <p>Bảo hành: 36 tháng</p>
+                    </div>
+                    <div class="thing__item--price">
+                        <span style="color: #999; text-decoration: line-through;">11.999.000 ₫</span><br>
+                        <span>7.999.000 ₫</span><br>
+                        <input type="hidden" value="7999000" id="price-2">
+                        <b style="color:red;">Tổng: <span id="payment2"></span></b>
+                        <div class="changenumber">
+                            <button id="change__decrease-2" class="change__button"><b>-</b></button>
+                            <input type="text" value="1" id="quantity-2">
+                            <button id="change__increase-2" class="change__button"><b>+</b></button>
+                        </div>
+                    </div>
                 </div>
+                <!-- --------------------------------------------------------- -->
+                <hr>
+                <!-- -------------------------san pham 3---------------------- -->
+                <div class="thing__item">
+                    <div class="thing__item--img">
+                        <img src="assets/img/order/item3.jpg" alt="">
+                    </div>
+                    <div class="thing__item--content">
+                        <a href="#" class="taga">
+                            Màn Hình Gaming UltraWide SAMSUNG Odyssey G5
+                            LC34G55TWWEXXV (34.0 inch - WQHD - 165Hz - VA - 1ms - FreeSync - HDR10 - Curved)
+                        </a>
+                        <p style="color: red;">Mã sản phẩm: NBLN0860</p>
+                        <p>Bảo hành: 24 tháng</p>
+                    </div>
+                    <div class="thing__item--price">
+                        <span style="color: #999; text-decoration: line-through;">9.999.000 ₫</span><br>
+                        <span>7.389.000 ₫</span><br>
+                        <input type="hidden" value="7389000" id="price-3">
+                        <b style="color:red;">Tổng: <span id="payment3"></span></b>
+                        <div class="changenumber">
+                            <button id="change__decrease-3" class="change__button"><b>-</b></button>
+                            <input type="text" value="1" id="quantity-3">
+                            <button id="change__increase-3" class="change__button"><b>+</b></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------- -->
+            </div>
+            <!-- ------------------------------------------------------------------------------ -->
+            <hr>
+            <!-- --------------------------------------thanh toan------------------------------------ -->
+            <div class="total">
+                <div class="total__voucher">
+                    <p style="font-weight: bolder; color: red;">Mã giảm giá</p>
+                    <input id="voucher__code" type="text" placeholder="vd: thaytrungdeptrai123" value="">
+                    <button id="voucher__action"><b>Áp dụng</b></button>
+                </div>
+                <div class="total__price">
+                    <span>Phí vận chuyển: 0 ₫</span><br>
+                    <span>Phí dịch vụ: 0 ₫</span><br>
+                    <b style="color: red;">Tổng cộng: <span id="totalPrice"></span></b>
+                    <p>Giảm giá: <span id="voucher__discount"></span></p>
+                    <b style="color: red;">Thanh toán: <span id="totalPayment"></span></b>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------------------------------- -->
+            <hr>
+            <div class="payments">
+                <button class="btn btn-primary button__left"><b>Đặt hàng</b></button>
+                <button class="btn btn-warning button__right"><b>Mua trả góp</b></button>
             </div>
         </div>
 
-        <div class="cart__wrapper" style="margin-top: 10vh;">
-            <div class="container-fluid">
-                <h1 class="tagh1">ĐẶT HÀNG</h1>
-                <h2 class="tagh2">1. Thông tin khách hàng</h2>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="gender" id="gender__male">
-                    <label for="gender__male" class="form-check-label">Anh</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="gender" id="gender__female">
-                    <label for="gender__female" class="form-check-label">Chị</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form__item form-control" placeholder="Họ và tên">
-                    <input type="mail" class="form__item form-control" placeholder="Email">
-                    <input type="phone" class="form__item form-control" placeholder="Số điện thoại">
-                    <select class="form__item form-select" name="city" id="city">
-                        <option value="0">--Chọn Tỉnh/TP--</option>
-                        <option value="1">TP. Hồ Chí Minh</option>
-                        <option value="2">TP. Hà Nội</option>
-                        <option value="3">TP. Đà Nẵng</option>
-                    </select>
-                    <input type="text" class="form__item form-control" placeholder="Địa chỉ">
-                    <input type="text" class="form__item form-control" placeholder="Ghi chú">
-                </div>
-                <h2 class="tagh2">2. Hình thức thanh toán</h2>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="payment__methods" id="payment__method1">
-                    <label for="payment__method1">COD</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="payment__methods" id="payment__method2">
-                    <label for="payment__method2">Chuyển khoản</label>
-                </div>
-                <h2 class="tagh2">3. Hình thức vận chuyển</h2>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="trans__methods" id="trans__method1">
-                    <label for="trans__method1">Giao hàng tiết kiệm</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="trans__methods" id="trans__method2">
-                    <label for="trans__method2">Giao hàng nhanh</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="trans__methods" id="trans__method3">
-                    <label for="trans__method3">Giao hàng hỏa tốc</label>
-                </div>
-                <div class="butsubmit">
-                    <button class="btn btn-primary button__submit">GỬI ĐƠN HÀNG</button>
-                </div>
+        <div class="cart__wrapper">
+            <h1 class="tagh1">ĐẶT HÀNG</h1>
+            <h2 class="tagh2">1. Thông tin khách hàng</h2>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="gender" id="gender__male">
+                <label for="gender__male" class="form-check-label">Anh</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="gender" id="gender__female">
+                <label for="gender__female" class="form-check-label">Chị</label>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form__item form-control" placeholder="Họ và tên">
+                <input type="mail" class="form__item form-control" placeholder="Email">
+                <input type="phone" class="form__item form-control" placeholder="Số điện thoại">
+                <select class="form__item form-select" name="city" id="city">
+                    <option value="0">--Chọn Tỉnh/TP--</option>
+                    <option value="1">TP. Hồ Chí Minh</option>
+                    <option value="2">TP. Hà Nội</option>
+                    <option value="3">TP. Đà Nẵng</option>
+                </select>
+                <input type="text" class="form__item form-control" placeholder="Địa chỉ">
+                <input type="text" class="form__item form-control" placeholder="Ghi chú">
+            </div>
+            <h2 class="tagh2">2. Hình thức thanh toán</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="payment__methods" id="payment__method1">
+                <label for="payment__method1">COD</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="payment__methods" id="payment__method2">
+                <label for="payment__method2">Chuyển khoản</label>
+            </div>
+            <h2 class="tagh2">3. Hình thức vận chuyển</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="trans__methods" id="trans__method1">
+                <label for="trans__method1">Giao hàng tiết kiệm</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="trans__methods" id="trans__method2">
+                <label for="trans__method2">Giao hàng nhanh</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="trans__methods" id="trans__method3">
+                <label for="trans__method3">Giao hàng hỏa tốc</label>
+            </div>
+            <div class="butsubmit">
+                <button class="btn btn-primary button__submit">GỬI ĐƠN HÀNG</button>
             </div>
         </div>
     </div>
+
     <div class="footer-top">
         <div class="footer__left">
             <p>KẾT NỐI VỚI CHÚNG TÔI</p>
@@ -371,10 +364,13 @@
                 <h4>Chứng nhận.</h4>
                 <div class="footer-img">
                     <span><a href="#"><img src="assets/img/footer/dmca_icon_8fc6622bd5.svg" alt=""></a></span>
-                    <span><a href="#"><img  src="assets/img/footer/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg" alt=""></a></span>
-                    <span><a href="#"><img src="assets/img/footer/thuong_hieu_manh_2013_icon_b56f772475.svg"  alt=""></a></span>
+                    <span><a href="#"><img
+                                src="assets/img/footer/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg"
+                                alt=""></a></span>
+                    <span><a href="#"><img src="assets/img/footer/thuong_hieu_manh_2013_icon_b56f772475.svg"
+                                alt=""></a></span>
                     <a href="#"><img src="assets/img/footer/noi_khong_voi_hang_gia_icon_e16037d9cb.svg" alt=""></a>
-                    <a href="#" ><img src="assets/img/footer/da_thong_bao_bo_cong_thuong_icon_64785fb3f7.svg" alt=""></a>
+                    <a href="#"><img src="assets/img/footer/da_thong_bao_bo_cong_thuong_icon_64785fb3f7.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -401,7 +397,17 @@
         </div>
     </footer>
 
+    <div id="footer-1">
+        <p>MỜI BẠN NHẬP EMAIL ĐỂ NHÂN KHUYẾN MÃI</p>
+        <div class="footer__voucher">
+            <input class="form-check-input" type="email" placeholder="Nhập email vào">
+            <button class="btn btn-warning">NHẬN MÃ</button>
+        </div>
+    </div>
+
+
     <script src="assets/js/order__number.js"></script>
     <script src="assets/js/order__price.js"></script>
 </body>
+
 </html>
