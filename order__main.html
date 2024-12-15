@@ -125,8 +125,7 @@
                         <span style="color: #999; text-decoration: line-through;">32.000.000đ</span><br>
                         <span>28.000.000đ</span><br>
                         <input type="hidden" value="28000000" id="price-1">
-                        <b style="color:red;">Tổng: </b>
-                        <b style="color:red;" id="payment1"></b>
+                        <b style="color:red;">Tổng: <span id="payment1"></span></b>
                         <div class="changenumber">
                             <button id="change__decrease-1" class="change__button"><b>-</b></button>
                             <input type="text" value="1" id="quantity-1">
@@ -152,8 +151,7 @@
                         <span style="color: #999; text-decoration: line-through;">11.999.000đ</span><br>
                         <span >7.999.000đ</span><br>
                         <input type="hidden" value="7999000" id="price-2">
-                        <b style="color:red;">Tổng: </b>
-                        <b style="color:red;" id="payment2"></b>
+                        <b style="color:red;">Tổng: <span id="payment2"></span></b>
                         <div class="changenumber">
                             <button id="change__decrease-2" class="change__button"><b>-</b></button>
                             <input type="text" value="1" id="quantity-2">
@@ -180,8 +178,7 @@
                         <span style="color: #999; text-decoration: line-through;">9.999.000đ</span><br>
                         <span >7.389.000đ</span><br>
                         <input type="hidden" value="7389000" id="price-3">
-                        <b style="color:red;">Tổng: </b>
-                        <b style="color:red;" id="payment3"></b>
+                        <b style="color:red;">Tổng: <span id="payment3"></span></b>
                         <div class="changenumber">
                             <button id="change__decrease-3" class="change__button"><b>-</b></button>
                             <input type="text" value="1" id="quantity-3">
@@ -197,18 +194,15 @@
             <div class="total">
                 <div class="total__voucher">
                     <p style="font-weight: bolder; color: red;">Mã giảm giá</p>
-                    <input type="text" placeholder="helloworld123">
-                    <button><b>Áp dụng</b></button>
+                    <input id="voucher__code" type="text" placeholder="vd: helloworld123" value="">
+                    <button id="voucher__action"><b>Áp dụng</b></button>
                 </div>
                 <div class="total__price">
                     <span>Phí vận  chuyển: 0đ</span><br>
                     <span>Phí dịch vụ: 0đ</span><br>
-                    <b style="color: red;">Tổng cộng: </b>
-                    <b style="color: red;" class="totalPayment"></b>
-                    <br>
-                    <p>Giảm giá: <span id="voucher"></span></p><br>
-                    <b style="color: red;">Thanh toán: </b>
-                    <b style="color: red;" class="totalPayment"></b>
+                    <b style="color: red;">Tổng cộng: <span id="totalPrice"></span></b>
+                    <p>Giảm giá: <span id="voucher__discount"></span></p>
+                    <b style="color: red;">Thanh toán: <span id="totalPayment"></span></b>
                 </div>
             </div>
             <!-- ------------------------------------------------------------------------------------- -->
@@ -270,23 +264,13 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="footer__left">
-            <p>KẾT NỐI VỚI CHÚNG TÔI</p>
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-            </ul>
+    <div id="footer-1">
+        <p>MỜI BẠN NHẬP EMAIL ĐỂ NHÂN KHUYẾN MÃI</p>
+        <div class="footer__voucher">
+            <input class="form-check-input" type="email" placeholder="Nhập email vào">
+            <button class="btn btn-warning">NHẬN MÃ</button>
         </div>
-        <div class="footer__right">
-            <p>MỜI BẠN NHẬP EMAIL ĐỂ NHÂN KHUYẾN MÃI</p>
-            <div class="footer__right--voucher">
-                <input class="form-check-input" type="email" placeholder="Nhập email vào">
-                <button class="btn btn-warning">NHẬN MÃ</button>
-            </div>
-        </div>
-    </footer>
+    </div>
 
     <script src="assets/js/order__number.js"></script>
     <script src="assets/js/order__price.js"></script>

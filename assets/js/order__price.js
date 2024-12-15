@@ -25,19 +25,32 @@ $(document).ready( function(){
             style: "currency",
             currency: "VND"
         })
+        
         $('#payment1').html(vnd.format(payment1));
         $('#payment2').html(vnd.format(payment2));
         $('#payment3').html(vnd.format(payment3));
+        
+        var totalPrice = payment1 + payment2 + payment3;
+        
+        var voucherCode = String($('#voucher__code').val());
+        var discount = 0;
 
-        var totalPayment = payment1 + payment2 + payment3;
-        $('.totalPayment').html(vnd.format(totalPayment));
+        if(voucherCode == 'helloworld123') discount = 900000;
+        else discount = 0;
+
+        $('#voucher__discount').html(vnd.format(discount));
+        console.log("#voucher__code");
+        console.log(voucherCode);
+
+        $('#totalPrice').html(vnd.format(totalPrice));
+        $('#totalPayment').html(vnd.format(totalPrice - discount));
     }
     
     $('#quantity-1, #quantity-2, #quantity-3').on('input', function(){
         updatePayment();
     });
     
-    $('button[id^="change__"]').on('click', function(){
+    $('button[id^="change__"], #voucher__action').on('click', function(){
         updatePayment();
     });
 
