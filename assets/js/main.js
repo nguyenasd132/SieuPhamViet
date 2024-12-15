@@ -18,7 +18,34 @@ setInterval(() => {
 }, 3000);
 
 showCurrentImage();
-
+const gridSwiper2 = new Swiper(".gridSlide-2", {
+    grid: {
+        rows: 1,
+    },
+    spaceBetween: 0,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+    },
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            rows: 1,
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        }
+    }
+});
 var swiper_phu = new Swiper(".SwiperPhu", {
     loop: true,
     autoplay: {
@@ -103,38 +130,7 @@ const gridSwiper = new Swiper(".gridSlide", {
     }
 });
 
-const gridSwiper2 = new Swiper(".gridSlide-2", {
-    grid: {
-        rows: 1,
-    },
-    spaceBetween: 0,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true
-    },
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-            rows: 1,
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
-        }
-    }
-});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
