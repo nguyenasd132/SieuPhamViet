@@ -8,13 +8,9 @@ window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         header2.style.transform = "translateY(0)";
-        sidebar.style.transform = "translateY(0px)";
-        body.style.transform = "translateY(-30px)";
 
     } else {
         header2.style.transform = "translateY(-64px)";
-        sidebar.style.transform = "translateY(-48px)";
-        body.style.transform = "translateY(-64px)";
     }
     prevScrollpos = currentScrollPos;
 }
@@ -25,7 +21,7 @@ let soSP = 8;
 let chieucao = containerSP.offsetHeight;
 let chieucao2 = document.querySelector('.danhMucItem .sale-container-1 .sp-card');
 let footer = document.getElementById("footer");
-console.log(chieucao2.offsetHeight);
+let container = document.querySelector('.danhMucItem .sale-container-1 .sale-slide-show');
 let k = 0;
 
 function loadmore(){
@@ -38,10 +34,10 @@ function loadmore(){
     soSP += 4;
     containerSP.style.height = chieucao3 + "px";
     footer.style.marginTop = 412*k + "px";
-    xemthem.style.top = 412*(k+1) + "px";
+    xemthem.style.top = 50 + 412*(k+2) + "px";
+    container.style.height = 812 + 412*k + "px";
 
-    
-    if( soSP >= tongSP.length - 2){
+    if( tongSP.length <= soSP ){
         xemthem.style.display = 'none';
     }
 

@@ -284,6 +284,10 @@ sale-card-container-2 .sp-card a h4{
     height: 400px;
     width: 1100px;
 }
+.sale-container-3 .sale-card-container-2 .sp-card{
+    border: none;
+    scale: 0.9;
+}
 .sale-slide-show{
     position: relative;
     height: 400px;
@@ -866,6 +870,8 @@ sale-card-container-2 .sp-card a h4{
 .danhMucItem .sale-container-1 .sale-slide-show{
     display: flex;
     flex-wrap: wrap;
+    height: 812px;
+    overflow-y: hidden;
 }
 .danhMucItem .sale-container-1 .sale-slide-show .sp-card{
     display: none;
@@ -898,7 +904,7 @@ sale-card-container-2 .sp-card a h4{
     display: inline-block;
     background: white;
     top: 880px;
-    left: 520px;
+    transform: translateX(-35%);
     z-index: 10001;
     border: 2px solid #ffa600;
     color: #007bff;
@@ -922,7 +928,6 @@ sale-card-container-2 .sp-card a h4{
     position: relative;
     top: 80px;
     margin-bottom: 50px;
-    border: black 3px solid;
     padding: 15px;
 }
 
