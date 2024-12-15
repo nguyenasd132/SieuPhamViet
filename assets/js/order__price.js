@@ -35,7 +35,7 @@ $(document).ready( function(){
         var voucherCode = String($('#voucher__code').val());
         var discount = 0;
 
-        if(voucherCode == 'helloworld123') discount = 900000;
+        if(voucherCode == 'thaytrungdeptrai123') discount = totalPrice*0.9;
         else discount = 0;
 
         $('#voucher__discount').html(vnd.format(discount));
