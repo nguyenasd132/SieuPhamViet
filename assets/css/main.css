@@ -508,11 +508,17 @@ sale-card-container-2 .sp-card a h4{
 .footer-contact .footer-img, .footer-social .footer-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 10px;
 }
 
 .footer-contact .footer-img a img, .footer-social .footer-img a img {
     width: 70px;
+}
+
+.footer-img{
+    width: auto;
+    height: 50px;
+    aspect-ratio: 1/1;
 }
 
 .footer-img span {
@@ -558,6 +564,9 @@ sale-card-container-2 .sp-card a h4{
     font-size: 30px;
     padding-right: 15px;
 }
+.footer-social .footer-icon a i:hover{
+    color: #0021fc;
+}
 @media screen and (min-width : 1024px){
 
 }
@@ -570,15 +579,13 @@ sale-card-container-2 .sp-card a h4{
     }
     .logo img{
         width:auto;
-        left: 150px;
+        left: 30px;
     }
     .logo h1{
-        font-size: 20px;
-        margin-left: -10px;
-        padding: 10px;
+        display: none;
     }
     .nav{
-        left: 230px;
+        left: 130px;
     }
     .menu-container {
         display: grid;
@@ -587,7 +594,7 @@ sale-card-container-2 .sp-card a h4{
     }
     .menu-search {
         width: 30%;
-        left: 380px;
+        left: 280px;
         top: 12px;
     }
     .menu-search span {
@@ -632,7 +639,7 @@ sale-card-container-2 .sp-card a h4{
     }
     .list-menu li i {
         font-size: 2em;
-        margin-top: -10px;
+        margin-top: -5px;
     }
     .footer-social .footer-img {
         display: inline;
