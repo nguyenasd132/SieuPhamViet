@@ -299,10 +299,11 @@ input.menu-input-search:not(:placeholder-shown) {
 .changenumber{
     display:flex;
     margin-top: 5px;
+    justify-content: right;
+    text-align: right;
 }
 
 .change__button{
-    margin: auto;
     width: 30px;
     height: 30px;
     font-size: larger;
@@ -311,13 +312,14 @@ input.menu-input-search:not(:placeholder-shown) {
     background-color: #3684db;
     color: white;
     border-style: none;
+    padding: 0;
+    margin:0;
 }
 
 .change__button b{
     text-align: center;
-    margin: auto;
-    position: relative;
-    transform: translateY(-200%);
+    margin: 0;
+    padding: 0;
 }
 
 .changenumber input{
