@@ -32,7 +32,9 @@ $(document).ready( function(){
         var totalPayment = payment1 + payment2 + payment3;
         $('.totalPayment').html(vnd.format(totalPayment));
     }
-    
+    $('button[id^="change__"]').on('click', function () {
+        updatePayment();
+    });
     $('#quantity-1, #quantity-2, #quantity-3').on('input', function(){
         updatePayment();
     });
