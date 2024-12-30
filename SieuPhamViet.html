@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/img/header/logo.png" type="image/x-icon">
 </head>
 
-<body>
-    <header class=" d-none d-md-flex menu" id="header">
+<body id="top">
+    <header class="d-md-flex menu" id="header">
         <div class="logo">
             <a href="SieuPhamViet.html">
-                <h3 class="d-none d-lg-block">Siêu Phẩm Việt</h3>
+                <h3 class="d-none d-lg-block" id="tenweb">Siêu Phẩm Việt</h3>
+                <img src="assets/img/header/logo.png" alt="logo">
             </a>
-            <img src="assets/img/header/logo.png" alt="logo">
         </div>
         <div class="nav">
             <i class='bx bx-menu icon' style="color: white"></i>
@@ -25,28 +26,8 @@
             <div class="menu-container">
                 <div class="menu-child">
                     <a href="danhmucweb/pclapsan/Pcbuilt.html">
-                        <img src="assets/img/linkKienPC/pc-do-hoa-photoshop-pdc01dh-i78700-h310m-ram-16g-hdd-1tb-ssd-pcie-256g-gtx-1650_1718267833_250x250.png"
-                            alt="PC" width="80px">
+                        <img src="assets/img/linkKienPC/pc-do-hoa.png" alt="PC" width="80px">
                         <h4>PC ráp sẵn</h4>
-                    </a>
-                </div>
-                <div class="menu-child">
-                    <a href="danhmucweb/mainboard/mainboard.html">
-                        <img src="assets/img/linkKienPC/mainboard.png" alt="Mainboard" width="80px">
-                        <h4>Mainboard</h4>
-                    </a>
-                </div>
-                <div class="menu-child">
-                    <a href="danhmucweb/tannhiet/tan__nhiet.html">
-                    <a href="danhmucweb/vga/Vga.html">
-                        <img src="assets/img/linkKienPC/vga.png" alt="VGA" width="80px">
-                        <h4>VGA</h4>
-                    </a>
-                </div>
-                <div class="menu-child">
-                    <a href="danhmucweb/cpu/cpu.html">
-                        <img src="assets/img/linkKienPC/cpu.png" alt="CPU" width="80px">
-                        <h4>CPU</h4>
                     </a>
                 </div>
                 <div class="menu-child">
@@ -56,22 +37,45 @@
                     </a>
                 </div>
                 <div class="menu-child">
-                    <a href="danhmucweb/mainboard/mainboard.html">
+                        <a href="danhmucweb/vga/Vga.html">
+                            <img src="assets/img/linkKienPC/vga.png" alt="VGA" width="80px">
+                            <h4>VGA</h4>
+                        </a>
+                </div>
+                <div class="menu-child">
+                    <a href="danhmucweb/cpu/cpu.html">
+                        <img src="assets/img/linkKienPC/cpu.png" alt="CPU" width="80px">
+                        <h4>CPU</h4>
+                    </a>
+                </div>
+                <div class="menu-child">
+                    <a href="danhmucweb/Mainboard/mainboard.html">
+                        <img src="assets/img/linkKienPC/mainboard.png" alt="Mainboard" width="80px">
+                        <h4>Mainboard</h4>
+                    </a>
+                </div>
+                <div class="menu-child">
+                    <a href="danhmucweb/o_cung/o_cung.html">
                         <img src="assets/img/linkKienPC/o_cung.png" alt="Ổ Cứng" width="80px">
                         <h4>Ổ Cứng</h4>
                     </a>
                 </div>
                 <div class="menu-child">
                     <a href="danhmucweb/tannhiet/tan__nhiet.html">
-                    <a href="danhmucweb/tannhiet/">
                         <img src="assets/img/linkKienPC/tan_nhiet.png" alt="Tản Nhiệt" width="80px">
                         <h4>Tản Nhiệt</h4>
                     </a>
                 </div>
                 <div class="menu-child">
-                    <a href="danhmucweb/Ram/Ram.html">
+                    <a href="danhmucweb/vo_case/vo_case.html">
                         <img src="assets/img/linkKienPC/vo_case.png" alt="Vỏ Case" width="80px">
                         <h4>Vỏ Case</h4>
+                    </a>
+                </div>
+                <div class="menu-child">
+                    <a href="danhmucweb/buildPC/buildPC.html" class="menu-child">
+                        <img src="assets/img/linkKienPC/LZ8A8126_Final.webp" alt="PC" width="80px">
+                        <h4> Tự Build PC </h4>
                     </a>
                 </div>
             </div>
@@ -79,18 +83,23 @@
         <div class="menu-search">
             <input class="menu-input-search" type="text" placeholder="Tìm kiếm sản phầm bạn ưa thích"
                 spellcheck="false">
-            <span onclick=""><i class='bx bx-search'></i></span>
+            <span onclick="toggleSearchMenu()"> <i class='bx bx-search'></i> </span>
+            <button class="close" type="button" onclick="closeSearchMenu()"><i class='bx bx-x' style="font-size: 40px;"></i></button>
         </div>
         <div>
             <ul class="list-menu">
                 <li><a href="danhmucweb/datHang/order__main.html"><i class='bx bx-cart '></i><span>(9)</span></a></li>
-                <li><a href="danhmucweb/dangnhap/đăng nhập.html"><i class='bx bx-user-circle'></i>
-                    <span>Đăng Nhập</span></a>
+                <li><a href="danhmucweb/listweb/dangnhap.html"><i class='bx bx-user-circle'></i>
+                        <span>Đăng Nhập</span></a>
                 </li>
             </ul>
         </div>
     </header>
-    <div class="container headSlide">
+
+    <br>
+    <br>
+
+    <div class="container headSlide" id="quangcao">
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper SwiperChinh">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -179,9 +188,8 @@
         <div class=" container-fluid bg-ligh swiper gridSlide" style="margin-top: 0px">
             <div class="sale-card-container-2 container-fluid swiper-wrapper">
                 <div class="sp-card swiper-slide">
-                    <a href="#">
-                        <img src="assets/img/linkKienPC/pc-do-hoa-photoshop-pdc01dh-i78700-h310m-ram-16g-hdd-1tb-ssd-pcie-256g-gtx-1650_1718267833_250x250.png"
-                            alt="PC" width="80px">
+                    <a href="#pc">
+                        <img src="assets/img/linkKienPC/pc-do-hoa.png" alt="PC" width="80px">
                         <h4>PC ráp sẵn</h4>
                     </a>
                 </div>
@@ -198,44 +206,44 @@
                     </a>
                 </div>
                 <div class="sp-card swiper-slide">
-                    <a href="#">
+                    <a href="#main">
                         <img src="assets/img/sanpham/mainboard.1.png" alt="Mainboard" width="80px">
-                        <h4>Mainboard</h4>
+                        <h4>Main</h4>
                     </a>
                 </div>
                 <div class="sp-card swiper-slide">
-                    <a href="danhmucweb/Vga.html">
+                    <a href="#main">
                         <img src="assets/img/linkKienPC/vga.png" alt="VGA" width="80px">
                         <h4>VGA</h4>
                     </a>
                 </div>
                 <div class="sp-card swiper-slide">
-                    <a href="#">
+                    <a href="#ram">
                         <img src="assets/img/linkKienPC/vo_case.png" alt="Vỏ Case" width="80px">
                         <h4>Case</h4>
                     </a>
                 </div>
 
                 <div class="sp-card swiper-slide">
-                    <a href="#">
+                    <a href="#pc">
                         <img src="assets/img/linkKienPC/o_cung.png" alt="Ổ Cứng" width="80px">
                         <h4>Ổ Cứng</h4>
                     </a>
                 </div>
                 <div class="sp-card swiper-slide">
-                    <a href="danhmucweb/tannhiet/tan__nhiet.html">
+                    <a href="#laptop">
                         <img src="assets/img/linkKienPC/tan_nhiet.png" alt="Tản Nhiệt" width="80px">
                         <h4>Tản Nhiệt</h4>
                     </a>
                 </div>
                 <div class="sp-card swiper-slide">
-                    <a href="danhmucweb/cpu/cpu.html">
+                    <a href="#ram">
                         <img src="assets/img/linkKienPC/cpu.png" alt="CPU" width="80px">
                         <h4>CPU</h4>
                     </a>
                 </div>
                 <div class="sp-card swiper-slide">
-                    <a href="#">
+                    <a href="#main">
                         <img src="assets/img/linkKienPC/nguon_may_tinh_cate_thumb_1cb5ef76ac.png" alt="Nguồn máy tính"
                             width="80px">
                         <h4>PSU</h4>
@@ -254,8 +262,9 @@
 
 
     <!--  Nguyên: Tạo khung sale, sản phẩm nổi bật, ... -->
-    <div class="sale-container-1 container text-info" id="laptop">
-        <h3> Săn Deal Máy tính - Laptop giờ giá sốc</h5>
+    <div class="sale-container-1 container " id="laptop">
+        <h3><a href="danhmucweb/pclapsan/Pcbuilt.html" style="text-decoration: none; color: white;"> Săn Deal Máy tính -
+                Laptop giờ giá sốc</a> </h5>
 
             <div class="sale-card-container container-fluid bg-light swiper spSwiper">
                 <!-- Nguyên: Tạo slideshow container để trưng bày sản phầm -->
@@ -310,7 +319,8 @@
                     <div class="sp-card swiper-slide">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="danhmucweb/Lap/Lenovo LOQ 15IAX9.html" class="sp-card-link" style="text-decoration: none">
+                        <a href="danhmucweb/Lap/Lenovo LOQ 15IAX9.html" class="sp-card-link"
+                            style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="assets/img/SP/SP2.png" alt="SP2" class="">
@@ -401,7 +411,8 @@
                     <div class="sp-card swiper-slide">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="danhmucweb/Lap/ASUS Vivobook 15.html" class="sp-card-link" style="text-decoration: none">
+                        <a href="danhmucweb/Lap/ASUS Vivobook 15.html" class="sp-card-link"
+                            style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="assets/img/SP/SP4.png" alt="SP4" class="">
@@ -417,7 +428,7 @@
                                     </li>
                                     <li>
                                         <i class='bx bx-memory-card'></i>
-                                        <p> RAM 16GB DDR4 với ổ cứng SSD M.2 NVMe PCIe 3.0 dung lượng 512GB </p>
+                                        <p> RAM 16GB DDR4, SSD M.2 NVMe PCIe 3.0 512GB </p>
                                     </li>
                                 </div>
                             </div>
@@ -486,7 +497,7 @@
                                 <span class="giaHientai"> 18.190.000đ </span> <br>
                                 <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 4.800.000đ </span>
                             </p>
-                            <h6 class="sp-card-title blue"> Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam
+                            <h6 class="sp-card-title blue"> MacBook Air M1 256GB 2020 I Chính hãng Apple
                             </h6>
 
                         </a>
@@ -540,8 +551,8 @@
     <br>
 
     <!--  Nguyên: Tạo khung trưng bày sản phẩm ... -->
-    <div class="sale-container-1 container text-info" id="ram">
-        <h3> Ram PC - Laptop</h3>
+    <div class="sale-container-1 container " id="ram">
+        <h3><a href="danhmucweb/Ram/Ram.html" style="text-decoration: none; color: white;"> Ram PC - Laptop </a> </h3>
 
         <div class="sale-card-container container-fluid bg-light swiper spSwiper">
             <!-- Nguyên: Tạo slideshow container để trưng bày sản phầm -->
@@ -550,7 +561,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-Ram/RAM-1%20ADATA%20Spectrix%20D50%20RGB%208GB-DDR4-3200MHz.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/Ram.1.png" alt="Ram.1" class="">
@@ -561,7 +572,7 @@
                                     <p> RGB 8GB-DDR4-3200MHz </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p>Dung lượng RAM: 8 GB (1 thanh 8 GB)</p>
                                 </li>
                                 <li>
@@ -597,7 +608,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-Ram/RAM-2%20Corsair%20Vengeance%20.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/Ram.2.png" alt="Ram.2" class="">
@@ -608,7 +619,7 @@
                                     <p> 8GB - DDR4 - 3200 MHz </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p>Dung lượng RAM: 8 GB</p>
                                 </li>
                                 <li>
@@ -644,7 +655,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-Ram/RAM-3%20CORSAIR%20Vengeance%20RGB%20RS.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/Ram.3.png" alt="Ram.3" class="">
@@ -655,7 +666,7 @@
                                     <p> RGB RS 8 GB-DDR4-3200 MHz </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p>Dung lượng RAM: 8 GB </p>
                                 </li>
                                 <li>
@@ -691,7 +702,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-Ram/RAM-5%20G.SKILL%20Trident%20Z.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/Ram.4.png" alt="Ram.4" class="">
@@ -702,7 +713,7 @@
                                     <p> 32 GB-DDR4-4000 MHz </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p>Dung lượng RAM: 32 GB </p>
                                 </li>
                                 <li>
@@ -738,7 +749,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-Ram/RAM%20G.SKILL%20Trident%20Z.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/Ram.5.png" alt="Ram.5" class="">
@@ -749,7 +760,7 @@
                                     <p> 32 GB-DDR4-3200 MHz (F4-3200C16D-32GTZ)</p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p>Dung lượng RAM: 32 GB </p>
                                 </li>
                                 <li>
@@ -788,11 +799,42 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
+    <br>
+    <div class="sale-container-3 container">
+        <div class=" container-fluid bg-ligh swiper gridSlide-2" style="margin-top: 0px">
+            <div class="sale-card-container-2 container-fluid swiper-wrapper">
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/quangCao/slide3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/quangCao/slide4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/quangCao/slide6.jpg" alt="">
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/quangCao/slide7.webp" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-scroll"></div>
+
+        </div>
+    </div>
 
     <br>
 
-    <div class="sale-container-1 container text-info">
-        <h3> Mainboard </h3>
+
+    <div class="sale-container-1 container " id="main">
+        <h3><a href="danhmucweb/Mainboard/mainboard.html" style="text-decoration: none; color: white;"> Mainboard </a>
+        </h3>
 
         <div class="sale-card-container container-fluid bg-light swiper spSwiper">
             <!-- Nguyên: Tạo slideshow container để trưng bày sản phầm -->
@@ -801,7 +843,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-Mainboard/Bo mạch chủ GIGABYTE X870E AORUS PRO ICE.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/mainboard.1.png" alt="MB.1" class="">
@@ -816,7 +858,7 @@
                                     <p> AMD Socket AM5 </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p> 4 x khe cắm DDR5 DIMM hỗ trợ bộ nhớ hệ thống lên đến 256 GB </p>
                                 </li>
                             </div>
@@ -847,7 +889,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-Mainboard/Bo mạch chủ GIGABYTE X870E AORUS PRO ICE.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/mainboard.2.png" alt="MB.2" class="">
@@ -862,7 +904,7 @@
                                     <p> Socket LGA1700 </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p>2 x khe cắm DDR4 DIMM hỗ trợ bộ nhớ hệ thống lên đến 64 GB</p>
                                 </li>
                             </div>
@@ -893,7 +935,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-Mainboard/Bo mạch chủ GIGABYTE X870E AORUS PRO ICE.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/mainboard.3.png" alt="MB.3" class="">
@@ -908,7 +950,7 @@
                                     <p>Socket LGA1851 </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p> 4 x khe cắm DDR5 DIMM hỗ trợ bộ nhớ hệ thống lên đến 256 GB</p>
                                 </li>
                             </div>
@@ -939,7 +981,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-Mainboard/Bo mạch chủ GIGABYTE X870E AORUS PRO ICE.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/mainboard.4.png" alt="MB.4" class="">
@@ -954,7 +996,7 @@
                                     <p> AMD Socket AM5 </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p> 4 x khe cắm DDR5 DIMM hỗ trợ bộ nhớ hệ thống lên đến 256 GB </p>
                                 </li>
                             </div>
@@ -985,7 +1027,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-Mainboard/Bo mạch chủ GIGABYTE X870E AORUS PRO ICE.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/mainboard.5.png" alt="MB.5" class="">
@@ -1000,7 +1042,7 @@
                                     <p> Socket AM4 </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p> 2x DDR4, Dung lượng bộ nhớ tối đa 64GB </p>
                                 </li>
                             </div>
@@ -1034,21 +1076,53 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
-
     <br>
 
+    
 
-    <div class="sale-container-1 container text-info">
-        <h3>PC Built Sẵn</h3>
+    <div class="sale-container-3 container">
+        <div class=" container-fluid bg-ligh swiper gridSlide-2" style="margin-top: 0px">
+            <div class="sale-card-container-2 container-fluid swiper-wrapper">
+            
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/quangCao/lol.jpg" alt="">
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/quangCao/epic.jpg" alt="">
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/quangCao/black.jpg" alt="">
+                    </a>
+                </div>
+                <div class="sp-card swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/quangCao/csgo.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-scroll"></div>
 
+        </div>
+    </div>
+    <br>
+
+    <div class="sale-container-1 container " id="pc">
+        <span style="display: flex;">
+            <h3><a href="danhmucweb/pclapsan/Pcbuilt.html" style="text-decoration: none; color: white;"> PC Built Sẵn</a></h3>
+        </span>
         <div class="sale-card-container container-fluid bg-light swiper spSwiper">
             <!-- Nguyên: Tạo slideshow container để trưng bày sản phầm -->
-            <div class="sale-slide-show swiper-wrapper">
+            <div class="sale-slide-show swiper-wrapper sameSize">
                 <!-- Nguyên: Tạo thẻ sản phẩm -->
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-PCB/PC Intel i7-14700F VGA RTX 4070Ti Super.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/pcbuilt.1.png" alt="PC.1" class="">
@@ -1056,22 +1130,22 @@
                             <div class="sp-info">
                                 <li>
                                     <i class='bx bx-chip'></i>
-                                    <p> Intel Core i7 14700F / Turbo up to 5.4GHz / 20 Nhân 28 Luồng / 33MB / LGA 1700 </p>
+                                    <p> Intel Core i7 14700F / Turbo up to 5.4GHz / 20 Nhân 28 Luồng / 33MB / LGA 1700</p>
                                 </li>
                                 <li>
                                     <i class='bx bxs-server'></i>
-                                    <p>ASUS ROG Strix Z790-A GAMING WIFI II DDR5</p>
+                                    <p>ASUS ROG Strix Z790-A</p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
-                                    <p> Corsair Vengeance RGB White 32GB (2x16GB) 5600 DDR5</p>
+                                    <i class='bx bx-data'></i>
+                                    <p> Corsair Vengeance RGB White 32GB</p>
                                 </li>
                             </div>
                         </div>
                         <!-- Vị trị các tag -->
                         <div class="tag-group">
                             <p class="tag">
-                                PC Built 
+                                PC Built
                             </p>
                             <p class="tag">
                                 RTX
@@ -1094,7 +1168,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-PCB/PC Intel i7-14700F VGA RTX 4070Ti Super.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/pcbuilt.2.png" alt="PC.2" class="">
@@ -1102,14 +1176,15 @@
                             <div class="sp-info">
                                 <li>
                                     <i class='bx bx-chip'></i>
-                                    <p> Intel Core i5 12400F / 2.5GHz Turbo 4.4GHz / 6 Nhân 12 Luồng / 18MB / LGA 1700 (TRAY) </p>
+                                    <p> Intel Core i5 12400F / 2.5GHz Turbo 4.4GHz / 6 Nhân 12 Luồng / 18MB / LGA 1700
+                                        (TRAY) </p>
                                 </li>
                                 <li>
                                     <i class='bx bxs-server'></i>
                                     <p>ASUS PRIME H610M-K D4-CSM</p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p>V-Color Skywalker Plus 1x8GB 3600 RGB Black DDR4</p>
                                 </li>
                             </div>
@@ -1140,7 +1215,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-PCB/PC Intel i7-14700F VGA RTX 4070Ti Super.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/pcbuilt.3.png" alt="PC.3" class="">
@@ -1148,14 +1223,15 @@
                             <div class="sp-info">
                                 <li>
                                     <i class='bx bx-chip'></i>
-                                    <p> Intel Core i7 14700F / Turbo up to 5.4GHz / 20 Nhân 28 Luồng / 33MB / LGA 1700 </p>
+                                    <p> Intel Core i7 14700F / Turbo up to 5.4GHz / 20 Nhân 28 Luồng / 33MB / LGA 1700
+                                    </p>
                                 </li>
                                 <li>
                                     <i class='bx bxs-server'></i>
                                     <p>ASUS Z790 AYW WIFI W DDR5 </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
+                                    <i class='bx bx-data'></i>
                                     <p> Kingston Fury Beast RGB 16GB (2x8GB) bus 5600 DDR5</p>
                                 </li>
                             </div>
@@ -1186,7 +1262,7 @@
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-PCB/PC Intel i7-14700F VGA RTX 4070Ti Super.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/pcbuilt.4.png" alt="PC.4" class="">
@@ -1194,15 +1270,16 @@
                             <div class="sp-info">
                                 <li>
                                     <i class='bx bx-chip'></i>
-                                    <p> Intel Core Ultra 7 265K / Turbo up to 5.5GHz / 20 Nhân 20 Luồng / 30MB / LGA 1851 </p>
+                                    <p> Intel Core Ultra 7 265K / Turbo up to 5.5GHz / 20 Nhân 20 Luồng / 30MB / LGA
+                                        1851 </p>
                                 </li>
                                 <li>
                                     <i class='bx bxs-server'></i>
                                     <p>ASUS ProArt Z890-CREATOR WIFI (DDR5) </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
-                                    <p> TeamGroup T-Force XTreem 2x16GB 8000Mhz Black DDR5 </p>
+                                    <i class='bx bx-data'></i>
+                                    <p> RAM 2x16GB 8000Mhz Black DDR5 </p>
                                 </li>
                             </div>
                         </div>
@@ -1225,14 +1302,14 @@
                             <span class="giaHientai"> 91.990.000₫ </span> <br>
                             <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 4.580.000 ₫ </span>
                         </p>
-                        <h6 class="sp-card-title blue"> PC Intel Core Ultra 7 </h6>
+                        <h6 class="sp-card-title blue"> PC AI Intel Core Ultra 7 265K / VGA INTEL ARC </h6>
 
                     </a>
                 </div>
                 <div class="sp-card swiper-slide">
                     <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                     <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                    <a href="#" class="sp-card-link" style="text-decoration: none">
+                    <a href="danhmucweb/CTSP-PCB/PC Intel i7-14700F VGA RTX 4070Ti Super.html" class="sp-card-link" style="text-decoration: none">
                         <div class="card-container">
                             <div class="sp-hinh-anh">
                                 <img src="assets/img/sanpham/pcbuilt.5.png" alt="PC.5" class="">
@@ -1240,15 +1317,16 @@
                             <div class="sp-info">
                                 <li>
                                     <i class='bx bx-chip'></i>
-                                    <p> Intel Core Ultra 9 285K / Turbo up to 5.7GHz / 24 Nhân 24 Luồng / 36MB / LGA 1851 </p>
+                                    <p> Intel Core Ultra 9 285K / Turbo up to 5.7GHz / 24 Nhân 24 Luồng / 36MB / LGA
+                                        1851 </p>
                                 </li>
                                 <li>
                                     <i class='bx bxs-server'></i>
                                     <p>ASUS ROG MAXIMUS Z890 EXTREME (DDR5) </p>
                                 </li>
                                 <li>
-                                    <i class='bx bx-data' ></i>
-                                    <p> Corsair Dominator Titanium Black 96GB (2x48GB) RGB 6600 DDR5</p>
+                                    <i class='bx bx-data'></i>
+                                    <p> Ram 96GB (2x48GB) RGB 6600 DDR5</p>
                                 </li>
                             </div>
                         </div>
@@ -1271,7 +1349,7 @@
                             <span class="giaHientai"> 160.000.000₫ </span> <br>
                             <span>Tiết kiệm hẳn: </span> <span class="giaDaGiam"> 7.220.000₫</span>
                         </p>
-                        <h6 class="sp-card-title blue"> PC Intel Core Ultra 9 </h6>
+                        <h6 class="sp-card-title blue"> PC AI Intel Core Ultra 9 / VGA INTEL ARC</h6>
                     </a>
                 </div>
             </div>
@@ -1280,11 +1358,17 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
+    <div id="scrollToTop">
+        <a id="btnbg" href="#top"> <i class='bx bxs-arrow-to-top'></i> </a>
+        <a type="submit" formaction="#" href="#top"> <i class='bx bxs-arrow-to-top'></i> </a>
+    </div>
+
+    <br>
+    <br>
 
 
 
-
-
+    <br>
     <footer>
         <div class="footer-container">
             <div class="footer-contact">
@@ -1295,7 +1379,7 @@
                 <div id="contact-collapse" class="collapse">
                     <p>Gọi Mua Hàng: <a href="#">1800.2097</a> </p>
                     <p>Khiếu nại: <a href="#">1800.1062</a></p>
-                    <p>Bảo hành: <a href="#">1900 232 464</a></p>
+                    <p>Bảo hành: <a href="#">1900.232.464</a></p>
                 </div>
 
                 <h4>Phương thức thanh toán.</h4>
@@ -1364,10 +1448,11 @@
                 <h4>Chứng nhận.</h4>
                 <div class="footer-img">
                     <a href="#"><img src="assets/img/footer/dmca_icon_8fc6622bd5.svg" alt=""></a>
-                    <a href="#"><img  src="assets/img/footer/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg" alt=""></a>
-                    <a href="#"><img src="assets/img/footer/thuong_hieu_manh_2013_icon_b56f772475.svg"  alt=""></a>
+                    <a href="#"><img src="assets/img/footer/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg"
+                            alt=""></a>
+                    <a href="#"><img src="assets/img/footer/thuong_hieu_manh_2013_icon_b56f772475.svg" alt=""></a>
                     <a href="#"><img src="assets/img/footer/noi_khong_voi_hang_gia_icon_e16037d9cb.svg" alt=""></a>
-                    <a href="#" ><img src="assets/img/footer/da_thong_bao_bo_cong_thuong_icon_64785fb3f7.svg" alt=""></a>
+                    <a href="#"><img src="assets/img/footer/da_thong_bao_bo_cong_thuong_icon_64785fb3f7.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -1393,8 +1478,9 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,15 +1,34 @@
 function validateForm() {
-    var text = document.getElementById("fullName").value.trim();
-    var password = document.getElementById("password").value.trim(); 
-    if (text === "" || password === "") {
-        alert("Vui lòng điền đầy đủ thông tin!"); 
+    var errorMessages = []; 
+    var fullName = document.getElementById("fullName").value.trim();
+    var password = document.getElementById("password").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var confirmPassword = document.getElementById("confirmPassword").value.trim();
+    if (fullName === "" || password === "" || email === "" || confirmPassword === "") {
+        alert("Vui lòng điền đầy đủ thông tin!");
         return false; 
     }
-    var textPattern = /^[a-zA-Z\s]{3,}$/;
-    if (!text.match(textPattern)) {
-        alert("Tên Không Hợp Lệ!"); 
+    if (fullName.length < 3) {
+        alert("Tên tài khoản phải có ít nhất 3 ký tự!");
         return false; 
     }
-    window.location.href = "SieuPhamViet.html"; 
+    if (password.length < 6) {
+        alert("Mật khẩu phải có ít nhất 6 ký tự.");
+        return false;
+    }
+    if (password !== confirmPassword) {
+        alert("Mật khẩu và xác nhận mật khẩu không khớp!");
+        return false;
+    }
+    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email) ) {
+        alert("Email không hợp lệ. Vui lòng nhập đúng định dạng.");
+        return false;
+    }
+    if (errorMessages.length > 0) {
+        document.getElementById("errorMessages").innerHTML = errorMessages.join("<br>");
+        return false; 
+    }
+    alert("Đăng ký thành công!");
+    window.location.href = "../../danhmucweb/listweb/dangnhap.html";
     return false;
 }

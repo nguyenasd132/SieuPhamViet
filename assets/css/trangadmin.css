@@ -1,18 +1,20 @@
 .allbox{
     height: 80%;
-    width: 100%;
     display: grid;
-    grid-template-columns: 15% 85%;
-    grid-template-rows: 5% 95% ;
+    grid-template-columns: 260px auto ;
 }
 .menu{
-    background-color: #F7F7F9;
+    background-color:white;
     padding-top: 100px;
-    width: 100%;
+    width:auto;
     border-color: 1px solid black;
     height: auto;
     color: black;
-    grid-row: 2/ span 3;
+    grid-row: 1/ span 2;
+}
+.menu ul{
+    position: fixed;
+    width: 260px;
 }
 .menu ul li{
     margin: 0px;
@@ -20,7 +22,6 @@
     padding: 20px 0px;
     width: 100%;
     padding-left: 10px;
-    height: 10pxs;
 }
 .menu ul li:hover{
     background-color: #EEEEEE;
@@ -54,7 +55,6 @@
     background: linear-gradient(90deg, rgb(12, 17, 229) 0%, rgb(10, 17, 246) 10%, rgb(15, 60, 241) 29%, rgb(18, 88, 238) 52%, rgba(54,132,219,1) 93%);
     width: 100%;
     height: 10% ;
-    position: fixed;
 }
 .navbarimg{
     width: 80px;
@@ -68,6 +68,7 @@
     grid-template-columns: 20% 80%;
 }
 .menu-search-cha{
+    width: 100%;
     padding-top: 20px;
 }
 .menu-search {
@@ -124,12 +125,9 @@
 }
 
 .danhsach{
-    padding-top: 3%;
-    grid-row: 2 /span 3 ;
     grid-column: 2 /span 3;
+    overflow-x: auto;
     background-color: #EEEEEE;
-    display: flex;
-    flex-direction: column;
 }
 
 .dulieu{
@@ -145,6 +143,8 @@
     background-color: #F7F7F9;
     display: grid;
     grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
 }
 .boxtext{
@@ -153,38 +153,38 @@
     padding-left: 20px;
 }
 .luotmua{
-    margin: 15px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 100px;
+    font-size: 130px;
+    height: 100%;
     background-color: #CCE7FF;
     border-radius: 10px;
 }
 .timkiem{
-    margin: 15px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 100px;
+    font-size: 130px;
+    height: 100%;
     background-color:#FFD2D1;
     border-radius: 10px;
 }
 .doanhthu{
-    margin: 15px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 100px;
+    font-size: 130px;
+    height: 100%;
     background-color:#B7F0D1;
     border-radius: 10px;
 }
 .truycap{
-    margin: 15px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 100px;
+    font-size: 130px;
+    height: 100%;
     background-color:#FFF1C4;
     border-radius: 10px;
 }
@@ -209,7 +209,7 @@
     border-top-left-radius: 20px;
 }
 .success{
-    border-radius: 15px;
+    border-radius: 8px;
     text-align: center;
     color: white;
     width: 30%;
@@ -217,7 +217,7 @@
     background-color: #23652E;
 }
 .thatbai{
-    border-radius: 15px;
+    border-radius: 8px;
     text-align: center;
     color: white;
     width: 30%;
@@ -225,7 +225,7 @@
     background-color:#BF3223;
 }
 .chothanhtoan{
-    border-radius: 15px;
+    border-radius: 8px;
     text-align: center;
     color: white;
     width: 30%;
@@ -238,68 +238,231 @@
     flex-direction: column;
 }
 .Chart{
-    width: 100%; 
-    padding-left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-@media (min-width: 660px) and (max-width: 1024px){
+.danhsachadmin{
+    margin: 0 7%;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns:25% 25% 25% ;
+    grid-template-rows: auto auto;
+    column-gap: 100px;
+    row-gap: 20px;
+    column-gap: 100px;
+}
+.adminso1{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 270px;
+    border-radius: 15px;
+    height: 100px;
+}
+.anhemlogo{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.anhemlogo i{
+    padding-top: 20px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.taskbar{
+    padding-top: 6px;
+    padding-left: 60px;
+    box-shadow: 0 2px 4px 0 rgba(158, 158, 158, 0), 0 2px 15px 0 rgba(0, 0, 0, 0.06);
+    height: 45px;
+}
+
+.admintext{
+    text-align: center;
+}
+@media (min-width: 501px) and (max-width: 640px){
+    .anhemlogo{
+        margin-left: -20px;
+    }
+    .success{
+        width: 60%;
+    }
+    .thatbai{
+        width: 60%;
+    }
+    .chothanhtoan{
+        width: 60%;
+    }
+    .danhsach{
+        width: 100%;
+    }
     .allbox{
-        grid-template-columns: 5% 95%;
-        grid-template-rows: 5% 95%;
+        grid-template-columns: 46px auto;
         height: 100%;
     }
     .mattieu{
         opacity: 0;
     }
     .dulieu{
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         column-gap: 20px;
         row-gap: 20px;
     }
     .menu ul{
+        width: 46px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
     }
     .menu ul li{
         width: 100%;
         height: 60px;
         padding-left: 20%;
     }
-    .Chart{
-        padding-left: 150px
+    .danhsachadmin{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 0;
+        column-gap: 10px;
+        padding-left: 50px;
+        width: 100%;
+    }
+    .adminso1{
+        width: 250px;
+    }
+    .navbar1{
+        height: 80px;
+    }
+    .navbar-p1{
+        grid-template-columns: 20% 80%;
+    }
+    .navbarimg{
+        margin-left: -10px;
+        padding-top: 10px;
+        width: 60px;
+        height: auto;
+    }
+    .menu-search{
+        width: 50%;
+    }
+    .adminso1{
+        font-size: 11px;
+        width: 80%;
+        grid-template-columns: 40% 60%;
+    }
+    .data1{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .luotmua{
+        width: 80%;
     }
 }
-@media (min-width:320px) and (max-width: 660px) {
+@media (min-width: 641px) and (max-width: 1024px){
+    .anhemlogo{
+        margin-left: -20px;
+    }
+    .success{
+        width: 60%;
+    }
+    .thatbai{
+        width: 60%;
+    }
+    .chothanhtoan{
+        width: 60%;
+    }
+    .allbox{
+        grid-template-columns: 46px auto;
+        height: 90%;
+    }
+    .mattieu{
+        opacity: 0;
+    }
+    .dulieu{
+        padding-left: 8%;
+        grid-template-columns: auto auto;
+            column-gap: 20px;
+        row-gap: 20px;
+    }
+    .menu ul{
+        width: 46px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu ul li{
+        width: 100%;
+        height: 60px;
+        padding-left: 20%;
+    }
+    .danhsachadmin{
+        display: grid;
+        grid-template-columns: auto  auto;
+        margin: 0 0;
+        column-gap: 1px;
+        padding-left: 50px;
+        width: 100%;
+    }
+    .adminso1{
+        width: 250px;
+    }
+    .menu-search{
+        width: 400px
+    }
+    .data1{
+        width: 70%;
+    }
+    .luotmua{
+        height: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .taskbar{
+        display: none;
+    }
+    .miniheader .taskbar{
+        top: 0px;
+        display: flex;
+    }
+    .danhsachadmin{
+        display: none;
+        height: 0px;
+    }
+    .adminso1{
+        display: none;
+    }
+    .anhemlogo{
+        padding-left: 0;
+    }
+    .anhemlogo i{
+        font-size: 30px;
+    }
     .mattieu{
         opacity: 0;
     }
     .allbox{
-        grid-template-columns: 10% 90%;
-        grid-template-rows: 5% 95%;
+        grid-template-columns: 40px auto;
         width: 100%;
-        height: 100%;
     }
     .danhsach{
-        padding-top: 40px;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     .menu{
         width: 100%;
     }
     .menu ul{
-        display: flex;
-        flex-direction: row;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 46px;
     }
     .menu ul li{
         height: 50px;
-        padding: 10px 0;
-        padding-left: 20%;
+        padding-left: 10px;
     }
     .navbar1{
         height: 80px;
@@ -309,7 +472,8 @@
     }
     .navbarimg{
         margin-left: -10px;
-        width: 80px;
+        padding-top: 10px;
+        width: 50px;
         height: auto;
     }
     .menu-search {
@@ -317,6 +481,7 @@
     }
     .Chart{
         padding-left: 0;
+        padding: 20px 0;
         width: 100%;
     }
     .dulieu{
@@ -327,7 +492,7 @@
         gap: 20px;
     }
     .data1{
-        width: 90%;
+        width: 80%;
         height: 100%;
     }
     .donhang{
@@ -355,87 +520,12 @@
     #minibar{
         font-size: smaller;
     }
-}
-@media screen (max-width:320px) {
-    .mattieu{
-        opacity: 0;
-    }
-    .allbox{
-        grid-template-columns: 10% 90%;
-        grid-template-rows: 5% 95%;
-        width: 100%;
-        height: 100%;
-    }
-    .danhsach{
-        padding-top: 40px;
-        width: 100%;
-        height: auto;
-    }
-    .menu{
-        width: 100%;
-    }
-    .menu ul{
+    .danhsachadmin{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .menu ul li{
-        height: 10px;
-        padding-bottom: 40px;
-    }
-    .navbar1{
-        height: 80px;
-    }
-    .navbar-p1{
-        grid-template-columns: 20% 80%;
-    }
-    .navbarimg{
-        margin-left: -10px;
-        width: 80px;
-        height: auto;
-    }
-    .menu-search {
-        width: 80%;
-    }
-    .Chart{
         width: 90%;
-        padding-left: 0;
     }
-    .dulieu{
+    .adminso1{
         width: 100%;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .data1{
-        width: 90%;
-        height: 100%;
-    }
-    .donhang{
-        margin: 0px 30px;
-        width: 80%;
-        height: 20%;
-    }
-    .cacdonhang{
-        width: 100%;
-        font-size: 10px;
-    }
-    .success{
-        width: 100%;
-    }
-    .thatbai{
-        width: 100%;
-    }
-    .chothanhtoan{
-        width: 100%;
-    }
-    .minibar{
-        height: 100%;  
-        padding-top: 5px;
-    }
-    #minibar{
-        font-size: smaller;
     }
 }

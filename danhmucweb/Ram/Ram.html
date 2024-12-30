@@ -3,20 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ram</title>
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../assets/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/znpm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../assets/css/boxicons.min.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="icon" href="../../assets/img/header/logo.png" type="image/x-icon">
 </head>
 
-<body>
-    <header class=" d-none d-md-flex menu" id="header">
+<body id="top">
+    <header class=" d-md-flex menu" id="header">
         <div class="logo">
             <a href="../../SieuPhamViet.html">
-                <h3 class="d-none d-lg-block">Siêu Phẩm Việt</h3>
+                <h3 class=" d-lg-block">Siêu Phẩm Việt</h3>
+                <img src="../../assets/img/header/logo.png" alt="logo">
             </a>
-            <img src="../../assets/img/header/logo.png" alt="logo">
         </div>
         <div class="nav">
             <i class='bx bx-menu icon' style="color: white"></i>
@@ -24,8 +26,7 @@
             <div class="menu-container">
                 <div class="menu-child">
                     <a href="../../danhmucweb/pclapsan/Pcbuilt.html">
-                        <img src="../../assets/img/linkKienPC/pc-do-hoa-photoshop-pdc01dh-i78700-h310m-ram-16g-hdd-1tb-ssd-pcie-256g-gtx-1650_1718267833_250x250.png"
-                            alt="PC" width="80px">
+                        <img src="../../assets/img/linkKienPC/pc-do-hoa.png" alt="PC" width="80px">
                         <h4>PC ráp sẵn</h4>
                     </a>
                 </div>
@@ -36,14 +37,15 @@
                     </a>
                 </div>
                 <div class="menu-child">
-                    <a href="../../danhmucweb/vga/Vga.html">
-                        <img src="../../assets/img/linkKienPC/vga.png" alt="VGA" width="80px">
-                        <h4>VGA</h4>
-                    </a>
+                    <a href="../../danhmucweb/tannhiet/tan__nhiet.html">
+                        <a href="../../danhmucweb/vga/Vga.html">
+                            <img src="../../assets/img/linkKienPC/vga.png" alt="VGA" width="80px">
+                            <h4>VGA</h4>
+                        </a>
                 </div>
                 <div class="menu-child">
                     <a href="../../danhmucweb/cpu/cpu.html">
-                        <img src="assets/img/linkKienPC/cpu.png" alt="CPU" width="80px">
+                        <img src="../../assets/img/linkKienPC/cpu.png" alt="CPU" width="80px">
                         <h4>CPU</h4>
                     </a>
                 </div>
@@ -54,21 +56,27 @@
                     </a>
                 </div>
                 <div class="menu-child">
-                    <a href="../../danhmucweb/mainboard/mainboard.html">
+                    <a href="../../danhmucweb/o_cung/o_cung.html">
                         <img src="../../assets/img/linkKienPC/o_cung.png" alt="Ổ Cứng" width="80px">
                         <h4>Ổ Cứng</h4>
                     </a>
                 </div>
                 <div class="menu-child">
-                    <a href="../../danhmucweb/tannhiet/">
+                    <a href="../../danhmucweb/tannhiet/tan__nhiet.html">
                         <img src="../../assets/img/linkKienPC/tan_nhiet.png" alt="Tản Nhiệt" width="80px">
                         <h4>Tản Nhiệt</h4>
                     </a>
                 </div>
                 <div class="menu-child">
-                    <a href="../../danhmucweb/Ram/Ram.html">
+                    <a href="../../danhmucweb/vo_case/vo_case.html">
                         <img src="../../assets/img/linkKienPC/vo_case.png" alt="Vỏ Case" width="80px">
                         <h4>Vỏ Case</h4>
+                    </a>
+                </div>
+                <div class="menu-child">
+                    <a href="../../danhmucweb/buildPC/buildPC.html">
+                        <img src="../../assets/img/linkKienPC/LZ8A8126_Final.webp" alt="Vỏ Case" width="80px">
+                        <h4>Tự Build PC</h4>
                     </a>
                 </div>
             </div>
@@ -76,12 +84,15 @@
         <div class="menu-search">
             <input class="menu-input-search" type="text" placeholder="Tìm kiếm sản phầm bạn ưa thích"
                 spellcheck="false">
-            <span onclick=""><i class='bx bx-search'></i></span>
+            <span onclick="toggleSearchMenu()"> <i class='bx bx-search'></i> </span>
+            <button class="close" type="button" onclick="closeSearchMenu()"><i class='bx bx-x'
+                    style="font-size: 40px;"></i></button>
         </div>
         <div>
             <ul class="list-menu">
-                <li><a href="../../danhmucweb/datHang/order__main.html"><i class='bx bx-cart '></i><span>(9)</span></a></li>
-                <li><a href="../../danhmucweb/dangnhap/đăng nhập.html"><i class='bx bx-user-circle'></i>
+                <li><a href="../../danhmucweb/datHang/order__main.html"><i class='bx bx-cart '></i><span>(9)</span></a>
+                </li>
+                <li><a href="../../danhmucweb/listweb/dangnhap.html"><i class='bx bx-user-circle'></i>
                         <span>Đăng Nhập</span></a>
                 </li>
             </ul>
@@ -105,7 +116,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-1 ADATA Spectrix D50 RGB 8GB-DDR4-3200MHz.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.1.png" alt="Ram.1" class="">
@@ -151,7 +162,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-2 Corsair Vengeance .html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.2.png" alt="Ram.2" class="">
@@ -198,7 +209,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-3 CORSAIR Vengeance RGB RS.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.3.png" alt="Ram.3" class="">
@@ -245,7 +256,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-5 G.SKILL Trident Z.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.4.png" alt="Ram.4" class="">
@@ -292,7 +303,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-5 G.SKILL Trident Z.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.5.png" alt="Ram.5" class="">
@@ -339,7 +350,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-1 ADATA Spectrix D50 RGB 8GB-DDR4-3200MHz.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.1.png" alt="Ram.1" class="">
@@ -386,7 +397,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-2 Corsair Vengeance .html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.2.png" alt="Ram.2" class="">
@@ -433,7 +444,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-3 CORSAIR Vengeance RGB RS.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.3.png" alt="Ram.3" class="">
@@ -480,7 +491,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-5 G.SKILL Trident Z.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.4.png" alt="Ram.4" class="">
@@ -526,7 +537,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-1 ADATA Spectrix D50 RGB 8GB-DDR4-3200MHz.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.1.png" alt="Ram.1" class="">
@@ -572,7 +583,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-2 Corsair Vengeance .html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.2.png" alt="Ram.2" class="">
@@ -619,7 +630,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-5 G.SKILL Trident Z.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.3.png" alt="Ram.3" class="">
@@ -666,7 +677,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-5 G.SKILL Trident Z.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.4.png" alt="Ram.4" class="">
@@ -713,7 +724,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-5 G.SKILL Trident Z.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.5.png" alt="Ram.5" class="">
@@ -760,7 +771,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-5 G.SKILL Trident Z.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.1.png" alt="Ram.1" class="">
@@ -807,7 +818,7 @@
                     <div class="sp-card ">
                         <!-- Nguyên: chỉnh href tới trang chi tiết sản phẩm nha mấy ní -->
                         <!-- Nguyên: nội dung thì cứ tùy ý thay đổi-->
-                        <a href="#" class="sp-card-link" style="text-decoration: none">
+                        <a href="../../danhmucweb/CTSP-Ram/RAM-5 G.SKILL Trident Z.html" class="sp-card-link" style="text-decoration: none">
                             <div class="card-container">
                                 <div class="sp-hinh-anh">
                                     <img src="../../assets/img/sanpham/Ram.2.png" alt="Ram.2" class="">
@@ -856,6 +867,10 @@
             </div>
         </main>
     </div>
+    <div id="scrollToTop">
+        <a id="btnbg" href="#top"> <i class='bx bxs-arrow-to-top'></i> </a>
+        <a type="submit" formaction="#" href="#top"> <i class='bx bxs-arrow-to-top'></i> </a>
+    </div>
     <br>
     <br>
     <br>
@@ -874,7 +889,8 @@
 
                 <h4>Phương thức thanh toán.</h4>
                 <div class="footer-img">
-                    <a href="https://zalopay.vn/"><img src="../../assets/img/footer/zalopay-logo.webp" alt="zalopay"></a>
+                    <a href="https://zalopay.vn/"><img src="../../assets/img/footer/zalopay-logo.webp"
+                            alt="zalopay"></a>
                     <a href="https://www.momo.vn/"><img src="../../assets/img/footer/momo_1.webp" alt="MOMO"></a>
                     <a href="https://www.visa.com.vn/en_VN"><img
                             src="../../assets/img/footer/d4bbea4570b93bfd5fc652ca82a262a8.png" alt="visa"></a>
@@ -938,10 +954,14 @@
                 <h4>Chứng nhận.</h4>
                 <div class="footer-img">
                     <a href="#"><img src="../../assets/img/footer/dmca_icon_8fc6622bd5.svg" alt=""></a>
-                    <a href="#"><img  src="../../assets/img/footer/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg" alt=""></a>
-                    <a href="#"><img src="../../assets/img/footer/thuong_hieu_manh_2013_icon_b56f772475.svg"  alt=""></a>
-                    <a href="#"><img src="../../assets/img/footer/noi_khong_voi_hang_gia_icon_e16037d9cb.svg" alt=""></a>
-                    <a href="#" ><img src="../../assets/img/footer/da_thong_bao_bo_cong_thuong_icon_64785fb3f7.svg" alt=""></a>
+                    <a href="#"><img
+                            src="../../assets/img/footer/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg"
+                            alt=""></a>
+                    <a href="#"><img src="../../assets/img/footer/thuong_hieu_manh_2013_icon_b56f772475.svg" alt=""></a>
+                    <a href="#"><img src="../../assets/img/footer/noi_khong_voi_hang_gia_icon_e16037d9cb.svg"
+                            alt=""></a>
+                    <a href="#"><img src="../../assets/img/footer/da_thong_bao_bo_cong_thuong_icon_64785fb3f7.svg"
+                            alt=""></a>
                 </div>
             </div>
         </div>
@@ -967,18 +987,14 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main2.js"></script>
+
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="../../assets/js/main2.js"></script>
-
-
-<script>
-
-</script>
-</body>
 
 </html>

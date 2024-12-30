@@ -1,8 +1,9 @@
-@media (max-width: 500px){
+@media (max-width: 480px){
     .cart__wrapper{
         max-width: 100vw;
         width: 100%;
         margin: 0;
+        height: auto;
     }
     .tagh1{
         font-weight: 700;
@@ -66,10 +67,18 @@
         height: 30px;
         font-size: 10px;
     }
+    #voucher__code{
+        width: 130px;
+        margin-left: -10px;
+    }   
 
     .total__voucher button{
         width: 70px;
         height: 30px;
+    }
+
+    #btn__pay {
+        width: 150px;
     }
 
     /* -------------------------------------------------- */
@@ -81,5 +90,13 @@
     #footer-1{
         padding-bottom: 25px;
     }
-
+    .box__prod{
+        max-width: 90%;
+    }
+    .prod{
+        width: 100%;
+    }
+    .prod .prod__img img{
+        width: 100%;
+    }
 }
