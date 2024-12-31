@@ -896,22 +896,22 @@ table {
       width: 100%;
   }
   .logo img{
-      left: 20px;
+      left: 0px;
       font-size: 1em;
   }
   .logo h3{
       display: none;
   }
   .nav{
-      left:180px;
-      padding: 0;
+      left:130px;
+      padding: 10px;
   }
   .menu-container {
       display: grid;
       margin-left:2vw;
       width: 92vw;
       grid-template-columns: repeat(2, 1fr);
-      left: -170px;
+      left: -130px;
   }
   .menu-child a{
       height: 50px;
@@ -935,6 +935,9 @@ table {
       display: block;
       position: absolute;
       font-size: 30px;
+      border: none;
+      background-color: transparent;
+      top: 0px;
   }
   .menu-search.show ~ .nav,
   .menu-search.show ~ .logo,
@@ -959,7 +962,7 @@ table {
       border-radius: 0;
       background-color: transparent;
       border: none;
-      left: -440px;
+      left: -470px;
       font-size: 40px;
   }
   .menu-search.show span i {
@@ -980,13 +983,18 @@ table {
   .list-menu li{
       display: none;
   }
-  .list-menu li:last-child {
+  .list-menu li {
       display: flex;
       margin-top: -40px;
   }
-  .list-menu li:last-child a i{
-      font-size: 2em;
+  .list-menu li:hover{
+    border: none;
+    background-color: transparent;
+  }
+  .list-menu li a i{
+      font-size: 1.8em;
       margin-right: -20px;
+      padding: 4px;
   }
   .slide-show {
       width: 90%;           

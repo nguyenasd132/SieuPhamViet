@@ -1063,7 +1063,7 @@ margin: 20px 0px 30px;}
         margin-left: 450px;
     }
     body{
-        max-width: 0%;
+        max-width: 0vw;
     }
     .menu {
         display: flex;
@@ -1074,22 +1074,26 @@ margin: 20px 0px 30px;}
         max-width: 100%;
     }
     .logo img{
-        left: 10px;
+        left: 0px;
         font-size: 1em;
     }
     .logo h3{
         display: none;
     }
     .nav{
-        left:180px;
+        left:130px;
         padding: 0;
+    }
+    .list-menu li:hover{
+        border: none;
+        background-color: transparent;
     }
     .menu-container {
         display: grid;
         margin-left:2vw;
         width: 90vw;
         grid-template-columns: repeat(2, 1fr);
-        left: -170px;
+        left: -110px;
     }
     .menu-child a{
         height: 50px;
@@ -1137,7 +1141,7 @@ margin: 20px 0px 30px;}
         border-radius: 0;
         background-color: transparent;
         border: none;
-        left: -450px;
+        left: -480px;
         font-size: 40px;
     }
     .menu-search.show span i {
@@ -1155,16 +1159,14 @@ margin: 20px 0px 30px;}
     .list-menu li span  {
         display: none;  
     }
-    .list-menu li{
-        display: none;
-    }
-    .list-menu li:last-child {
+    .list-menu li {
         display: flex;
         margin-top: -32px;
     }
-    .list-menu li:last-child a i{
-        font-size: 2em;
+    .list-menu li a i{
+        font-size: 1.8em;
         margin-right: -15px;
+        padding: 4px;
     }
     .slide-show {
         width: 90%;           

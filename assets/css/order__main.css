@@ -847,6 +847,10 @@ ul li {
 }
 
 @media screen and (max-width: 480px){
+  .list-menu li:hover{
+      border: none;
+      background-color: transparent;
+  }
   .menu {
       display: flex;
       align-items: center;
@@ -856,22 +860,23 @@ ul li {
       width: 100%;
   }
   .logo img{
-      left: 20px;
+      left: 0px;
       font-size: 1em;
   }
   .logo h3{
       display: none;
   }
   .nav{
-      left:180px;
-      padding: 0;
+      left:130px;
+      padding: 10px;
+      
   }
   .menu-container {
       display: grid;
       margin-left:2vw;
       width: 92vw;
       grid-template-columns: repeat(2, 1fr);
-      left: -170px;
+      left: -130px;
   }
   .menu-child a{
       height: 50px;
@@ -895,6 +900,9 @@ ul li {
       display: block;
       position: absolute;
       font-size: 30px;
+      border: none;
+      background: transparent;
+      top: 0px;
   }
   .menu-search.show ~ .nav,
   .menu-search.show ~ .logo,
@@ -919,7 +927,7 @@ ul li {
       border-radius: 0;
       background-color: transparent;
       border: none;
-      left: -440px;
+      left: -470px;
       font-size: 40px;
   }
   .menu-search.show span i {
@@ -937,16 +945,14 @@ ul li {
   .list-menu li span  {
       display: none;  
   }
-  .list-menu li{
-      display: none;
-  }
-  .list-menu li:last-child {
+  .list-menu li {
       display: flex;
       margin-top: -40px;
   }
-  .list-menu li:last-child a i{
-      font-size: 2em;
+  .list-menu li a i{
+      font-size: 1.8em;
       margin-right: -20px;
+      padding: 4px;
   }
   .slide-show {
       width: 90%;           

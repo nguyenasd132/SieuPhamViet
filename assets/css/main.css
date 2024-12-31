@@ -600,7 +600,7 @@ img{
         width:auto;
         left: 20vw;
     }
-    #tenweb{
+    .logo h3{
         left: 0px;
     }
     .nav{
@@ -798,14 +798,14 @@ img{
         width: 100%;
     }
     .logo img{
-        left: 20px;
+        left: 0px;
         font-size: 1em;
     }
     .logo h3{
         display: none;
     }
     .nav{
-        left:180px;
+        left:120px;
         padding: 0;
     }
     .menu-container {
@@ -813,7 +813,7 @@ img{
         margin-left:2vw;
         width: 90vw;
         grid-template-columns: repeat(2, 1fr);
-        left: -170px;
+        left: -110px;
     }
     .menu-child a{
         height: 50px;
@@ -861,7 +861,7 @@ img{
         border-radius: 0;
         background-color: transparent;
         border: none;
-        left: -440px;
+        left: -480px;
         font-size: 40px;
     }
     .menu-search.show span i {
@@ -879,16 +879,18 @@ img{
     .list-menu li span  {
         display: none;  
     }
-    .list-menu li{
-        display: none;
-    }
-    .list-menu li:last-child {
+    .list-menu li {
         display: flex;
         margin-top: -40px;
     }
-    .list-menu li:last-child a i{
-        font-size: 2em;
+    .list-menu li a i{
+        font-size: 1.8em;
         margin-right: -20px;
+        padding: 5px;
+    }
+    .list-menu li:hover{
+        border: none;
+        background-color: transparent;
     }
     .slide-show {
         width: 90%;           
