@@ -879,13 +879,14 @@ img{
     }
     .logo img{
         width:auto;
-        left: 20vw;
+        left: 22vw;
     }
     .logo h3{
-        left: 0px;
+        left: 10px;
+        font-weight: 100;
     }
     .nav{
-        left: 27vw;
+        left: 30vw;
     }
     .menu-container {
         display: grid;
@@ -899,7 +900,7 @@ img{
     }
     .menu-search {
         width: 40%;
-        left: 40vw;
+        left: 43vw;
         top: 12px;
     }
     .menu-search span {
