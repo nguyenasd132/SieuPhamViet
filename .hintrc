@@ -3,15 +3,10 @@
     "development"
   ],
   "hints": {
-    "axe/name-role-value": "off",
-    "no-inline-styles": "off",
-    "axe/structure": "off",
-    "compat-api/css": [
+    "axe/name-role-value": [
       "default",
       {
-        "ignore": [
-          "user-select"
-        ]
+        "button-name": "off"
       }
     ]
   }
