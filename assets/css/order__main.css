@@ -841,9 +841,10 @@ ul li {
 
 @media screen and (max-width: 480px){
   .list-menu li:hover{
-      border: none;
-      background-color: transparent;
-  }
+    border: none;
+    background-color: transparent;
+    color: yellow;
+}
   .menu {
       display: flex;
       align-items: center;

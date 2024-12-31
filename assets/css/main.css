@@ -1165,6 +1165,11 @@ img{
         display: flex;
         margin-top: -40px;
     }
+    .list-menu li:hover{
+        border: none;
+        background-color: transparent;
+        color: yellow;
+    }
     .list-menu li a i{
         font-size: 1.8em;
         margin-right: -20px;

@@ -1054,6 +1054,11 @@ margin: 20px 0px 30px;}
     body{
         max-width: 0vw;
     }
+    .list-menu li:hover{
+        border: none;
+        background-color: transparent;
+        color: yellow;
+    }
     .menu {
         display: flex;
         align-items: center;
