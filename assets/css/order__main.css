@@ -650,41 +650,42 @@ ul li {
 }
 @media screen and (min-width : 1000px) and (max-width: 1280px) {
   .menu {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-  }
-  .logo img{
-      width:auto;
-      left: 20vw;
-  }
-  .logo h3{
-      left: 0px;
-  }
-  .nav{
-      left: 27vw;
-  }
-  .menu-container {
-      display: grid;
-      width: 90vw;
-      grid-template-columns: repeat(2, 1fr);
-      left: -23vw;
-      height: 50vw;
-  }
-  .menu-child a img {
-      width: 200px;
-  }
-  .menu-search {
-      width: 40%;
-      left: 40vw;
-      top: 12px;
-  }
-  .menu-search span {
-      margin-left: auto; 
-  }
-  .menu-search span i{
-      width: 50px;
-      left: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.logo img{
+    width:auto;
+    left: 20vw;
+}
+.logo h3{
+  left: 10px;
+  font-weight: 200;
+}
+.nav{
+  left: 28vw;
+}
+.menu-container {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(2, 1fr);
+    left: -23vw;
+    height: 50vw;
+}
+.menu-child a img {
+    width: 200px;
+}
+.menu-search {
+    width: 40%;
+    left: 43vw;
+    top: 12px;
+}
+.menu-search span {
+    margin-left: auto; 
+}
+.menu-search span i{
+    width: 50px;
+    left: auto;
   }
   .list-menu{
       gap: 2px;
@@ -701,16 +702,12 @@ ul li {
       justify-content: center;
       
   }
-  .list-menu li:hover{
-      background:  rgba(255, 255, 255, 0.201);
-      border-radius: 10px;
-  }
   .list-menu li span{
       display: none;  
   }
   .list-menu li a i {
-      font-size: 40px;
-      margin-top: -10px;
+      font-size: 1.8em;
+      margin-top: 0px;
   }
   .footer-container{
       border: 1px solid black;
@@ -798,16 +795,12 @@ ul li {
       justify-content: center;
       
   }
-  .list-menu li:hover{
-      background:  rgba(255, 255, 255, 0.201);
-      border-radius: 10px;
-  }
   .list-menu li span{
       display: none;  
   }
   .list-menu li a i {
-      font-size: 40px;
-      margin-top: -10px;
+      font-size: 1.8em;
+      margin-top: 0px;
   }
   .footer-container{
       border: 1px solid black;

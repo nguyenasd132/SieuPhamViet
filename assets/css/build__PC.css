@@ -699,10 +699,11 @@ table {
       left: 20vw;
   }
   .logo h3{
-      left: 0px;
+    left: 10px;
+    font-weight: 200;
   }
   .nav{
-      left: 27vw;
+    left: 28vw;
   }
   .menu-container {
       display: grid;
@@ -716,7 +717,7 @@ table {
   }
   .menu-search {
       width: 40%;
-      left: 40vw;
+      left: 43vw;
       top: 12px;
   }
   .menu-search span {
@@ -739,18 +740,13 @@ table {
       align-items: center;
       flex-direction: row;
       justify-content: center;
-      
-  }
-  .list-menu li:hover{
-      background:  rgba(255, 255, 255, 0.201);
-      border-radius: 10px;
   }
   .list-menu li span{
       display: none;  
   }
   .list-menu li a i {
-      font-size: 40px;
-      margin-top: -10px;
+      font-size: 1.8em;
+      margin-top: 0px;
   }
   .footer-container{
       border: 1px solid black;
@@ -838,16 +834,12 @@ table {
       justify-content: center;
       
   }
-  .list-menu li:hover{
-      background:  rgba(255, 255, 255, 0.201);
-      border-radius: 10px;
-  }
   .list-menu li span{
       display: none;  
   }
   .list-menu li a i {
-      font-size: 40px;
-      margin-top: -10px;
+      font-size: 1.8em;
+      margin-top: 0px;
   }
   .footer-container{
       border: 1px solid black;
